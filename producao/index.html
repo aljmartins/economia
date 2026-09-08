@@ -1,0 +1,353 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Produção | Infográfico de Aula</title>
+<style>
+:root{
+  --azul:#173b63; --azul2:#285b8f; --claro:#f5f8fb; --linha:#d8e2ec;
+  --texto:#18222d; --muted:#5d6d7d; --verde:#edf8f2; --amarelo:#fff7d6;
+  --vermelho:#fff1f1;
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;line-height:1.55;color:var(--texto);background:#fff}
+html{scroll-behavior:smooth}
+header{background:linear-gradient(135deg,#173b63,#285b8f);color:#fff;padding:28px 18px}
+.wrap{max-width:1100px;margin:auto}
+.head{display:flex;gap:18px;align-items:center}
+.head img{width:84px;height:84px;object-fit:contain;background:#fff;border-radius:14px;padding:8px}
+h1{font-size:clamp(1.9rem,4vw,3rem);line-height:1.06;margin:0 0 6px}
+.subtitle{margin:0;opacity:.92}
+nav{position:sticky;top:0;z-index:10;background:#fff;border-bottom:1px solid var(--linha);box-shadow:0 2px 8px rgba(0,0,0,.05)}
+nav .wrap{display:flex;overflow:auto;gap:6px;padding:8px 12px}
+nav a{white-space:nowrap;text-decoration:none;color:var(--azul);font-weight:750;padding:8px 11px;border-radius:9px}
+nav a:hover{background:var(--claro)}
+main{padding:26px 18px 54px}
+section{scroll-margin-top:74px;margin-bottom:36px}
+.kicker{text-transform:uppercase;letter-spacing:.11em;font-size:.8rem;font-weight:800;color:var(--azul2)}
+h2{color:var(--azul);font-size:clamp(1.55rem,3vw,2.2rem);margin:.2rem 0 1rem}
+h3{color:var(--azul);margin:.1rem 0 .7rem}
+.lead{font-size:1.08rem;color:#2c4052;max-width:930px}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.grid3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.card{border:1px solid var(--linha);border-radius:16px;padding:16px;background:#fff;box-shadow:0 3px 12px rgba(0,0,0,.05)}
+.card strong{color:var(--azul)}
+.concept{border-left:5px solid var(--azul2);background:var(--claro)}
+.note{background:var(--amarelo);border-radius:12px;padding:12px 14px}
+.good{background:var(--verde)}
+.warn{background:var(--vermelho)}
+.figure{margin:14px 0;border:1px solid var(--linha);border-radius:16px;padding:12px;background:#fff;text-align:center}
+.figure img{max-width:100%;height:auto;max-height:390px;object-fit:contain}
+.figure figcaption{font-size:.92rem;color:var(--muted);margin-top:8px}
+.formula{font-family:ui-monospace,SFMono-Regular,Consolas,monospace;background:#f0f4f8;padding:12px 14px;border-radius:10px;overflow:auto}
+.pill{display:inline-block;background:#eaf1f8;color:var(--azul);font-weight:700;border-radius:999px;padding:5px 9px;margin:3px}
+.flow{display:grid;grid-template-columns:1fr auto 1fr auto 1fr;gap:8px;align-items:center}
+.arrow{font-size:1.5rem;text-align:center;color:var(--azul2);font-weight:800}
+.small{font-size:.92rem;color:var(--muted)}
+table{width:100%;border-collapse:collapse;margin:10px 0}
+th,td{border-bottom:1px solid var(--linha);padding:10px;text-align:left;vertical-align:top}
+th{background:var(--claro);color:var(--azul)}
+details{border:1px solid var(--linha);border-radius:12px;padding:10px 13px;margin:8px 0;background:#fff}
+summary{cursor:pointer;font-weight:760;color:var(--azul)}
+footer{border-top:1px solid var(--linha);padding:22px 18px;color:var(--muted);background:#fafcfe}
+@media(max-width:780px){
+  .grid,.grid3,.flow{grid-template-columns:1fr}
+  .arrow{transform:rotate(90deg)}
+  .head{align-items:flex-start}
+  .head img{width:66px;height:66px}
+}
+@media print{
+  nav{display:none}
+  .card,.figure,details{break-inside:avoid}
+}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap head">
+    <img src="IMG/logo_ufpel.png" alt="Logo da UFPel">
+    <div>
+      <div class="kicker" style="color:#dcebff">15000599 Economia</div>
+      <h1>Produção</h1>
+      <p class="subtitle">Resumo visual da aula · Prof. Alejandro Martins</p>
+    </div>
+  </div>
+</header>
+
+<nav>
+  <div class="wrap">
+    <a href="#visao">Visão geral</a>
+    <a href="#conceitos">Conceitos</a>
+    <a href="#curto">Curto prazo</a>
+    <a href="#longo">Longo prazo</a>
+    <a href="#custos">Custos</a>
+    <a href="#aplicacoes">Aplicações</a>
+    <a href="#questoes">Questões</a>
+  </div>
+</nav>
+
+<main class="wrap">
+<section id="visao">
+  <div class="kicker">Visão geral</div>
+  <h2>Como a firma transforma insumos em produto</h2>
+  <p class="lead">A teoria da produção estuda a relação entre <strong>insumos</strong> e <strong>quantidade produzida</strong>. Já a teoria dos custos adiciona os <strong>preços dos insumos</strong> e mostra quanto custa produzir em diferentes escalas. Em sala, isso se organiza em uma sequência lógica: produção, produtividade, rendimentos, custos e planejamento.</p>
+
+  <div class="flow">
+    <div class="card concept"><strong>Insumos</strong><br>trabalho, capital, terra e matérias-primas</div>
+    <div class="arrow">→</div>
+    <div class="card concept"><strong>Processo de produção</strong><br>transformação técnica</div>
+    <div class="arrow">→</div>
+    <div class="card concept"><strong>Produto</strong><br>bens e serviços finais</div>
+  </div>
+
+  <p class="note"><strong>Ponto-chave:</strong> função de produção <strong>não</strong> é função de oferta. A função de produção relaciona <em>quantidades físicas</em> de fatores e produto; a função de oferta relaciona produção e <em>preços</em>.</p>
+</section>
+
+<section id="conceitos">
+  <div class="kicker">1 · Conceitos básicos</div>
+  <h2>Produção, eficiência e função de produção</h2>
+
+  <div class="grid">
+    <div class="card">
+      <h3>O que é produção?</h3>
+      <p>É o processo pelo qual a firma transforma fatores de produção adquiridos em produtos ou serviços para venda no mercado.</p>
+      <p><span class="pill">Mão de obra</span><span class="pill">Capital físico</span><span class="pill">Terra</span><span class="pill">Matérias-primas</span></p>
+    </div>
+    <div class="card">
+      <h3>Dois tipos de eficiência</h3>
+      <p><strong>Eficiência técnica:</strong> produzir a mesma quantidade usando menos insumos.</p>
+      <p><strong>Eficiência econômica:</strong> produzir a mesma quantidade com <em>menor custo</em>.</p>
+    </div>
+  </div>
+
+  <div class="card concept">
+    <h3>Função de produção</h3>
+    <div class="formula">q = f(N, K, M, T)</div>
+    <p class="small">N: trabalho; K: capital físico; M: matérias-primas; T: terra/área, conforme a notação da aula.</p>
+  </div>
+
+  <div class="grid">
+    <div class="card">
+      <h3>Curto prazo (CP)</h3>
+      <p>Período em que existe <strong>pelo menos um fator fixo</strong>. Ex.: instalações ou máquinas da empresa.</p>
+    </div>
+    <div class="card">
+      <h3>Longo prazo (LP)</h3>
+      <p>Período em que <strong>todos os fatores são variáveis</strong>. É o horizonte do planejamento e da mudança de escala.</p>
+    </div>
+  </div>
+</section>
+
+<section id="curto">
+  <div class="kicker">2 · Produção no curto prazo</div>
+  <h2>Produto total e produtividades</h2>
+  <p class="lead">No curto prazo, costuma-se analisar a produção com <strong>um fator variável</strong> e <strong>um fator fixo</strong>. A aula trabalha com três medidas principais: produto total, produtividade média e produtividade marginal.</p>
+
+  <div class="grid3">
+    <div class="card">
+      <h3>Produto total (PT)</h3>
+      <p>Quantidade total produzida em determinado período.</p>
+    </div>
+    <div class="card">
+      <h3>Produtividade média (PMe)</h3>
+      <p>Relação entre o nível do produto e a quantidade usada do fator de produção.</p>
+    </div>
+    <div class="card">
+      <h3>Produtividade marginal (PMg)</h3>
+      <p>Variação do produto gerada pelo acréscimo de uma unidade do fator variável.</p>
+    </div>
+  </div>
+
+  <figure class="figure">
+    <img src="IMG/produto_produtividade.png" alt="Gráficos de produto total, produtividade média e produtividade marginal">
+    <figcaption>Produto total, produtividade média e produtividade marginal: o formato das curvas decorre da lei dos rendimentos decrescentes.</figcaption>
+  </figure>
+
+  <div class="card warn">
+    <h3>Lei dos rendimentos decrescentes</h3>
+    <p>Ao aumentar o fator variável, mantendo fixo ao menos um fator, a <strong>produtividade marginal</strong> cresce até certo ponto e depois <strong>passa a cair</strong>, podendo inclusive tornar-se negativa.</p>
+    <p class="small">Essa lei vale no curto prazo, justamente porque pressupõe a existência de fator fixo.</p>
+  </div>
+</section>
+
+<section id="longo">
+  <div class="kicker">3 · Produção no longo prazo</div>
+  <h2>Isoquantas, isocustos e rendimentos de escala</h2>
+  <p class="lead">No longo prazo, a firma pode variar simultaneamente trabalho, capital e outros fatores. Por isso, o foco deixa de ser “quanto produzir com uma planta dada” e passa a ser “qual combinação de fatores e qual escala escolher”.</p>
+
+  <div class="grid">
+    <figure class="figure">
+      <img src="IMG/isoquantas.png" alt="Mapa de isoquantas de produção">
+      <figcaption>Isoquanta: conjunto de combinações de fatores que produz a mesma quantidade.</figcaption>
+    </figure>
+    <figure class="figure">
+      <img src="IMG/isocusto.png" alt="Linha de isocusto">
+      <figcaption>Isocusto: combinações de trabalho e capital que geram o mesmo custo total.</figcaption>
+    </figure>
+  </div>
+
+  <div class="card concept">
+    <h3>Escolha ótima no longo prazo</h3>
+    <p>A firma escolhe a combinação de fatores considerando <strong>custos de produção</strong> e <strong>demanda pelo produto</strong>. Em termos gráficos, a escolha eficiente aparece na tangência entre <strong>isoquanta</strong> e <strong>isocusto</strong>.</p>
+  </div>
+
+  <div class="grid3">
+    <div class="card"><h3>Rendimentos crescentes de escala</h3><p>Todos os fatores aumentam numa proporção e a produção cresce <strong>mais do que proporcionalmente</strong>.</p></div>
+    <div class="card"><h3>Rendimentos constantes de escala</h3><p>Todos os fatores e a produção crescem na <strong>mesma proporção</strong>.</p></div>
+    <div class="card"><h3>Rendimentos decrescentes de escala</h3><p>Todos os fatores aumentam numa proporção e a produção cresce <strong>menos do que proporcionalmente</strong>.</p></div>
+  </div>
+</section>
+
+<section id="custos">
+  <div class="kicker">4 · Custos de produção</div>
+  <h2>Do custo privado ao planejamento de longo prazo</h2>
+
+  <div class="grid">
+    <div class="card">
+      <h3>Avaliação privada × avaliação social</h3>
+      <p><strong>Avaliação privada:</strong> análise financeira da empresa.</p>
+      <p><strong>Avaliação social e ambiental:</strong> considera custos e benefícios para toda a sociedade.</p>
+      <p><strong>Externalidades:</strong> efeitos da produção sobre terceiros, positivos ou negativos.</p>
+    </div>
+    <div class="card">
+      <h3>ESG</h3>
+      <p>O material destaca a lógica <strong>Environmental, Social and Governance</strong>, conectando a firma a responsabilidade ambiental, social e de governança.</p>
+      <img src="IMG/esg_exi.png" alt="Exemplo visual de ESG" style="max-width:100%;height:auto">
+    </div>
+  </div>
+
+  <div class="grid">
+    <div class="card good">
+      <h3>Custos a curto prazo</h3>
+      <p><strong>CFT:</strong> custo fixo total.<br><strong>CVT:</strong> custo variável total.<br><strong>CT:</strong> custo total = CFT + CVT.</p>
+    </div>
+    <div class="card">
+      <h3>Custos médios</h3>
+      <p><strong>CFMe</strong>, <strong>CVMe</strong> e <strong>CTMe</strong>, com a relação:</p>
+      <div class="formula">CTMe = CVMe + CFMe</div>
+    </div>
+  </div>
+
+  <div class="grid">
+    <figure class="figure">
+      <img src="IMG/custo_total_cft_cvt.png" alt="Curvas de custo total, custo fixo total e custo variável total">
+      <figcaption>Custo total, custo fixo total e custo variável total no curto prazo.</figcaption>
+    </figure>
+    <figure class="figure">
+      <img src="IMG/custos_medios.png" alt="Curvas de custo fixo médio, custo variável médio e custo total médio">
+      <figcaption>As curvas médias de curto prazo exibem o formato em U.</figcaption>
+    </figure>
+  </div>
+
+  <div class="grid">
+    <figure class="figure">
+      <img src="IMG/custo_marginal.png" alt="Curva de custo marginal">
+      <figcaption>Custo marginal: custo de produzir uma unidade extra.</figcaption>
+    </figure>
+    <figure class="figure">
+      <img src="IMG/cmg_ctme_cvme.png" alt="Relação entre custo marginal, custo total médio e custo variável médio">
+      <figcaption>Quando o CMg corta CTMe ou CVMe, o faz no ponto mínimo dessas curvas.</figcaption>
+    </figure>
+  </div>
+
+  <div class="card concept">
+    <h3>Relação importante</h3>
+    <p>Se o <strong>custo marginal</strong> estiver acima do custo médio, o custo médio está subindo. Se estiver abaixo, o custo médio está caindo. Quando forem iguais, o CMg corta o custo médio no seu ponto mínimo.</p>
+  </div>
+
+  <div class="grid">
+    <div class="card">
+      <h3>Longo prazo</h3>
+      <p>No longo prazo, <strong>não existem custos fixos</strong>; todos os custos são variáveis. O empresário opera no curto prazo, mas <strong>planeja no longo prazo</strong>.</p>
+    </div>
+    <figure class="figure">
+      <img src="IMG/custo_longo_prazo_envoltoria.png" alt="Curva de custo médio de longo prazo como envoltória das curvas de curto prazo">
+      <figcaption>Curva de custo médio de longo prazo: curva de envoltória ou de planejamento.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section id="aplicacoes">
+  <div class="kicker">5 · Aplicações</div>
+  <h2>Dois casos práticos: ibuprofeno e microchips</h2>
+  <p class="lead">Os anexos acrescentam dois exemplos excelentes para ligar teoria e prática: a fabricação de <strong>ibuprofeno</strong> e a indústria de <strong>microchips</strong>. Eles aparecem aqui como pontes para pensar produção, custos, externalidades, tecnologia e escala.</p>
+
+  <div class="grid">
+    <div class="card">
+      <h3>Ibuprofeno: produção farmacêutica e solventes</h3>
+      <p>O texto destaca o peso ambiental dos solventes na indústria farmacêutica: geração de resíduos, uso intensivo de insumos e necessidade de controle regulatório.</p>
+      <p>Didaticamente, isso ajuda a discutir:</p>
+      <ul>
+        <li><strong>avaliação privada × social</strong>;</li>
+        <li><strong>externalidades negativas</strong>;</li>
+        <li><strong>mudança tecnológica</strong> para processos mais limpos;</li>
+        <li><strong>eficiência econômica</strong>, não apenas técnica.</li>
+      </ul>
+      <img src="IMG/ibuprofeno_solventes.png" alt="Infográfico sobre solventes na produção farmacêutica" style="max-width:100%;height:auto">
+    </div>
+    <div class="card">
+      <h3>Microchips: gargalos produtivos e escala</h3>
+      <p>O texto sobre semicondutores mostra como a produção depende de cadeias altamente especializadas, equipamentos raros e investimentos gigantescos.</p>
+      <p>Didaticamente, ele ajuda a discutir:</p>
+      <ul>
+        <li><strong>fatores fixos</strong> e limitações de curto prazo;</li>
+        <li><strong>planejamento de longo prazo</strong>;</li>
+        <li><strong>economias de escala</strong>;</li>
+        <li><strong>gargalos tecnológicos</strong> e restrições de capacidade.</li>
+      </ul>
+      <img src="IMG/microchips_fabrica.png" alt="Máquina e instalação fabril da indústria de microchips" style="max-width:100%;height:auto">
+    </div>
+  </div>
+
+  <p class="note"><strong>Leitura econômica:</strong> nos dois casos, produzir não é só combinar insumos. É lidar com tecnologia, restrições físicas, ambiente regulatório, cadeias de suprimento e custos sociais. A velha firma do quadro-negro continua viva; só ganhou mais parafusos, mais moléculas e um belo punhado de chips.</p>
+</section>
+
+<section id="sintese">
+  <div class="kicker">Síntese final</div>
+  <h2>O que o estudante deve lembrar</h2>
+  <div class="grid">
+    <div class="card"><strong>Produção</strong>: transformação de insumos em bens e serviços.</div>
+    <div class="card"><strong>Curto prazo</strong>: há fator fixo e vale a lei dos rendimentos decrescentes.</div>
+    <div class="card"><strong>Longo prazo</strong>: todos os fatores variam; a firma escolhe escala e combinação de insumos.</div>
+    <div class="card"><strong>Custos</strong>: CMg conversa com custos médios; no longo prazo, a curva relevante é a envoltória.</div>
+  </div>
+</section>
+
+<section id="questoes">
+  <div class="kicker">Estudo e avaliação</div>
+  <h2>20 questões de revisão</h2>
+  <p class="small">A maior parte das questões deriva diretamente da aula; as últimas integram os exemplos práticos de ibuprofeno e microchips.</p>
+
+  <details><summary>1. O que é produção, segundo a teoria da firma?</summary></details>
+  <details><summary>2. Diferencie eficiência técnica e eficiência econômica.</summary></details>
+  <details><summary>3. O que a função de produção relaciona? Explique por que ela não deve ser confundida com a função de oferta.</summary></details>
+  <details><summary>4. Diferencie fator de produção fixo e fator de produção variável.</summary></details>
+  <details><summary>5. O que caracteriza o curto prazo? E o longo prazo?</summary></details>
+  <details><summary>6. Defina produto total, produtividade média e produtividade marginal.</summary></details>
+  <details><summary>7. Explique a lei dos rendimentos decrescentes e indique em que horizonte ela vale.</summary></details>
+  <details><summary>8. O que é uma isoquanta de produção?</summary></details>
+  <details><summary>9. O que é uma linha de isocusto?</summary></details>
+  <details><summary>10. Como a firma escolhe a combinação de fatores no longo prazo?</summary></details>
+  <details><summary>11. Diferencie rendimentos crescentes, constantes e decrescentes de escala.</summary></details>
+  <details><summary>12. Defina CFT, CVT e CT.</summary></details>
+  <details><summary>13. Explique a relação entre CFMe, CVMe e CTMe.</summary></details>
+  <details><summary>14. O que é custo marginal e por que ele não é influenciado pelos custos fixos a curto prazo?</summary></details>
+  <details><summary>15. Explique por que o custo marginal corta o custo médio no ponto mínimo do custo médio.</summary></details>
+  <details><summary>16. Diferencie avaliação privada, avaliação social e externalidade.</summary></details>
+
+  <details><summary>17. Caso do ibuprofeno: como o uso intensivo de solventes pode ser analisado à luz da diferença entre avaliação privada e avaliação social?</summary></details>
+  <details><summary>18. Caso do ibuprofeno: se uma rota mecanoquímica reduzir resíduos e consumo de solventes, isso representa ganho de eficiência técnica, eficiência econômica, ou ambos? Justifique.</summary></details>
+  <details><summary>19. Caso dos microchips: por que a escassez de semicondutores pode ser interpretada como um problema de curto prazo com fatores produtivos rígidos e gargalos tecnológicos?</summary></details>
+  <details><summary>20. Caso dos microchips: o altíssimo custo e o tempo de implantação de uma nova fábrica sugerem que tipo de problema de longo prazo? Relacione com escala, planejamento e custos.</summary></details>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <strong>15000599 Economia — UFPel</strong><br>
+    Infográfico elaborado a partir da aula sobre Produção e dos anexos sobre ibuprofeno e microchips.<br>
+    </div>
+</footer>
+</body>
+</html>

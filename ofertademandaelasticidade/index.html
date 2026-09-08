@@ -1,0 +1,384 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Demanda, Oferta, Equilíbrio e Elasticidade | Economia</title>
+<style>
+:root{
+  --azul:#173b63; --azul2:#285b8f; --claro:#f5f8fb; --linha:#d9e2ec;
+  --texto:#17212b; --muted:#5d6b78; --amarelo:#fff3c4; --verde:#edf7ef;
+  --vermelho:#fff0f0;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:var(--texto);background:#fff;line-height:1.55}
+header{background:linear-gradient(135deg,#173b63,#285b8f);color:white;padding:28px 20px}
+.wrap{max-width:1080px;margin:auto}
+.head{display:flex;gap:20px;align-items:center}
+.head img{width:84px;height:84px;object-fit:contain;background:#fff;border-radius:14px;padding:7px}
+h1{font-size:clamp(1.8rem,4vw,3rem);line-height:1.08;margin:0 0 8px}
+.subtitle{margin:0;opacity:.92}
+nav{position:sticky;top:0;z-index:5;background:#fff;border-bottom:1px solid var(--linha);box-shadow:0 2px 8px #0000000a}
+nav .wrap{display:flex;overflow:auto;gap:6px;padding:8px 12px}
+nav a{white-space:nowrap;text-decoration:none;color:var(--azul);font-weight:700;padding:8px 11px;border-radius:9px}
+nav a:hover{background:var(--claro)}
+main{padding:26px 18px 50px}
+section{scroll-margin-top:70px;margin-bottom:36px}
+.kicker{text-transform:uppercase;letter-spacing:.12em;font-size:.78rem;font-weight:800;color:var(--azul2)}
+h2{color:var(--azul);font-size:clamp(1.55rem,3vw,2.2rem);margin:.2rem 0 1rem}
+h3{color:var(--azul);margin-top:0}
+.lead{font-size:1.08rem;color:#304252;max-width:900px}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.grid3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.card{border:1px solid var(--linha);border-radius:16px;padding:17px;background:#fff;box-shadow:0 3px 12px #00000008}
+.card strong{color:var(--azul)}
+.concept{border-left:5px solid var(--azul2);background:var(--claro)}
+.formula{font-family:ui-monospace,SFMono-Regular,Consolas,monospace;background:#f0f4f8;padding:12px 14px;border-radius:10px;overflow:auto}
+.note{background:var(--amarelo);border-radius:12px;padding:12px 14px}
+.good{background:var(--verde)}
+.warn{background:var(--vermelho)}
+.figure{margin:16px 0;border:1px solid var(--linha);border-radius:16px;padding:12px;background:#fff;text-align:center}
+.figure img{max-width:100%;height:auto;max-height:390px;object-fit:contain}
+.figure figcaption{font-size:.9rem;color:var(--muted);margin-top:8px}
+.arrow{font-size:1.5rem;text-align:center;color:var(--azul2);font-weight:800}
+.pill{display:inline-block;background:#eaf1f8;color:var(--azul);font-weight:700;border-radius:999px;padding:5px 9px;margin:3px}
+.flow{display:grid;grid-template-columns:1fr auto 1fr;gap:10px;align-items:center}
+.question-box{margin-top:18px}
+details{border:1px solid var(--linha);border-radius:12px;padding:10px 13px;margin:8px 0;background:#fff}
+summary{cursor:pointer;font-weight:750;color:var(--azul)}
+.small{font-size:.9rem;color:var(--muted)}
+table{width:100%;border-collapse:collapse;margin:12px 0}
+th,td{border-bottom:1px solid var(--linha);padding:10px;text-align:left;vertical-align:top}
+th{background:var(--claro);color:var(--azul)}
+footer{border-top:1px solid var(--linha);padding:22px 18px;color:var(--muted);background:#fafcfe}
+@media(max-width:760px){
+  .grid,.grid3,.flow{grid-template-columns:1fr}
+  .arrow{transform:rotate(90deg)}
+  .head{align-items:flex-start}
+  .head img{width:64px;height:64px}
+}
+@media print{
+  nav{display:none}
+  .card,.figure,details{break-inside:avoid}
+}
+</style>
+</head>
+<body>
+<header>
+<div class="wrap head">
+  <img src="IMG/logo_ufpel.png" alt="Logo da UFPel">
+  <div>
+    <div class="kicker" style="color:#dfeeff">15000599 Economia</div>
+    <h1>Demanda → Oferta → Equilíbrio → Elasticidade</h1>
+    <p class="subtitle">Resumo visual da aula · Prof. Alejandro Martins</p>
+  </div>
+</div>
+</header>
+
+<nav>
+<div class="wrap">
+  <a href="#demanda">1. Demanda</a>
+  <a href="#oferta">2. Oferta</a>
+  <a href="#equilibrio">3. Equilíbrio</a>
+  <a href="#elasticidade">4. Elasticidade</a>
+  <a href="#questoes">Questões</a>
+</div>
+</nav>
+
+<main class="wrap">
+<section id="visao-geral">
+  <div class="kicker">Visão geral</div>
+  <h2>A lógica central da microeconomia</h2>
+  <p class="lead">A microeconomia estuda o comportamento de consumidores, empresas e mercados específicos e analisa como os preços se formam. Nesta aula, a sequência é: compreender <strong>quanto os consumidores desejam comprar</strong>, <strong>quanto os produtores desejam vender</strong>, <strong>como o mercado encontra um ponto de equilíbrio</strong> e, por fim, <strong>quão sensíveis são essas quantidades às mudanças de preços, renda e outras variáveis</strong>.</p>
+  <div class="flow">
+    <div class="card concept"><strong>Demanda</strong><br>Intenção de compra dos consumidores.</div>
+    <div class="arrow">→</div>
+    <div class="card concept"><strong>Oferta</strong><br>Intenção de venda dos produtores.</div>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="flow">
+    <div class="card concept"><strong>Equilíbrio</strong><br>Quantidade demandada = quantidade ofertada.</div>
+    <div class="arrow">→</div>
+    <div class="card concept"><strong>Elasticidade</strong><br>Sensibilidade das quantidades às mudanças.</div>
+  </div>
+  <p class="note"><strong>Hipótese recorrente:</strong> <em>coeteris paribus</em> — analisar o efeito de uma variável mantendo as demais constantes.</p>
+</section>
+
+<section id="demanda">
+  <div class="kicker">1 · Demanda</div>
+  <h2>O lado do consumidor</h2>
+  <p class="lead"><strong>Demanda (ou procura)</strong> é a quantidade de determinado bem ou serviço que os consumidores desejam adquirir, em um dado período. Ela representa uma <strong>intenção de compra</strong>, e não necessariamente a compra efetiva.</p>
+
+  <div class="grid">
+    <div class="card">
+      <h3>Lei geral da demanda</h3>
+      <p>Tudo o mais constante, a quantidade demandada varia em relação <strong>inversa</strong> ao preço do próprio bem.</p>
+      <div class="formula">qᵈᵢ = f(pᵢ, pₛ, p꜀, R, G)</div>
+      <p class="small">pᵢ: preço do bem; pₛ: substitutos; p꜀: complementares; R: renda; G: gostos e preferências.</p>
+    </div>
+    <div class="card">
+      <h3>Por que a curva cai?</h3>
+      <p><strong>Efeito substituição:</strong> quando o bem fica relativamente mais barato, tende a substituir concorrentes.</p>
+      <p><strong>Efeito renda:</strong> a queda do preço aumenta o poder aquisitivo do consumidor para aquele conjunto de compras.</p>
+    </div>
+  </div>
+
+  <figure class="figure">
+    <img src="IMG/demanda_curva.png" alt="Exemplo de curva de demanda com relação inversa entre preço e quantidade">
+    <figcaption>Curva de demanda: preço e quantidade demandada apresentam relação negativa, mantidas as demais variáveis constantes.</figcaption>
+  </figure>
+
+  <div class="grid3">
+    <div class="card"><h3>Substitutos</h3><p>Se o preço de um bem aumenta, a demanda pelo seu substituto tende a aumentar.</p><p class="small">Ex.: manteiga e margarina.</p></div>
+    <div class="card"><h3>Complementares</h3><p>Se o preço de um bem aumenta, a demanda pelo bem consumido em conjunto tende a diminuir.</p><p class="small">Ex.: computador e software.</p></div>
+    <div class="card"><h3>Renda</h3><p><strong>Normal:</strong> renda ↑ → demanda ↑.<br><strong>Inferior:</strong> renda ↑ → demanda ↓.<br><strong>Saciado:</strong> variação da renda não altera a demanda.</p></div>
+  </div>
+
+  <div class="grid">
+    <div class="card concept">
+      <h3>Quantidade demandada ≠ demanda</h3>
+      <p><strong>Preço do próprio bem:</strong> provoca movimento <em>ao longo</em> da curva.</p>
+      <p><strong>Renda, bens relacionados, gostos, expectativas e número de compradores:</strong> deslocam a curva.</p>
+    </div>
+    <figure class="figure">
+      <img src="IMG/demanda_deslocamento.png" alt="Exemplo de deslocamento da curva de demanda">
+      <figcaption>Exemplo de deslocamento da demanda provocado por alteração em outra variável.</figcaption>
+    </figure>
+  </div>
+
+  <div class="card">
+    <h3>Utilidade, escassez e excedente</h3>
+    <p>A teoria da demanda parte da ideia de que o consumidor procura maximizar sua satisfação. A aula diferencia <strong>utilidade total</strong> e <strong>utilidade marginal</strong> e usa o paradoxo da água e do diamante para relacionar utilidade marginal e escassez.</p>
+    <p><strong>Excedente do consumidor:</strong> diferença entre a disposição máxima a pagar e o preço efetivamente pago.</p>
+  </div>
+</section>
+
+<section id="oferta">
+  <div class="kicker">2 · Oferta</div>
+  <h2>O lado do produtor</h2>
+  <p class="lead"><strong>Oferta</strong> é a quantidade de determinado bem ou serviço que os produtores desejam vender, em função dos preços, em um determinado período. O material assume produtores racionais, buscando lucro máximo dentro das restrições de custos.</p>
+
+  <div class="grid">
+    <div class="card">
+      <h3>Preço do próprio bem</h3>
+      <p>Tudo o mais constante, se o preço do bem aumenta, há estímulo para aumentar a quantidade ofertada.</p>
+      <p><span class="pill">Preço ↑</span> <span class="pill">Quantidade ofertada ↑</span></p>
+    </div>
+    <div class="card">
+      <h3>Outros determinantes</h3>
+      <p><strong>Preço dos fatores de produção</strong>, <strong>preços de bens substitutos na produção</strong>, <strong>tecnologia</strong>, <strong>objetivos do empresário</strong> e <strong>número de vendedores</strong> podem deslocar a curva de oferta.</p>
+    </div>
+  </div>
+
+  <figure class="figure">
+    <img src="IMG/oferta_curva.png" alt="Curva de oferta com relação direta entre preço e quantidade ofertada">
+    <figcaption>Curva de oferta: a quantidade ofertada tende a aumentar com o preço do próprio bem, coeteris paribus.</figcaption>
+  </figure>
+
+  <div class="grid">
+    <div class="card">
+      <h3>Custos dos fatores</h3>
+      <p>Se o preço de mão de obra, terra, matérias-primas ou outros fatores aumenta, a oferta do bem tende a diminuir.</p>
+    </div>
+    <div class="card">
+      <h3>Tecnologia</h3>
+      <p>Um aumento da tecnologia, mantidas as demais condições, aumenta a oferta do bem.</p>
+    </div>
+  </div>
+
+  <div class="grid">
+    <div class="card concept">
+      <h3>Quantidade ofertada ≠ oferta</h3>
+      <p><strong>Preço do próprio bem:</strong> movimento ao longo da curva.</p>
+      <p><strong>Custos, tecnologia, bens substitutos na produção, metas e vendedores:</strong> deslocamento da curva.</p>
+    </div>
+    <figure class="figure">
+      <img src="IMG/oferta_deslocamento.png" alt="Exemplo de deslocamento da curva de oferta">
+      <figcaption>Deslocamentos da oferta alteram a quantidade oferecida a cada nível de preço.</figcaption>
+    </figure>
+  </div>
+
+  <div class="card">
+    <h3>Oferta de mercado e excedente do produtor</h3>
+    <p>A oferta de mercado é a soma das ofertas das firmas individuais a cada preço.</p>
+    <p><strong>Excedente do produtor:</strong> diferença entre o preço recebido pelo vendedor e sua disposição para vender cada quantidade.</p>
+  </div>
+</section>
+
+<section id="equilibrio">
+  <div class="kicker">3 · Equilíbrio de mercado</div>
+  <h2>Quando os dois lados se encontram</h2>
+  <p class="lead">O equilíbrio está no ponto em que as curvas de oferta e demanda se cruzam. Ao preço de equilíbrio, a <strong>quantidade ofertada é igual à quantidade demandada</strong>.</p>
+
+  <figure class="figure">
+    <img src="IMG/equilibrio.png" alt="Gráfico de equilíbrio entre oferta e demanda">
+    <figcaption>Preço e quantidade de equilíbrio resultam do encontro entre oferta e demanda.</figcaption>
+  </figure>
+
+  <div class="grid">
+    <div class="card warn">
+      <h3>Excesso de oferta</h3>
+      <p>Quantidade ofertada &gt; quantidade demandada.</p>
+      <p><strong>Mecanismo apresentado:</strong> fornecedores reduzem preços, aproximando o mercado do equilíbrio.</p>
+    </div>
+    <div class="card good">
+      <h3>Excesso de demanda</h3>
+      <p>Quantidade demandada &gt; quantidade ofertada.</p>
+      <p><strong>Mecanismo apresentado:</strong> fornecedores aumentam preços, aproximando o mercado do equilíbrio.</p>
+    </div>
+  </div>
+
+  <figure class="figure">
+    <img src="IMG/excesso_oferta_demanda.png" alt="Gráfico com excesso de oferta, excesso de demanda e equilíbrio">
+    <figcaption>O preço funciona como mecanismo de ajuste entre excesso de oferta e excesso de demanda.</figcaption>
+  </figure>
+
+  <div class="grid">
+    <div class="card">
+      <h3>Aumento da demanda</h3>
+      <p>Se a demanda se desloca para a direita e a oferta permanece constante, o material mostra <strong>aumento do preço e da quantidade de equilíbrio</strong>.</p>
+      <img src="IMG/equilibrio_aumento_demanda.png" alt="Aumento da demanda e novo equilíbrio" style="max-width:100%;height:auto">
+    </div>
+    <div class="card">
+      <h3>Redução da oferta</h3>
+      <p>Se a oferta se desloca para a esquerda e a demanda permanece constante, o material mostra <strong>aumento do preço e redução da quantidade de equilíbrio</strong>.</p>
+      <img src="IMG/equilibrio_reducao_oferta.png" alt="Redução da oferta e novo equilíbrio" style="max-width:100%;height:auto">
+    </div>
+  </div>
+
+  <div class="card concept">
+    <h3>Mudanças simultâneas</h3>
+    <p>Quando oferta e demanda se deslocam ao mesmo tempo, o efeito final depende da <strong>extensão relativa dos deslocamentos</strong>. O preço pode ter direção determinada em alguns casos, enquanto a quantidade pode depender de qual deslocamento é maior.</p>
+  </div>
+</section>
+
+<section id="elasticidade">
+  <div class="kicker">4 · Elasticidade</div>
+  <h2>Medindo sensibilidade</h2>
+  <p class="lead">Elasticidade é a alteração percentual em uma variável diante de uma variação percentual em outra, <em>coeteris paribus</em>. Em termos simples: mede <strong>sensibilidade, resposta ou reação</strong>.</p>
+
+  <div class="grid">
+    <div class="card">
+      <h3>Elasticidade-preço da demanda</h3>
+      <div class="formula">Epd = (%Δ quantidade demandada) / (%Δ preço)</div>
+      <p>É apresentada com sinal negativo, mas usualmente classificada pelo módulo:</p>
+      <p><strong>|Epd| &gt; 1:</strong> elástica<br><strong>|Epd| &lt; 1:</strong> inelástica<br><strong>|Epd| = 1:</strong> unitária</p>
+    </div>
+    <div class="card">
+      <h3>O que torna a demanda mais ou menos elástica?</h3>
+      <p>Disponibilidade de substitutos, essencialidade do bem, importância no orçamento e horizonte de tempo.</p>
+    </div>
+  </div>
+
+  <figure class="figure">
+    <img src="IMG/elasticidade_ao_longo_curva.png" alt="Elasticidade variando ao longo da curva de demanda">
+    <figcaption>O material destaca que a elasticidade-preço pode variar ao longo de uma mesma curva de demanda.</figcaption>
+  </figure>
+
+  <div class="grid">
+    <figure class="figure"><img src="IMG/demanda_inelastica.png" alt="Curva de demanda inelástica"><figcaption>Inclinação acentuada: quantidade responde pouco ao preço.</figcaption></figure>
+    <figure class="figure"><img src="IMG/demanda_elastica.png" alt="Curva de demanda elástica"><figcaption>Inclinação menor: quantidade responde mais ao preço.</figcaption></figure>
+  </div>
+
+  <div class="grid">
+    <div class="card">
+      <h3>Casos extremos</h3>
+      <p><strong>Perfeitamente inelástica:</strong> Epd = 0.</p>
+      <img src="IMG/perfeitamente_inelastica.png" alt="Demanda perfeitamente inelástica" style="max-width:100%;height:auto">
+    </div>
+    <div class="card">
+      <h3>Casos extremos</h3>
+      <p><strong>Perfeitamente elástica:</strong> Epd → ∞.</p>
+      <img src="IMG/perfeitamente_elastica.png" alt="Demanda perfeitamente elástica" style="max-width:100%;height:auto">
+    </div>
+  </div>
+
+  <div class="card concept">
+    <h3>Receita total e elasticidade-preço da demanda</h3>
+    <p><strong>RT = preço × quantidade.</strong></p>
+    <table>
+      <tr><th>Tipo</th><th>Preço ↑</th><th>Preço ↓</th></tr>
+      <tr><td>Demanda elástica</td><td>RT diminui</td><td>RT aumenta</td></tr>
+      <tr><td>Demanda inelástica</td><td>RT aumenta</td><td>RT diminui</td></tr>
+      <tr><td>Elasticidade unitária</td><td colspan="2">RT permanece constante</td></tr>
+    </table>
+  </div>
+
+  <div class="grid3">
+    <div class="card">
+      <h3>Elasticidade-preço cruzada</h3>
+      <p><strong>EAB &gt; 0:</strong> bens substitutos.<br><strong>EAB &lt; 0:</strong> bens complementares.</p>
+    </div>
+    <div class="card">
+      <h3>Elasticidade-renda</h3>
+      <p><strong>ERd &gt; 1:</strong> bem superior/luxo.<br><strong>ERd &gt; 0:</strong> normal.<br><strong>ERd &lt; 0:</strong> inferior.<br><strong>ERd = 0:</strong> saciado.</p>
+    </div>
+    <div class="card">
+      <h3>Elasticidade-preço da oferta</h3>
+      <p><strong>Epo &gt; 1:</strong> oferta elástica.<br><strong>Epo &lt; 1:</strong> inelástica.<br><strong>Epo = 1:</strong> unitária.</p>
+      <img src="IMG/elasticidade_oferta.png" alt="Curvas com diferentes elasticidades-preço da oferta" style="max-width:100%;height:auto">
+    </div>
+  </div>
+</section>
+
+<section id="sintese">
+  <div class="kicker">Síntese</div>
+  <h2>O que precisa ficar</h2>
+  <div class="grid">
+    <div class="card"><strong>Demanda:</strong> preço do próprio bem move o ponto na curva; outras variáveis deslocam a curva.</div>
+    <div class="card"><strong>Oferta:</strong> preço do próprio bem move o ponto na curva; custos, tecnologia e outros fatores deslocam a curva.</div>
+    <div class="card"><strong>Equilíbrio:</strong> ocorre quando quantidade demandada = quantidade ofertada.</div>
+    <div class="card"><strong>Elasticidade:</strong> mede o tamanho da resposta percentual de uma variável à mudança percentual de outra.</div>
+  </div>
+</section>
+
+<section id="questoes">
+  <div class="kicker">Estudo e avaliação</div>
+  <h2>20 questões para revisar a aula</h2>
+  <p class="small">As questões 1–16 são diretamente ancoradas nos conceitos apresentados; 17–20 integram e aplicam os conceitos da aula.</p>
+
+  <div class="question-box">
+    <details><summary>1. O que é demanda e por que ela não corresponde necessariamente à compra efetiva?</summary></details>
+    <details><summary>2. Explique a Lei Geral da Demanda utilizando a hipótese coeteris paribus.</summary></details>
+    <details><summary>3. Diferencie efeito substituição e efeito renda.</summary></details>
+    <details><summary>4. O que ocorre com a demanda por Coca-Cola se o preço de um substituto, como o guaraná, aumentar?</summary></details>
+    <details><summary>5. Diferencie bem normal, bem inferior e bem de consumo saciado.</summary></details>
+
+    <details><summary>6. O que é oferta e qual é a relação entre preço do próprio bem e quantidade ofertada?</summary></details>
+    <details><summary>7. Como o aumento do preço de um fator de produção afeta a oferta?</summary></details>
+    <details><summary>8. Como uma melhoria tecnológica afeta a curva de oferta?</summary></details>
+    <details><summary>9. Diferencie variação da oferta de variação da quantidade ofertada.</summary></details>
+    <details><summary>10. Como se obtém a oferta de mercado a partir das ofertas individuais?</summary></details>
+
+    <details><summary>11. Defina preço e quantidade de equilíbrio.</summary></details>
+    <details><summary>12. O que caracteriza excesso de oferta e qual mecanismo de preço é apresentado para corrigi-lo?</summary></details>
+    <details><summary>13. O que caracteriza excesso de demanda e qual mecanismo de preço é apresentado para corrigi-lo?</summary></details>
+    <details><summary>14. Se a demanda aumentar e a oferta permanecer constante, o que acontece com preço e quantidade de equilíbrio?</summary></details>
+    <details><summary>15. Se a oferta diminuir e a demanda permanecer constante, o que acontece com preço e quantidade de equilíbrio?</summary></details>
+
+    <details><summary>16. O que a elasticidade mede e por que ela é expressa em variações percentuais?</summary></details>
+    <details><summary>17. Um bem possui |Epd| = 1,5. Como classificar sua demanda e o que isso indica sobre a sensibilidade dos consumidores?</summary></details>
+    <details><summary>18. Se a demanda é inelástica, o que tende a ocorrer com a receita total quando o preço aumenta?</summary></details>
+    <details><summary>19. Uma elasticidade-preço cruzada positiva indica que relação entre dois bens? E uma negativa?</summary></details>
+    <details><summary>20. Integração: uma inovação tecnológica aumenta a oferta de um produto cuja demanda é inelástica. Explique, usando os conceitos da aula, quais variáveis do mercado serão diretamente afetadas e quais gráficos você utilizaria para analisar a situação.</summary></details>
+  </div>
+
+  <div class="card" style="margin-top:18px">
+    <h3>Exercício quantitativo do material</h3>
+    <p>Considere:</p>
+    <div class="formula">D = 22 − 3p &nbsp;&nbsp;&nbsp; S = 10 + p</div>
+    <p>a) Determine o preço de equilíbrio e a quantidade de equilíbrio.<br>
+       b) Se o preço for R$ 4,00, identifique se há excesso de oferta ou de demanda e calcule sua magnitude.</p>
+  </div>
+</section>
+</main>
+
+<footer>
+<div class="wrap">
+  <strong>15000599 Economia — UFPel</strong><br>
+  Resumo visual elaborado a partir dos materiais de aula “Demanda, Oferta e Equilíbrio” e “Elasticidade”.<br>
+  </div>
+</footer>
+</body>
+</html>
