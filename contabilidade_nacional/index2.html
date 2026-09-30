@@ -1,0 +1,477 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Resumo de aula | Macroeconomia e contabilidade nacional</title><style>
+:root{--navy:#123047;--teal:#067c86;--blue:#3274a4;--amber:#e9a23b;--ink:#203442;--bg:#f4f7f8;--line:#d7e3e7}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font:17px/1.62 system-ui,-apple-system,Segoe UI,Arial,sans-serif;color:var(--ink);background:var(--bg)}header{background:linear-gradient(125deg,#123047,#176a78);color:white;padding:55px max(5vw,20px)}header h1{font-size:clamp(2.2rem,5vw,4.3rem);line-height:1.07;max-width:900px;margin:13px 0}header p{max-width:790px;font-size:1.15rem}.tag,.badge{font-size:.78rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase}.tag{border:1px solid #ffffff8a;border-radius:30px;padding:7px 13px}nav{position:sticky;top:0;z-index:5;overflow:auto;white-space:nowrap;padding:8px max(3vw,16px);background:#fffffff2;border-bottom:1px solid var(--line)}nav a{display:inline-block;padding:8px 10px;text-decoration:none;color:var(--navy);font-size:.88rem;font-weight:750}main{max-width:1110px;margin:32px auto 70px;padding:0 20px}section{margin:48px 0;scroll-margin-top:76px}h2{font-size:clamp(1.7rem,3.3vw,2.45rem);line-height:1.2;color:var(--navy);margin:5px 0 16px}h3{color:var(--navy);line-height:1.25}.badge{color:var(--teal)}.lead{font-size:1.13rem;max-width:850px}.panel,.question,details{background:white;border:1px solid var(--line);border-radius:16px;box-shadow:0 4px 16px #1230470a}.panel{padding:23px}.highlight{border-left:6px solid var(--amber)}figure{margin:22px 0;background:white;border:1px solid var(--line);border-radius:16px;padding:12px}figure img{display:block;width:100%;height:auto;max-height:420px;object-fit:contain}figcaption{font-size:.85rem;color:#536775;text-align:center;margin:5px 0}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:17px}.formula{padding:17px 20px;background:#e9f4f4;color:var(--navy);border-radius:12px;font-size:1.35rem;font-weight:800;text-align:center;margin:17px 0}.example{border-left:5px solid var(--teal);padding:10px 17px;background:#f0f8f8;border-radius:0 12px 12px 0}.note{border-left:5px solid var(--amber);padding:10px 17px;background:#fff7ea;border-radius:0 12px 12px 0}table{border-collapse:collapse;width:100%;background:#fff}th,td{border-bottom:1px solid var(--line);padding:10px 13px;text-align:left;vertical-align:top}th{background:var(--navy);color:white}.tablewrap{overflow:auto;border-radius:13px;border:1px solid var(--line)}.sum{font-weight:800;background:#e9f4f4}details{padding:12px 17px;margin:9px 0}summary{cursor:pointer;font-weight:700;color:var(--navy)}details p{margin:9px 0 1px;color:#276153}.tiny{font-size:.85rem;color:#536775}footer{padding:28px max(5vw,20px);color:#dbe7eb;background:var(--navy)}footer p{max-width:1000px;margin:6px auto}@media(max-width:750px){.grid{grid-template-columns:1fr}header{padding-top:37px}main{padding:0 15px}figure{padding:5px}.formula{font-size:1.13rem}}@media print{nav{display:none}body{background:#fff;font-size:11pt}section{margin:22px 0}.panel,figure,details{box-shadow:none;break-inside:avoid}header{padding:25px}details p{display:block}}
+:root{--prod:#067c86;--desp:#3274a4;--rend:#c9861f;--rend-ink:#8a5a12}
+.grid3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:17px;margin:20px 0}
+.door{background:#fff;border:1px solid var(--line);border-top:7px solid var(--c);border-radius:14px;padding:18px 20px}
+.door h3{margin:0 0 4px;color:var(--c)}.door .q{font-weight:750;color:var(--navy);margin:4px 0}
+.prod{--c:var(--prod)}.desp{--c:var(--desp)}.rend{--c:var(--rend)}
+.res{background:#f4f7f8;border-radius:10px;padding:9px 12px;margin:10px 0 0;color:var(--navy)}
+.k-prod{color:var(--prod);font-weight:800}.k-desp{color:var(--desp);font-weight:800}.k-rend{color:var(--rend-ink);font-weight:800}
+.prod-t{color:var(--prod)}.desp-t{color:var(--desp)}.rend-t{color:var(--rend-ink)}
+.prod-f{background:#e6f4f4;border-left:7px solid var(--prod)}.desp-f{background:#e8f0f8;border-left:7px solid var(--desp)}.rend-f{background:#fdf2e0;border-left:7px solid var(--rend)}
+.formula.sm{font-size:1.08rem}
+.def{font-size:1.28rem;line-height:1.5;color:var(--navy);background:#fff;border:1px solid var(--line);border-radius:14px;padding:20px 24px;max-width:900px}
+.def u{text-decoration-color:var(--amber);text-decoration-thickness:3px;text-underline-offset:4px}
+.mt{margin-top:32px}
+.decode{display:grid;grid-template-columns:max-content 1fr;gap:8px 16px;align-items:baseline;margin:14px 0;padding:14px 18px;background:#fff;border:1px solid var(--line);border-radius:12px}
+.decode .sym{font-weight:800;color:var(--navy);font-size:1.05rem}
+.quiz{display:grid;grid-template-columns:repeat(auto-fill,minmax(245px,1fr));gap:13px;margin:12px 0}
+.qcard{background:#fff;border:1px solid var(--line);border-radius:12px;padding:14px 15px;display:flex;flex-direction:column}
+.qcard>p:first-child{margin:0 0 10px;font-weight:650;color:var(--navy);flex:1}
+.btns{display:flex;gap:7px;flex-wrap:wrap}
+.btns button{font:inherit;font-size:.88rem;font-weight:750;padding:6px 13px;border-radius:8px;border:1.5px solid var(--navy);background:#fff;color:var(--navy);cursor:pointer}
+.btns.five button{padding:5px 10px;min-width:38px}
+.btns button:hover{background:#eef4f6}.btns button:focus-visible,.toggles input:focus-visible{outline:3px solid var(--amber);outline-offset:2px}
+.btns button.ok{background:var(--prod);border-color:var(--prod);color:#fff}.btns button.no{background:#b3412e;border-color:#b3412e;color:#fff}
+.qcard .fb{display:none;margin:10px 0 0;font-size:.9rem;color:#276153}.qcard.done .fb{display:block}
+.qcard.done.wrong .fb{color:#7a3b10}
+.letters{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px;margin:18px 0}
+.letter{background:#fff;border:1px solid var(--line);border-radius:12px;padding:14px;font-size:.92rem}
+.letter b{display:block;font-size:2.4rem;line-height:1;color:var(--desp)}.letter.neg b{color:#b3412e}
+.letter h3{font-size:1rem;margin:6px 0}.letter p{margin:6px 0}.letter .warn{font-size:.83rem;color:#7a3b10;border-top:1px dashed var(--line);padding-top:6px}
+.fatores .sym{font-size:.98rem}
+table.cross td,table.cross th{text-align:right}table.cross td:first-child,table.cross th:first-child{text-align:left}
+table.cross .c-prod{background:#e6f4f4;color:var(--prod);font-weight:800}
+table.cross tr.r-rend td{background:#fdf2e0;color:var(--rend-ink);font-weight:800}
+table.cross td.corner{background:var(--navy);color:#fff}
+.lab{background:#fff;border:1px solid var(--line);border-radius:16px;padding:20px}
+.toggles{border:0;margin:0 0 16px;padding:0}.toggles legend{font-weight:800;color:var(--navy);margin-bottom:8px}
+.toggles label{display:flex;gap:10px;align-items:flex-start;padding:8px 10px;border-radius:9px;cursor:pointer}
+.toggles label:hover{background:#f4f7f8}.toggles input{margin-top:5px;width:18px;height:18px;accent-color:var(--navy);flex:none}
+.cols{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:13px}
+.col{border-top:6px solid var(--c);background:#f8fafb;border-radius:10px;padding:12px 14px}
+.col h3{margin:0 0 8px;color:var(--c)}
+.row{display:flex;justify-content:space-between;gap:10px;padding:4px 0;border-bottom:1px dotted var(--line);font-size:.93rem}
+.row.zero{color:#9aa8b1}.row.chg span:last-child{font-weight:800;color:var(--navy)}
+.row.tot{border-bottom:0;border-top:2px solid var(--c);margin-top:6px;padding-top:8px;font-weight:800;font-size:1.05rem;color:var(--c)}
+.equal{text-align:center;font-weight:800;font-size:1.25rem;color:var(--navy);background:#e9f4f4;border-radius:10px;padding:12px;margin:16px 0 10px}
+.why p{margin:7px 0;padding:8px 13px;border-left:4px solid var(--amber);background:#fff7ea;border-radius:0 9px 9px 0;font-size:.94rem}
+.steps li{margin:8px 0}
+@media(max-width:900px){.letters{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:750px){.grid3,.cols{grid-template-columns:1fr}.def{font-size:1.1rem}.decode{grid-template-columns:1fr;gap:2px}.decode .sym{margin-top:8px}}
+@media print{.btns,.toggles{display:none}.qcard .fb{display:block}}
+</style></head><body><header><span class="tag">Economia · 15000599 · UFPel</span><h1>Macroeconomia e contabilidade nacional</h1><p>Da política macroeconômica às contas nacionais: metas, mercados, instrumentos, fluxo circular e as três óticas do PIB.</p><p>Prof. Alejandro Martins Rodriguez</p><img src="IMG/logo_slides.png" alt="Marca institucional reproduzida do material original" style="width:88px;height:76px;object-fit:contain;background:white;border-radius:10px;padding:5px"></header><nav aria-label="Conteúdo"><a href="#inicio">Macroeconomia</a><a href="#macro1">Agregados</a><a href="#macro2">Metas</a><a href="#macro3">Mercados</a><a href="#macro4">Fiscal</a><a href="#macro5">Monetária</a><a href="#macro6">Externo e rendas</a><a href="#ponte">Ponte</a><a href="#visao">Parte II</a><a href="#conceito1">1. Definição</a><a href="#conceito2">2. Fluxo</a><a href="#conceito3">3. Produto</a><a href="#conceito4">4. Despesa</a><a href="#conceito5">5. Renda</a><a href="#laboratorio">6. Laboratório</a><a href="#conceito6">7. Agregados</a><a href="#conceito7">8. Nominal e real</a><a href="#tradutor">Símbolos</a><a href="#armadilhas">Armadilhas</a><a href="#sintese">Síntese</a><a href="#contexto">Gráficos</a><a href="#keynes">Keynes</a><a href="#questoes">Questões</a></nav><main>
+<section id="inicio"><span class="badge">Parte I · fundamentos de teoria e política macroeconômica · slides 1–23</span><h2>Da economia inteira às decisões públicas</h2><p class="lead">A macroeconomia estuda a evolução conjunta de produção, renda, emprego, preços e relações com outros países. Políticas econômicas tentam influenciar esses resultados. Para saber se funcionaram, precisamos medi-los com critérios coerentes: é aí que a contabilidade nacional entra na segunda parte da aula.</p><div class="panel highlight"><strong>Sequência desta aula:</strong> agregados → objetivos → mercados → instrumentos → contas nacionais → três óticas do PIB → interpretação dos indicadores.</div></section>
+<section id="macro1"><span class="badge">Conceito 01 · slides 3–4</span><h2>Agregados e horizonte de análise</h2><div class="grid"><div class="panel"><h3>O que se observa</h3><p><strong>Produto e renda:</strong> valor produzido e renda gerada. <strong>Consumo, poupança e investimento:</strong> usos da renda e formação de capacidade produtiva. <strong>Emprego e desemprego:</strong> uso do trabalho. <strong>Nível geral de preços:</strong> variação do poder de compra da moeda.</p><p><strong>Juros, moeda, câmbio e balanço de pagamentos:</strong> condições financeiras e relações econômicas com o exterior. Uma variação isolada não conta a história inteira: compare período, unidade, preços e contexto.</p></div><div class="panel"><h3>Curto e longo prazo</h3><p>Os slides distinguem problemas de estabilização, como desemprego e inflação, de questões de desenvolvimento e capacidade produtiva, como tecnologia, qualificação e indústria. Na prática, as duas escalas se influenciam.</p><p class="example"><strong>Exemplo:</strong> uma queda de investimento reduz a demanda agora e pode diminuir a capacidade de produção mais adiante.</p></div></div></section>
+<section id="macro2"><span class="badge">Conceito 02 · slides 5–9</span><h2>Metas macroeconômicas e conflitos entre objetivos</h2><figure><img src="IMG/metas_macro.png" alt="Quatro metas: crescimento, emprego, estabilidade de preços e equilíbrio externo; distribuição de renda atravessa as quatro"><figcaption>Nos slides, a distribuição equitativa de renda também figura como meta central.</figcaption></figure><div class="grid"><div class="panel"><h3>Crescimento e desenvolvimento</h3><p><strong>Crescimento:</strong> aumento do produto ou da renda, em termos reais quando se compara volume ao longo do tempo. <strong>Desenvolvimento:</strong> inclui condições de vida, distribuição, saúde, educação e ambiente. Produzir mais pode ajudar, mas não descreve sozinho quem se beneficia.</p><h3>Emprego e inflação</h3><p>Mais atividade pode elevar o emprego. Quando setores operam perto da capacidade e os insumos escasseiam, pressões de custo podem aparecer. Ganhos de produtividade e condições de oferta mudam esse efeito: não há uma troca fixa válida para toda época.</p></div><div class="panel"><h3>Estabilidade dos preços</h3><p>Inflação é aumento persistente e generalizado dos preços. Os slides distinguem pressões de demanda, de custos e inerciais. Preços estáveis ajudam contratos e planejamento; inflação elevada tende a atingir mais quem dispõe de menor proteção financeira.</p><h3>Equilíbrio externo e distribuição</h3><p>Déficits externos persistentes exigem financiamento; superávits e entradas de capital também trazem efeitos sobre câmbio e política econômica. A distribuição depende de salários, tributos, serviços públicos e oportunidades.</p></div></div><p class="note"><strong>Escolhas públicas:</strong> uma medida pode favorecer um objetivo e dificultar outro. A análise exige identificar mecanismo, prazo e grupos afetados, sem tratar qualquer relação como automática.</p></section>
+<section id="macro3"><span class="badge">Conceito 03 · slide 10</span><h2>Quatro mercados organizam a análise</h2><figure><img src="IMG/mercados_macro.png" alt="Mercados de bens e serviços, trabalho, financeiro e divisas com suas principais variáveis"><figcaption>A parte real se relaciona com a monetária e com o setor externo.</figcaption></figure><div class="tablewrap"><table><thead><tr><th>Mercado</th><th>Variáveis destacadas</th><th>Pergunta de aula</th></tr></thead><tbody><tr><td>Bens e serviços</td><td>Produto e nível de preços</td><td>Quanto se produz e compra?</td></tr><tr><td>Trabalho</td><td>Emprego e salários</td><td>Quem encontra trabalho e a que remuneração?</td></tr><tr><td>Financeiro e monetário</td><td>Juros, crédito e moeda</td><td>Quanto custa financiar gastos?</td></tr><tr><td>Divisas</td><td>Taxa de câmbio</td><td>Qual o preço relativo da moeda estrangeira?</td></tr></tbody></table></div><p class="example"><strong>Conexão:</strong> uma mudança nos juros pode afetar crédito e investimento; estes afetam gasto, produção e emprego. O câmbio altera custos e competitividade de forma diferente entre setores.</p></section>
+<section id="macro4"><span class="badge">Conceito 04 · slides 11–12 e 15; imagens históricas 19–21</span><h2>Política fiscal: tributos, gastos e resultado das contas públicas</h2><figure><img src="IMG/politica_fiscal.png" alt="Política fiscal usa tributos e gastos e influencia demanda, distribuição e saldo primário"><figcaption>O resultado primário registra receitas menos despesas primárias; juros exigem outra leitura.</figcaption></figure><p><strong>Arrecadação:</strong> tributos afetam renda disponível, custos e incentivos. <strong>Gastos:</strong> compras do governo demandam produção; transferências redistribuem renda, mas não entram diretamente em G na fórmula do PIB. Tributos progressivos e a composição dos serviços públicos podem alterar a distribuição.</p><div class="grid"><div class="panel"><h3>Expansão fiscal</h3><p>Aumento de gastos ou redução de tributos tende a sustentar a demanda, dependendo da capacidade ociosa, da reação dos agentes, das importações e da forma de financiamento.</p></div><div class="panel"><h3>Contração fiscal</h3><p>Redução de gastos ou aumento de tributos tende a conter a demanda no curto prazo. Os efeitos sobre inflação, dívida e crescimento dependem do contexto e da composição da medida.</p></div></div><p class="note"><strong>Não confundir:</strong> déficit é resultado de fluxo em um período; dívida é estoque acumulado. Resultado <em>primário</em> exclui juros da dívida na sua apuração; resultado <em>nominal</em> os incorpora segundo a metodologia fiscal pertinente. Os slides 19–21 usam valores de 2023 e servem como exercício de leitura histórica, não como situação atual.</p></section>
+<section id="macro5"><span class="badge">Conceito 05 · slides 13–15</span><h2>Política monetária: moeda, juros e crédito</h2><figure><img src="IMG/politica_monetaria.png" alt="Instrumentos do Banco Central afetam condições financeiras, demanda e preços com defasagens"><figcaption>Uma cadeia de transmissão possível; seus efeitos variam entre setores e no tempo.</figcaption></figure><div class="tablewrap"><table><thead><tr><th>Instrumento citado nos slides</th><th>Como entender</th><th>Canal principal</th></tr></thead><tbody><tr><td>Operações de mercado aberto</td><td>Compra e venda de títulos pelo Banco Central</td><td>Liquidez e condições de juros</td></tr><tr><td>Reservas compulsórias</td><td>Parcela de recursos que instituições recolhem</td><td>Liquidez bancária e crédito</td></tr><tr><td>Redesconto / assistência de liquidez</td><td>Operações do Banco Central com bancos</td><td>Liquidez do sistema</td></tr><tr><td>Taxa básica e comunicação</td><td>Orientação das taxas de mercado e expectativas</td><td>Financiamento, consumo e investimento</td></tr></tbody></table></div><p class="example"><strong>Exemplo didático:</strong> juros maiores podem tornar financiamento mais caro, reduzir certas compras a prazo e moderar a demanda. O repasse aos preços não é instantâneo nem garantido na mesma intensidade.</p><p class="tiny">A enumeração preserva os instrumentos do material, mas a prática operacional pode evoluir. A ideia de que política fiscal sempre demora e monetária sempre age de imediato, no slide 15, é uma simplificação; ambas têm prazos de decisão e de efeito.</p></section>
+<section id="macro6"><span class="badge">Conceito 06 · slides 16–17 e 36–37</span><h2>Políticas cambial, comercial e de rendas</h2><figure><img src="IMG/setor_externo.png" alt="Exportações, importações e rendas enviadas ou recebidas do exterior são fluxos diferentes"><figcaption>Compras externas e remunerações externas afetam contas distintas.</figcaption></figure><div class="grid"><div class="panel"><h3>Câmbio e comércio</h3><p><strong>Política cambial</strong> trata do regime e das intervenções na taxa de câmbio. <strong>Política comercial</strong> inclui tarifas, regras, cotas e incentivos que afetam importações e exportações. Uma desvalorização cambial pode beneficiar exportadores e elevar o custo doméstico de insumos importados.</p></div><div class="panel"><h3>Política de rendas</h3><p>Intervenções diretas em salários e preços tentam influenciar sua formação. O material menciona também lucros, juros e aluguéis. Para avaliar uma medida, pergunte: <strong>qual preço está sendo controlado, por quanto tempo e que efeitos pode haver sobre oferta e contratos?</strong></p></div></div><p class="note"><strong>Duas contas externas:</strong> <em>X − M</em> ajusta o PIB pela despesa. Rendas primárias recebidas ou enviadas ao exterior ajustam o PIB para chegar à renda nacional bruta (PNB na terminologia dos slides). Uma importação não é a mesma coisa que uma remessa de lucros.</p></section>
+<section id="ponte"><span class="badge">Transição · slides 23–24</span><h2>Por que a política econômica precisa da contabilidade nacional?</h2><p>As metas anteriores só podem ser discutidas seriamente quando as variáveis têm definição, período e unidade claros. O PIB mede produção, mas não equivale ao orçamento público, ao estoque de dívida ou ao balanço de pagamentos. Cada um desses registros responde a outra pergunta.</p><div class="tablewrap"><table><thead><tr><th>Questão</th><th>Conta ou indicador</th></tr></thead><tbody><tr><td>Quanto o país produziu?</td><td>PIB, por produto, despesa ou renda.</td></tr><tr><td>Como evoluem os preços?</td><td>Índices de preços.</td></tr><tr><td>Qual foi o resultado fiscal?</td><td>Receitas e despesas públicas conforme a metodologia.</td></tr><tr><td>Como o país se relaciona financeiramente com o exterior?</td><td>Balanço de pagamentos.</td></tr></tbody></table></div></section>
+
+<section id="visao"><span class="badge">Parte II · contabilidade nacional · slides 24–57</span>
+<h2>Um número, três portas de entrada</h2>
+<p class="lead">Imagine uma ilha que só produz pão. Durante um ano, um agricultor planta trigo, um moinho transforma o trigo em farinha e uma padaria assa o pão, que as famílias compram. <strong>Quanto essa ilha produziu?</strong> Há três jeitos de responder, e os três precisam chegar ao mesmo número.</p>
+<div class="grid3">
+<div class="door prod"><h3>Produto</h3><p class="q">Quanto cada empresa acrescentou?</p><p>Olhe no caixa das empresas, descontando o que compraram de outras empresas.</p><p class="res">100 + 300 + 600 = <strong>1.000</strong></p></div>
+<div class="door desp"><h3>Despesa</h3><p class="q">Quem comprou a produção final?</p><p>Olhe no bolso de quem gastou com bens e serviços finais.</p><p class="res">famílias compraram pão: <strong>1.000</strong></p></div>
+<div class="door rend"><h3>Renda</h3><p class="q">Quem recebeu o valor gerado?</p><p>Olhe nos salários, juros, aluguéis e lucros pagos pelas empresas.</p><p class="res">700 + 50 + 70 + 180 = <strong>1.000</strong></p></div>
+</div>
+<div class="panel highlight"><strong>A ideia que sustenta toda a Parte II:</strong> cada real gasto em um bem final vira receita de uma empresa, e essa receita termina, inteira, no bolso de alguém como salário, juro, aluguel ou lucro. Produção, gasto e renda são três fotografias do mesmo fluxo de dinheiro. Por isso o PIB pode ser medido por qualquer uma das três portas.</div>
+<p class="note"><strong>Como estudar esta parte:</strong> primeiro entenda o conceito com a ilha do pão, que tem números pequenos e redondos. As fórmulas completas aparecem depois, e cada símbolo vem traduzido em palavras. As cores são sempre as mesmas: <span class="k-prod">verde-azulado para produto</span>, <span class="k-desp">azul para despesa</span> e <span class="k-rend">âmbar para renda</span>.</p>
+</section>
+
+<section id="conceito1"><span class="badge">Passo 1 · a definição</span>
+<h2>O que é o PIB, palavra por palavra</h2>
+<p class="def">Produto Interno Bruto é o <u>valor de mercado</u> de todos os <u>bens e serviços finais</u> <u>produzidos</u> <u>dentro do território</u> de um país <u>durante um período</u>.</p>
+<p>Cada expressão sublinhada é um filtro. Se uma transação não passa por algum deles, não entra no PIB.</p>
+<div class="tablewrap">
+<table><thead><tr><th>Expressão</th><th>O que quer dizer</th><th>O que fica de fora</th></tr></thead><tbody>
+<tr><td><strong>Valor de mercado</strong></td><td>Somamos reais, não unidades. Pães e cortes de cabelo não se somam, mas R$ 1.000 em pão e R$ 200 em cortes, sim.</td><td>Atividades sem preço de mercado, como a faxina que cada um faz na própria casa (limite conhecido do PIB).</td></tr>
+<tr><td><strong>Finais</strong></td><td>Só o que chega a quem vai usar: consumir, investir ou exportar.</td><td>Insumos. A farinha usada pela padaria já está dentro do preço do pão.</td></tr>
+<tr><td><strong>Produzidos</strong></td><td>Produção nova. O PIB mede o que foi feito, não o que trocou de mãos.</td><td>Revenda de carro usado, compra de ações, venda de imóvel antigo. Só a comissão do corretor entra, porque é um serviço novo.</td></tr>
+<tr><td><strong>Dentro do território</strong> <span class="tiny">(“Interno”)</span></td><td>O critério é <em>onde</em> se produziu, não a nacionalidade do dono.</td><td>O que uma empresa brasileira produz na Argentina (entra no PIB argentino).</td></tr>
+<tr><td><strong>Durante um período</strong></td><td>O PIB é um <strong>fluxo</strong>: como a água que passa pela torneira em um ano.</td><td>Estoques, como riqueza acumulada ou dívida: são a água que está na caixa.</td></tr>
+<tr><td><strong>Bruto</strong></td><td>Não se desconta o desgaste das máquinas e prédios (depreciação).</td><td>Nada fica de fora: “bruto” só avisa que a depreciação ainda está dentro.</td></tr>
+</tbody></table></div>
+
+<h3 class="mt">Teste rápido: entra no PIB deste ano?</h3>
+<p class="tiny">Escolha uma resposta em cada cartão. A explicação aparece em seguida.</p>
+<div class="quiz" id="quizPIB">
+<div class="qcard" data-ans="sim"><p>Pão comprado por uma família para o café da manhã.</p><div class="btns"><button type="button" data-v="sim">Entra</button><button type="button" data-v="nao">Não entra</button></div><p class="fb">Bem final, produzido no ano e no território. É o caso mais simples.</p></div>
+<div class="qcard" data-ans="nao"><p>Farinha comprada pela padaria para fazer pão.</p><div class="btns"><button type="button" data-v="sim">Entra</button><button type="button" data-v="nao">Não entra</button></div><p class="fb">É consumo intermediário: já está incluída no preço do pão. Contá-la de novo seria dupla contagem.</p></div>
+<div class="qcard" data-ans="nao"><p>Carro usado revendido por R$ 40 mil.</p><div class="btns"><button type="button" data-v="sim">Entra</button><button type="button" data-v="nao">Não entra</button></div><p class="fb">O carro foi produzido em outro ano e já entrou no PIB daquele ano. A comissão da revendedora, porém, é serviço novo e entra.</p></div>
+<div class="qcard" data-ans="nao"><p>Ações compradas na bolsa de valores.</p><div class="btns"><button type="button" data-v="sim">Entra</button><button type="button" data-v="nao">Não entra</button></div><p class="fb">Um papel trocou de dono; nada foi produzido. A taxa da corretora é serviço e entra.</p></div>
+<div class="qcard" data-ans="sim"><p>Aula dada por uma professora de escola pública.</p><div class="btns"><button type="button" data-v="sim">Entra</button><button type="button" data-v="nao">Não entra</button></div><p class="fb">É um serviço final produzido pelo governo (vai para G). Como não tem preço de venda, é medido pelo custo, principalmente o salário.</p></div>
+<div class="qcard" data-ans="nao"><p>Benefício do Bolsa Família pago a uma família.</p><div class="btns"><button type="button" data-v="sim">Entra</button><button type="button" data-v="nao">Não entra</button></div><p class="fb">É transferência de renda, não pagamento por algo produzido. Quando a família gastar o dinheiro em pão, o pão entra, como consumo.</p></div>
+<div class="qcard" data-ans="sim"><p>Pães assados em dezembro que ainda estão na prateleira.</p><div class="btns"><button type="button" data-v="sim">Entra</button><button type="button" data-v="nao">Não entra</button></div><p class="fb">Foram produzidos no ano, mesmo sem venda. Entram como variação de estoques, dentro do investimento (I).</p></div>
+<div class="qcard" data-ans="sim"><p>Soja colhida no Rio Grande do Sul por uma empresa estrangeira.</p><div class="btns"><button type="button" data-v="sim">Entra</button><button type="button" data-v="nao">Não entra</button></div><p class="fb">Entra no PIB brasileiro: o critério é o território. O lucro que a empresa mandar para fora vai aparecer na diferença entre PIB e PNB (Passo 7).</p></div>
+</div>
+</section>
+
+<section id="conceito2"><span class="badge">Passo 2 · o fluxo circular</span>
+<h2>Por que as três contas sempre fecham</h2>
+<p>Siga o dinheiro na ilha. Duas coisas andam em sentidos opostos: <em>bens e trabalho</em> de um lado, <em>dinheiro</em> do outro.</p>
+<figure><svg viewBox="0 0 760 360" role="img" aria-labelledby="fcT fcD"><title id="fcT">Fluxo circular da ilha do pão</title><desc id="fcD">As empresas entregam pão às famílias e recebem 1.000 reais de gasto; as famílias oferecem trabalho, capital e terra e recebem 1.000 reais de renda.</desc>
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0L10,5L0,10z" fill="context-stroke"/></marker></defs>
+<rect x="20" y="30" width="180" height="300" rx="16" fill="#f0f8f8" stroke="#123047" stroke-width="2"/>
+<text x="110" y="170" text-anchor="middle" font-size="22" font-weight="800" fill="#123047">Famílias</text>
+<text x="110" y="196" text-anchor="middle" font-size="14" fill="#536775">consomem e são</text>
+<text x="110" y="214" text-anchor="middle" font-size="14" fill="#536775">donas dos fatores</text>
+<rect x="560" y="30" width="180" height="300" rx="16" fill="#f0f8f8" stroke="#123047" stroke-width="2"/>
+<text x="650" y="170" text-anchor="middle" font-size="22" font-weight="800" fill="#123047">Empresas</text>
+<text x="650" y="196" text-anchor="middle" font-size="14" fill="#536775">trigo, moinho</text>
+<text x="650" y="214" text-anchor="middle" font-size="14" fill="#536775">e padaria</text>
+<line x1="555" y1="75" x2="208" y2="75" stroke="#067c86" stroke-width="5" marker-end="url(#ah)"/>
+<text x="380" y="62" text-anchor="middle" font-size="15" font-weight="700" fill="#067c86">PRODUTO: pão, valor 1.000</text>
+<line x1="205" y1="130" x2="552" y2="130" stroke="#3274a4" stroke-width="5" marker-end="url(#ah)"/>
+<text x="380" y="117" text-anchor="middle" font-size="15" font-weight="700" fill="#3274a4">DESPESA: R$ 1.000 pagos pelo pão</text>
+<line x1="205" y1="240" x2="552" y2="240" stroke="#8a9aa5" stroke-width="3" stroke-dasharray="6 5" marker-end="url(#ah)"/>
+<text x="380" y="227" text-anchor="middle" font-size="14" fill="#536775">trabalho, capital emprestado, terra, iniciativa</text>
+<line x1="555" y1="295" x2="208" y2="295" stroke="#c9861f" stroke-width="5" marker-end="url(#ah)"/>
+<text x="380" y="282" text-anchor="middle" font-size="15" font-weight="700" fill="#b0731a">RENDA: R$ 1.000 em salários,</text>
+<text x="380" y="318" text-anchor="middle" font-size="15" font-weight="700" fill="#b0731a">juros, aluguéis e lucros</text>
+</svg><figcaption>As três setas coloridas medem o mesmo fluxo em pontos diferentes do circuito.</figcaption></figure>
+<div class="grid">
+<div class="panel"><h3>Siga R$ 10 gastos em pão</h3>
+<p>A padaria recebe 10. Usa 4 para pagar a farinha e fica com 6, que distribui em salários, juros, aluguéis e lucro. O moinho recebe os 4: paga 1 pelo trigo e distribui 3. O agricultor recebe 1 e o distribui.</p>
+<p class="res">6 + 3 + 1 = 10. <strong>Todo o gasto virou renda de alguém.</strong></p></div>
+<div class="panel"><h3>Quem garante o fechamento é o lucro</h3>
+<p>Salários, juros e aluguéis são combinados antes. O lucro é o que <em>sobra</em> depois de pagar tudo. Se a padaria vender o pão mais caro, seu lucro sobe exatamente na mesma quantia; se vender mais barato, cai.</p>
+<p>Como o lucro é a sobra, a renda total sempre iguala o valor produzido. <strong>Não é coincidência: é assim que se define lucro.</strong></p></div>
+</div>
+<div class="formula">Produto ≡ Despesa ≡ Renda</div>
+<p class="tiny">O símbolo ≡ indica <strong>identidade</strong>: algo verdadeiro por definição, em qualquer economia, porque as três contas registram o mesmo fluxo. Não é uma teoria sobre como a economia se comporta. Nas estatísticas reais, fontes diferentes geram uma pequena discrepância, que o órgão estatístico ajusta.</p>
+</section>
+
+<section id="conceito3"><span class="badge prod-t">Passo 3 · ótica do produto (ou da oferta)</span>
+<h2>Produto: somar só o que cada etapa acrescentou</h2>
+<p>A tentação é somar o que todas as empresas venderam: 100 (trigo) + 400 (farinha) + 1.000 (pão) = 1.500. Mas o pão de 1.000 já contém a farinha, que já contém o trigo. O gráfico mostra o problema.</p>
+<figure><svg viewBox="0 0 760 330" role="img" aria-labelledby="vaT vaD"><title id="vaT">Dupla contagem na cadeia do pão</title><desc id="vaD">Cada venda contém insumos já contados. Somando só as partes novas obtém-se 1.000.</desc>
+<defs><pattern id="hatch" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="8" height="8" fill="#eef1f3"/><line x1="0" y1="0" x2="0" y2="8" stroke="#a9b6bf" stroke-width="3"/></pattern></defs>
+<g font-size="15" fill="#203442">
+<text x="10" y="52" font-weight="700">Trigo</text><text x="10" y="70" font-size="12" fill="#536775">vende 100</text>
+<rect x="150" y="36" width="52" height="36" fill="#067c86"/><text x="176" y="59" text-anchor="middle" fill="#fff" font-weight="700">100</text>
+<text x="10" y="122" font-weight="700">Farinha</text><text x="10" y="140" font-size="12" fill="#536775">vende 400</text>
+<rect x="150" y="106" width="52" height="36" fill="url(#hatch)" stroke="#a9b6bf"/>
+<rect x="202" y="106" width="156" height="36" fill="#067c86"/><text x="280" y="129" text-anchor="middle" fill="#fff" font-weight="700">+300 novo</text>
+<text x="10" y="192" font-weight="700">Pão</text><text x="10" y="210" font-size="12" fill="#536775">vende 1.000</text>
+<rect x="150" y="176" width="208" height="36" fill="url(#hatch)" stroke="#a9b6bf"/><text x="254" y="199" text-anchor="middle" fill="#203442" font-size="13">farinha (400) já contada</text>
+<rect x="358" y="176" width="312" height="36" fill="#067c86"/><text x="514" y="199" text-anchor="middle" fill="#fff" font-weight="700">+600 novo</text>
+<line x1="150" y1="238" x2="670" y2="238" stroke="#d7e3e7"/>
+<text x="10" y="272" font-weight="800" fill="#067c86">Só o novo</text><text x="10" y="290" font-size="12" fill="#536775">= PIB</text>
+<rect x="150" y="256" width="52" height="36" fill="#067c86"/><rect x="203" y="256" width="155" height="36" fill="#067c86" opacity=".8"/><rect x="359" y="256" width="311" height="36" fill="#067c86" opacity=".65"/>
+<text x="410" y="279" text-anchor="middle" fill="#fff" font-weight="800">100 + 300 + 600 = 1.000 = preço do pão</text>
+</g>
+<rect x="470" y="306" width="18" height="14" fill="url(#hatch)" stroke="#a9b6bf"/><text x="494" y="318" font-size="12" fill="#536775">valor já contado em outra etapa</text>
+</svg><figcaption>Somar as barras inteiras (1.500) contaria o trigo três vezes e o valor novo da farinha duas vezes.</figcaption></figure>
+<p>Para cada empresa usamos três conceitos:</p>
+<div class="decode">
+<span class="sym">VBP</span><span><strong>Valor bruto da produção:</strong> tudo o que a empresa produziu, pelo preço de venda. É o seu “faturamento” com a produção.</span>
+<span class="sym">CI</span><span><strong>Consumo intermediário:</strong> o que ela comprou de outras empresas e gastou no processo (trigo para o moinho, farinha para a padaria, energia, embalagens).</span>
+<span class="sym">VA</span><span><strong>Valor adicionado:</strong> o que ela acrescentou com o próprio trabalho, máquinas e organização. <strong>VA = VBP − CI</strong>.</span>
+</div>
+<div class="tablewrap">
+<table><thead><tr><th>Empresa</th><th>VBP (vende)</th><th>CI (compra de insumos)</th><th>VA = VBP − CI</th></tr></thead><tbody>
+<tr><td>Agricultor (trigo)</td><td>100</td><td>0</td><td>100</td></tr>
+<tr><td>Moinho (farinha)</td><td>400</td><td>100</td><td>300</td></tr>
+<tr><td>Padaria (pão)</td><td>1.000</td><td>400</td><td>600</td></tr>
+<tr class="sum"><td>Total da ilha</td><td>1.500</td><td>500</td><td>1.000</td></tr>
+</tbody></table></div>
+<div class="formula prod-f">PIB = Σ VA = VBP total − CI total</div>
+<div class="decode"><span class="sym">Σ</span><span>Letra grega sigma: “some para todas as empresas”. Aqui, 100 + 300 + 600.</span>
+<span class="sym">✓</span><span>Três caminhos, mesmo resultado: somar os VA (1.000), subtrair totais (1.500 − 500 = 1.000) ou olhar só o bem final (pão = 1.000).</span></div>
+<div class="panel highlight"><h3>E quando há impostos?</h3>
+<p>Suponha que o governo cobre 100 de imposto sobre o pão. O consumidor passa a pagar 1.100, mas a padaria continua ficando com 1.000: os 100 vão para o governo. O VA das empresas não muda; ele é medido pelo que fica com o produtor (<strong>preço básico</strong>). Para chegar ao que o comprador pagou (<strong>preço de mercado</strong>), soma-se o imposto:</p>
+<div class="formula prod-f sm">PIB<sub>pm</sub> = Σ VA + impostos sobre produtos − subsídios</div>
+<p class="tiny">Subsídio é o contrário de imposto: o governo paga parte do preço para o produtor, e o comprador paga menos. Por isso entra com sinal de menos. O índice “pm” significa “a preços de mercado”.</p></div>
+</section>
+
+<section id="conceito4"><span class="badge desp-t">Passo 4 · ótica da despesa (ou da demanda)</span>
+<h2>Despesa: quem comprou a produção final?</h2>
+<p class="lead">Agora a pergunta é outra: não “quem fez?”, mas “quem pagou pelos bens finais?”. Cada compra final vai para uma de cinco gavetas, conforme o comprador e o uso.</p>
+<div class="letters">
+<div class="letter"><b>C</b><h3>Consumo das famílias</h3><p><strong>Pergunta:</strong> uma família comprou para usar?</p><p>Pão, corte de cabelo, passagem de ônibus, mensalidade.</p><p class="warn">Imóvel novo comprado por família vai para I, não C.</p></div>
+<div class="letter"><b>I</b><h3>Investimento</h3><p><strong>Pergunta:</strong> foi produzido agora para ajudar a produzir depois?</p><p>Forno, máquina, prédio, estrada. Inclui a variação de estoques.</p><p class="warn">Comprar ações ou um terreno não é investimento para o PIB.</p></div>
+<div class="letter"><b>G</b><h3>Gastos do governo</h3><p><strong>Pergunta:</strong> o governo pagou por bens ou serviços?</p><p>Aulas, consultas no SUS, policiamento, material de escritório.</p><p class="warn">Aposentadorias e Bolsa Família são transferências: não entram em G.</p></div>
+<div class="letter"><b>X</b><h3>Exportações</h3><p><strong>Pergunta:</strong> foi produzido aqui e comprado por alguém de fora?</p><p>Soja vendida à China, pão comprado por turista estrangeiro.</p></div>
+<div class="letter neg"><b>M</b><h3>Importações</h3><p><strong>Pergunta:</strong> foi produzido lá fora e comprado por nós?</p><p>Celular chinês, trigo argentino, viagem ao exterior.</p><p class="warn">Entra com sinal de menos (veja abaixo por quê).</p></div>
+</div>
+<div class="formula desp-f">PIB = C + I + G + (X − M)</div>
+<div class="decode"><span class="sym">X − M</span><span><strong>Exportações líquidas</strong>, ou saldo comercial de bens e serviços. Pode ser positivo ou negativo.</span></div>
+<div class="grid">
+<div class="panel"><h3>Por que o M tem sinal negativo?</h3>
+<p>Uma família compra um celular importado por 50. Quem mede o consumo registra: <strong>C sobe 50</strong>. Mas o celular foi produzido na China, não na ilha. Para o PIB não ficar inflado, esses 50 precisam ser retirados: <strong>M sobe 50</strong>.</p>
+<p class="res">+50 em C − 50 em M = <strong>efeito zero no PIB</strong></p>
+<p class="tiny">Então o M não quer dizer que “importar reduz o PIB”. É uma correção: C, I e G registram tudo o que gastamos, inclusive em produtos estrangeiros; o PIB só quer o que foi produzido aqui.</p></div>
+<div class="panel"><h3>Na ilha do pão</h3>
+<p>Todo o pão foi comprado por famílias. Não há governo, investimento nem comércio exterior.</p>
+<p class="res">C = 1.000; I = G = X = M = 0<br><strong>PIB = 1.000</strong></p>
+<p class="tiny">Mesmo número da ótica do produto. No Passo 6 você vai mudar essa economia e ver as gavetas se encherem.</p></div>
+</div>
+
+<h3 class="mt">Exercício: em que gaveta entra?</h3>
+<div class="quiz" id="quizCIG">
+<div class="qcard" data-ans="C"><p>Família compra geladeira fabricada em Canoas.</p><div class="btns five"><button type="button" data-v="C">C</button><button type="button" data-v="I">I</button><button type="button" data-v="G">G</button><button type="button" data-v="X">X</button><button type="button" data-v="M">M</button><button type="button" data-v="fora">Fora</button></div><p class="fb">Consumo das famílias: bem final, produzido no país, para uso da família.</p></div>
+<div class="qcard" data-ans="I"><p>Padaria compra forno novo fabricado em Pelotas.</p><div class="btns five"><button type="button" data-v="C">C</button><button type="button" data-v="I">I</button><button type="button" data-v="G">G</button><button type="button" data-v="X">X</button><button type="button" data-v="M">M</button><button type="button" data-v="fora">Fora</button></div><p class="fb">Investimento: o forno dura anos e serve para produzir mais pão. Não é insumo porque não se gasta em um só ciclo.</p></div>
+<div class="qcard" data-ans="G"><p>Prefeitura paga o salário de uma médica do posto de saúde.</p><div class="btns five"><button type="button" data-v="C">C</button><button type="button" data-v="I">I</button><button type="button" data-v="G">G</button><button type="button" data-v="X">X</button><button type="button" data-v="M">M</button><button type="button" data-v="fora">Fora</button></div><p class="fb">Gasto do governo: o serviço de saúde é produzido e medido pelo seu custo.</p></div>
+<div class="qcard" data-ans="fora"><p>Governo paga uma aposentadoria.</p><div class="btns five"><button type="button" data-v="C">C</button><button type="button" data-v="I">I</button><button type="button" data-v="G">G</button><button type="button" data-v="X">X</button><button type="button" data-v="M">M</button><button type="button" data-v="fora">Fora</button></div><p class="fb">Fica fora: é transferência, não pagamento por produção. Quando o aposentado gastar, o gasto aparece em C.</p></div>
+<div class="qcard" data-ans="X"><p>Turista uruguaio almoça em um restaurante de Pelotas.</p><div class="btns five"><button type="button" data-v="C">C</button><button type="button" data-v="I">I</button><button type="button" data-v="G">G</button><button type="button" data-v="X">X</button><button type="button" data-v="M">M</button><button type="button" data-v="fora">Fora</button></div><p class="fb">Exportação de serviço: produzido aqui, pago por não residente. Não importa que tenha sido consumido em território brasileiro.</p></div>
+<div class="qcard" data-ans="I"><p>Montadora fabrica carros que ficam no pátio sem vender.</p><div class="btns five"><button type="button" data-v="C">C</button><button type="button" data-v="I">I</button><button type="button" data-v="G">G</button><button type="button" data-v="X">X</button><button type="button" data-v="M">M</button><button type="button" data-v="fora">Fora</button></div><p class="fb">Investimento, como variação de estoques. A produção aconteceu; a contabilidade trata a própria empresa como “compradora” do estoque.</p></div>
+<div class="qcard" data-ans="C M"><p>Família compra celular fabricado na China.</p><div class="btns five"><button type="button" data-v="C">C</button><button type="button" data-v="I">I</button><button type="button" data-v="G">G</button><button type="button" data-v="X">X</button><button type="button" data-v="M">M</button><button type="button" data-v="fora">Fora</button></div><p class="fb">Pegadinha: aparece em C <em>e</em> em M, com sinais opostos. O efeito líquido no PIB é zero.</p></div>
+<div class="qcard" data-ans="fora"><p>Investidor compra ações da Petrobras na bolsa.</p><div class="btns five"><button type="button" data-v="C">C</button><button type="button" data-v="I">I</button><button type="button" data-v="G">G</button><button type="button" data-v="X">X</button><button type="button" data-v="M">M</button><button type="button" data-v="fora">Fora</button></div><p class="fb">Fica fora: é aplicação financeira, troca de dono de um papel. No dia a dia se diz “investir”, mas para o PIB investimento é bem de capital novo.</p></div>
+</div>
+<p class="tiny">Nota: nas contas oficiais, obras públicas (uma escola nova, uma estrada) entram em investimento, e G fica com o consumo do governo. Alguns livros colocam tudo o que o governo compra em G. Em exercícios, siga a convenção do enunciado.</p>
+</section>
+
+<section id="conceito5"><span class="badge rend-t">Passo 5 · ótica da renda</span>
+<h2>Renda: para onde foi o valor adicionado?</h2>
+<p>O valor adicionado de cada empresa não fica parado: ele paga quem ajudou a produzir. Cada fator de produção recebe um tipo de renda.</p>
+<div class="decode fatores">
+<span class="sym">Trabalho</span><span>recebe <strong>salários</strong></span>
+<span class="sym">Capital emprestado</span><span>recebe <strong>juros</strong></span>
+<span class="sym">Terra e imóveis</span><span>recebem <strong>aluguéis</strong></span>
+<span class="sym">Donos do negócio</span><span>recebem o <strong>lucro</strong>, que é o que sobra</span>
+</div>
+<p>A tabela abaixo mostra como cada empresa da ilha dividiu o seu VA. Ela é a chave para entender por que produto e renda são iguais:</p>
+<div class="tablewrap">
+<table class="cross"><thead><tr><th>Empresa</th><th>Salários</th><th>Juros</th><th>Aluguéis</th><th>Lucros</th><th class="c-prod">Soma da linha = VA</th></tr></thead><tbody>
+<tr><td>Agricultor</td><td>70</td><td>0</td><td>0</td><td>30</td><td class="c-prod">100</td></tr>
+<tr><td>Moinho</td><td>200</td><td>20</td><td>30</td><td>50</td><td class="c-prod">300</td></tr>
+<tr><td>Padaria</td><td>430</td><td>30</td><td>40</td><td>100</td><td class="c-prod">600</td></tr>
+<tr class="r-rend"><td>Soma da coluna = renda</td><td>700</td><td>50</td><td>70</td><td>180</td><td class="corner">1.000</td></tr>
+</tbody></table></div>
+<div class="panel highlight"><strong>Leia a mesma tabela de dois jeitos.</strong> Somando cada <span class="k-prod">linha</span>, você obtém o valor adicionado de cada empresa: é a ótica do produto. Somando cada <span class="k-rend">coluna</span>, você obtém quanto cada tipo de renda recebeu: é a ótica da renda. O total do canto é o mesmo porque os números são os mesmos, só agrupados de outro modo.</div>
+<div class="formula rend-f">PIB<sub>cf</sub> = salários + juros + aluguéis + lucros</div>
+<p>O índice “cf” quer dizer <strong>a custo de fatores</strong>: o valor medido pelo que os fatores de produção receberam. Se houver imposto sobre o pão, o comprador paga mais do que os fatores recebem; a diferença foi para o governo. Para chegar ao preço de mercado, soma-se:</p>
+<div class="formula rend-f sm">PIB<sub>pm</sub> = salários + juros + aluguéis + lucros + impostos indiretos − subsídios</div>
+<div class="grid">
+<div class="panel"><h3>Cuidado com a depreciação</h3><p>O lucro dessa conta é <em>bruto</em>: ainda inclui a parte que a padaria separa para repor o forno quando ele se desgastar. Por isso, para calcular o PIB, <strong>não se desconta a depreciação</strong>. Ela só é descontada quando queremos um produto <em>líquido</em> (Passo 7).</p></div>
+<div class="panel"><h3>Como o IBGE chama essas rendas</h3><p>Nas contas oficiais aparecem <strong>remuneração dos empregados</strong> (salários e contribuições), <strong>excedente operacional bruto</strong> (EOB, de onde saem juros, aluguéis e lucros) e <strong>rendimento misto bruto</strong> (autônomos, em que não se separa salário de lucro). A lógica é a mesma da tabela acima.</p></div>
+</div>
+</section>
+
+<section id="laboratorio"><span class="badge">Passo 6 · juntando tudo</span>
+<h2>Laboratório: mude a ilha e veja as três contas</h2>
+<p class="lead">Ative cada mudança e observe as três colunas. Algumas mudanças alteram o PIB; outras só mudam a composição. Em todos os casos, as três óticas continuam iguais.</p>
+<div class="lab">
+<fieldset class="toggles"><legend>Mudanças na economia da ilha</legend>
+<label><input type="checkbox" data-k="gov"> A prefeitura compra 200 do pão para a merenda escolar</label>
+<label><input type="checkbox" data-k="forno"> A padaria compra um forno novo de 150, feito por uma serralheria da ilha</label>
+<label><input type="checkbox" data-k="imp"> As famílias compram 50 de geleia importada</label>
+<label><input type="checkbox" data-k="exp"> O agricultor produz e exporta 100 a mais de trigo</label>
+<label><input type="checkbox" data-k="tax"> O governo cobra imposto de 10% sobre o pão</label>
+</fieldset>
+<div class="cols" aria-live="polite">
+<div class="col prod"><h3>Produto</h3><div id="labProd"></div></div>
+<div class="col desp"><h3>Despesa</h3><div id="labDesp"></div></div>
+<div class="col rend"><h3>Renda</h3><div id="labRend"></div></div>
+</div>
+<p class="equal" id="labEq"></p>
+<div id="labWhy" class="why"></div>
+</div>
+<p class="tiny">Hipóteses do laboratório: o imposto incide só sobre o pão; o forno é feito sem insumos comprados; a geleia chega pronta do exterior. Os números são didáticos.</p>
+</section>
+
+<section id="conceito6"><span class="badge">Passo 7 · os outros agregados</span>
+<h2>PIB, PNB, PNL: o nome do agregado é um código</h2>
+<p>Os livros e os slides falam em PIB, PNB, PIL, PNL, “a preços de mercado”, “a custo de fatores”. Parece uma sopa de letras, mas cada nome é a combinação de <strong>três chaves independentes</strong>. Entendendo as chaves, qualquer agregado se deduz.</p>
+<div class="tablewrap">
+<table><thead><tr><th>Chave</th><th>Pergunta</th><th>Como passar de um lado ao outro</th></tr></thead><tbody>
+<tr><td><strong>Interno ↔ Nacional</strong><br><span class="tiny">PIB ↔ PNB</span></td><td><em>Onde</em> foi produzido ou <em>de quem</em> é a renda?</td><td>PNB = PIB − <strong>RLEE</strong><br><span class="tiny">RLEE = renda enviada ao exterior − renda recebida do exterior (lucros, juros, salários)</span></td></tr>
+<tr><td><strong>Bruto ↔ Líquido</strong><br><span class="tiny">PIB ↔ PIL</span></td><td>Com ou sem o desgaste do capital?</td><td>Líquido = Bruto − <strong>depreciação</strong></td></tr>
+<tr><td><strong>Mercado ↔ Fatores</strong><br><span class="tiny">pm ↔ cf</span></td><td>Pelo preço que o comprador pagou ou pelo que os fatores receberam?</td><td>cf = pm − <strong>impostos indiretos</strong> + <strong>subsídios</strong></td></tr>
+</tbody></table></div>
+<p>Continuemos a ilha, agora com o imposto de 10% do laboratório (PIB<sub>pm</sub> = 1.100). Duas informações novas: o moinho pertence a um estrangeiro, que envia 50 de lucro para fora, e os ilhéus recebem 20 de juros de aplicações no exterior. Os fornos e máquinas da ilha se desgastaram em 60 no ano.</p>
+<figure><svg viewBox="0 0 760 350" role="img" aria-labelledby="esT esD"><title id="esT">Escada dos agregados</title><desc id="esD">PIB a preços de mercado 1.100; menos 100 de impostos indiretos líquidos dá PIB a custo de fatores 1.000; menos 30 de renda líquida enviada ao exterior dá PNB a custo de fatores 970; menos 60 de depreciação dá PNL a custo de fatores 910, a renda nacional.</desc>
+<g font-size="15">
+<rect x="210" y="20" width="520" height="44" rx="6" fill="#123047"/><text x="200" y="48" text-anchor="end" font-weight="800" fill="#123047">PIB pm</text><text x="470" y="48" text-anchor="middle" fill="#fff" font-weight="800">1.100</text>
+<text x="222" y="92" fill="#8a4f0f" font-size="14">− 100 impostos indiretos líquidos de subsídios (chave mercado → fatores)</text>
+<rect x="210" y="106" width="473" height="44" rx="6" fill="#1f4f6b"/><text x="200" y="134" text-anchor="end" font-weight="800" fill="#123047">PIB cf</text><text x="446" y="134" text-anchor="middle" fill="#fff" font-weight="800">1.000</text>
+<text x="222" y="178" fill="#8a4f0f" font-size="14">− 30 RLEE: 50 enviados − 20 recebidos (chave interno → nacional)</text>
+<rect x="210" y="192" width="459" height="44" rx="6" fill="#2d6a86"/><text x="200" y="220" text-anchor="end" font-weight="800" fill="#123047">PNB cf</text><text x="440" y="220" text-anchor="middle" fill="#fff" font-weight="800">970</text>
+<text x="222" y="264" fill="#8a4f0f" font-size="14">− 60 depreciação (chave bruto → líquido)</text>
+<rect x="210" y="278" width="430" height="44" rx="6" fill="#067c86"/><text x="200" y="306" text-anchor="end" font-weight="800" fill="#067c86">PNL cf</text><text x="425" y="306" text-anchor="middle" fill="#fff" font-weight="800">910 = Renda Nacional</text>
+</g></svg><figcaption>Cada degrau gira uma chave. A ordem não importa: o resultado final é o mesmo.</figcaption></figure>
+<div class="grid">
+<div class="panel"><h3>Por que no Brasil o PNB é menor que o PIB?</h3><p>Multinacionais instaladas aqui enviam lucros às matrizes, e o país paga juros sobre dívida externa. Como o Brasil envia mais renda do que recebe, a RLEE é positiva e o PNB fica abaixo do PIB.</p></div>
+<div class="panel"><h3>Não confunda com X − M</h3><p>Exportações e importações são compra e venda de <em>produtos</em> e já estão dentro do PIB e do PNB. A RLEE trata de <em>rendas</em> (lucros, juros, salários) que cruzam a fronteira. São contas diferentes.</p></div>
+</div>
+<p class="tiny">Terminologia atual: o IBGE usa “Renda Nacional Bruta (RNB)” no lugar de PNB, e “preços básicos” em vez de “custo de fatores” (os conceitos são próximos, mas não idênticos: preços básicos excluem só os impostos sobre produtos). Mantivemos os nomes dos slides porque são os mais usados em livros-texto e provas.</p>
+</section>
+
+<section id="conceito7"><span class="badge">Passo 8 · separar preço e quantidade</span>
+<h2>PIB nominal, real e per capita</h2>
+<p>O PIB é medido em reais. Se ele sobe, pode ser porque se produziu mais <em>ou</em> porque os preços subiram. Na ilha, com um único bem final, isso fica visível:</p>
+<div class="tablewrap">
+<table><thead><tr><th></th><th>Pães produzidos</th><th>Preço do pão</th><th>PIB nominal<br><span class="tiny">quantidade × preço do ano</span></th><th>PIB real<br><span class="tiny">quantidade × preço do ano 1</span></th></tr></thead><tbody>
+<tr><td>Ano 1</td><td>1.000</td><td>R$ 1,00</td><td>1.000</td><td>1.000</td></tr>
+<tr><td>Ano 2</td><td>1.050</td><td>R$ 1,10</td><td>1.155</td><td>1.050</td></tr>
+<tr class="sum"><td>Variação</td><td>+5%</td><td>+10%</td><td>+15,5%</td><td>+5%</td></tr>
+</tbody></table></div>
+<div class="grid">
+<div class="panel"><h3>Nominal e real</h3><p><strong>Nominal</strong>: valor aos preços do próprio ano. Mistura quantidade e preço. <strong>Real</strong>: valor a preços de um ano-base fixo. Mostra só a quantidade.</p><p>A economia cresceu 5%, não 15,5%. O resto foi inflação.</p>
+<div class="formula sm">PIB real = PIB nominal ÷ deflator</div>
+<p class="tiny">Deflator do ano 2 = 1.155 ÷ 1.050 = 1,10, ou seja, preços 10% maiores. Aproximação útil: crescimento nominal ≈ crescimento real + inflação (5% + 10% = 15%, perto dos 15,5% exatos).</p></div>
+<div class="panel"><h3>Per capita</h3><p><strong>PIB per capita = PIB ÷ população.</strong> Se a ilha passou de 100 para 102 habitantes, o PIB real por pessoa foi de 10,00 para 10,29: cresceu 2,9%, menos que o PIB total.</p>
+<p class="tiny">É uma média: não diz quanto cada pessoa recebe nem como a renda se distribui. Para comparar países, câmbio de mercado e paridade do poder de compra (PPC) respondem a perguntas diferentes.</p></div>
+</div>
+<p class="note"><strong>Precisão histórica:</strong> o slide antigo do IDH apresenta pesos e componentes de uma metodologia anterior. Nesta síntese, o IDH aparece só como lembrete de que desenvolvimento exige indicadores além do PIB.</p>
+</section>
+
+<section id="tradutor"><span class="badge">Consulta</span>
+<h2>Tradutor de símbolos</h2>
+<p>Volte aqui sempre que uma letra de fórmula não fizer sentido.</p>
+<div class="tablewrap">
+<table><thead><tr><th>Símbolo</th><th>Nome</th><th>Em palavras</th></tr></thead><tbody>
+<tr><td><strong>Y</strong></td><td>Produto ou renda</td><td>Os livros usam a mesma letra para as duas coisas justamente porque, na contabilidade, são o mesmo número.</td></tr>
+<tr><td><strong>≡</strong></td><td>Identidade</td><td>Igual por definição, sempre, em qualquer economia.</td></tr>
+<tr><td><strong>VBP</strong></td><td>Valor bruto da produção</td><td>Tudo o que uma empresa produziu, a preço de venda.</td></tr>
+<tr><td><strong>CI</strong></td><td>Consumo intermediário</td><td>Insumos comprados de outras empresas e gastos na produção.</td></tr>
+<tr><td><strong>VA</strong> (VAB)</td><td>Valor adicionado (bruto)</td><td>VBP − CI: o que a empresa acrescentou.</td></tr>
+<tr><td><strong>Σ</strong></td><td>Somatório</td><td>“Some para todos.”</td></tr>
+<tr><td><strong>C</strong></td><td>Consumo das famílias</td><td>Gastos das famílias com bens e serviços finais.</td></tr>
+<tr><td><strong>I</strong></td><td>Investimento (formação bruta de capital)</td><td>Máquinas, construções e variação de estoques.</td></tr>
+<tr><td><strong>G</strong></td><td>Gastos do governo</td><td>Consumo do governo: serviços públicos, medidos pelo custo. Sem transferências.</td></tr>
+<tr><td><strong>X</strong>, <strong>M</strong></td><td>Exportações, importações</td><td>Vendas ao exterior; compras do exterior (descontadas).</td></tr>
+<tr><td><strong>II</strong>, <strong>Sub</strong></td><td>Impostos indiretos, subsídios</td><td>Tributos embutidos nos preços; pagamentos do governo que baixam preços.</td></tr>
+<tr><td><strong>RLEE</strong></td><td>Renda líquida enviada ao exterior</td><td>Renda enviada − renda recebida. Separa PIB de PNB.</td></tr>
+<tr><td><strong>D</strong></td><td>Depreciação</td><td>Desgaste do capital no período. Separa bruto de líquido.</td></tr>
+<tr><td><strong>pm</strong>, <strong>cf</strong></td><td>Preços de mercado, custo de fatores</td><td>Com ou sem impostos indiretos líquidos.</td></tr>
+<tr><td><strong>EOB</strong></td><td>Excedente operacional bruto</td><td>Nome oficial para a renda do capital antes de descontar depreciação.</td></tr>
+</tbody></table></div>
+</section>
+
+<section id="armadilhas"><span class="badge">Revisão</span>
+<h2>Oito confusões frequentes em prova</h2>
+<div class="tablewrap">
+<table><thead><tr><th>Parece que…</th><th>Na verdade…</th></tr></thead><tbody>
+<tr><td>Somar o faturamento de todas as empresas dá o PIB.</td><td>Isso conta os insumos várias vezes. Some só valores adicionados ou só bens finais (Passo 3).</td></tr>
+<tr><td>Importar reduz o PIB.</td><td>O M apenas retira o que já tinha sido somado em C, I ou G. A geleia importada do laboratório não muda o PIB (Passo 6).</td></tr>
+<tr><td>Aposentadorias e Bolsa Família entram em G.</td><td>São transferências. Entram só quando gastas, como consumo (Passo 4).</td></tr>
+<tr><td>Comprar ações ou um terreno é investimento.</td><td>Para o PIB, investimento é bem de capital novo ou aumento de estoque (Passo 4).</td></tr>
+<tr><td>Para calcular o PIB pela renda, desconta-se a depreciação.</td><td>O PIB é bruto. A depreciação só sai quando se quer o produto líquido (Passos 5 e 7).</td></tr>
+<tr><td>PIB e PNB diferem por exportações e importações.</td><td>Diferem pela renda enviada e recebida do exterior (RLEE). X − M está dentro dos dois (Passo 7).</td></tr>
+<tr><td>O PIB nominal subiu 15%, então a economia cresceu 15%.</td><td>É preciso descontar a inflação. Crescimento se mede pelo PIB real (Passo 8).</td></tr>
+<tr><td>PIB per capita alto significa que todos vivem bem.</td><td>É uma média. Não mostra distribuição nem atividades fora do mercado (Passos 1 e 8).</td></tr>
+</tbody></table></div>
+</section>
+
+<section id="sintese"><span class="badge">Síntese para levar à prova</span>
+<h2>Mapa de uma página e um exercício resolvido</h2>
+<div class="grid3">
+<div class="door prod"><h3>Produto</h3><p class="res">PIB<sub>pm</sub> = Σ VA + II − Sub</p><p class="tiny">Some o que cada empresa acrescentou.</p></div>
+<div class="door desp"><h3>Despesa</h3><p class="res">PIB<sub>pm</sub> = C + I + G + X − M</p><p class="tiny">Some quem comprou os bens finais.</p></div>
+<div class="door rend"><h3>Renda</h3><p class="res">PIB<sub>pm</sub> = sal + jur + alug + luc + II − Sub</p><p class="tiny">Some o que os fatores receberam.</p></div>
+</div>
+<div class="formula sm">PIB → (− RLEE) → PNB → (− depreciação) → PNL · e em cada um: pm → (− II + Sub) → cf</div>
+<div class="panel"><h3>Exercício resolvido</h3>
+<p>Dados de uma economia, em bilhões: C = 500; I = 150; G = 200; X = 80; M = 90; impostos indiretos = 120; subsídios = 20; depreciação = 40; renda enviada ao exterior = 35; renda recebida do exterior = 5. Calcule o PIB<sub>pm</sub>, o PNB<sub>pm</sub> e a renda nacional (PNL<sub>cf</sub>).</p>
+<ol class="steps">
+<li><strong>Escolha a ótica pelos dados.</strong> Temos C, I, G, X e M: ótica da despesa. PIB<sub>pm</sub> = 500 + 150 + 200 + 80 − 90 = <strong>840</strong>.</li>
+<li><strong>Gire a chave interno → nacional.</strong> RLEE = 35 − 5 = 30. PNB<sub>pm</sub> = 840 − 30 = <strong>810</strong>.</li>
+<li><strong>Gire a chave bruto → líquido.</strong> PNL<sub>pm</sub> = 810 − 40 = 770.</li>
+<li><strong>Gire a chave mercado → fatores.</strong> Impostos indiretos líquidos = 120 − 20 = 100. PNL<sub>cf</sub> = 770 − 100 = <strong>670 = renda nacional</strong>.</li>
+</ol>
+<p class="tiny">Confira: fazendo os passos em outra ordem (primeiro tirar impostos, depois RLEE, depois depreciação), o resultado final é o mesmo 670.</p></div>
+</section>
+
+
+<section id="contexto"><span class="badge">Leitura crítica das imagens do material · slides 18–22 e 59–75</span><h2>Como ler os gráficos sem misturar períodos e medidas</h2><figure><img src="IMG/comparacao_pib.png" alt="PIB total mede tamanho da produção, PIB per capita representa uma média por habitante"><figcaption>As visualizações internacionais nos slides usam anos, fontes, projeções e unidades diferentes.</figcaption></figure><div class="tablewrap"><table><thead><tr><th>Figura do material</th><th>Questão didática</th><th>Cuidado</th></tr></thead><tbody><tr><td>Painel IBGE e indicadores de 2023</td><td>Inflação e crescimento do PIB são a mesma coisa?</td><td>Um é variação de preços; outro trata do produto. Distinguir indicador, data e unidade.</td></tr><tr><td>Impostômetro, orçamento e resultado previdenciário de 2023</td><td>Arrecadação é igual a PIB ou saldo fiscal?</td><td>Não. São perímetros, períodos e conceitos diferentes; orçamento previsto não é gasto realizado.</td></tr><tr><td>Infográficos internacionais de PIB e dívida</td><td>Qual comparação é feita: total, per capita, PPC, nominal ou dívida/PIB?</td><td>Conferir ano, moeda, fonte, metodologia e se o valor é realizado ou projetado.</td></tr><tr><td>Visualizações sobre riqueza</td><td>PIB anual equivale a riqueza acumulada?</td><td>Não. Produto é fluxo; riqueza e dívida são estoques.</td></tr></tbody></table></div><details><summary>Ver quatro figuras originais da apresentação para análise em aula</summary><div class="grid"><figure><img src="IMG/slide_18_historico.png" alt="Painel de indicadores IBGE mostrado no slide 18, com dados de 2023"><figcaption>Slide 18 · painel acessado em 2023: comparar inflação, PIB e desemprego.</figcaption></figure><figure><img src="IMG/slide_21_historico.png" alt="Infográfico do orçamento federal previsto para 2023 no slide 21"><figcaption>Slide 21 · orçamento previsto para 2023: separar previsão, gasto e composição.</figcaption></figure><figure><img src="IMG/slide_59_historico.png" alt="Gráfico histórico de PIB total do slide 59, com ano de referência 2019"><figcaption>Slide 59 · PIB total em US$, valores de 2019.</figcaption></figure><figure><img src="IMG/slide_60_historico.png" alt="Gráfico histórico de PIB por habitante do slide 60, com ano de referência 2019"><figcaption>Slide 60 · PIB per capita em US$, valores de 2019.</figcaption></figure></div></details><p class="note">Algumas figuras exibem projeções para 2026 feitas em datas específicas. Esta aula não reproduz suas cifras como fatos observados. Use as imagens originais da apresentação para um exercício de crítica de fontes.</p></section>
+<section id="keynes"><span class="badge">Apêndices · slides 76–83</span><h2>Origem das contas e uma ponte com Keynes</h2><p>Os slides situam a consolidação da análise dos grandes agregados no contexto da crise dos anos 1930 e da obra de John Maynard Keynes. Também apresentam a construção histórica das contas nacionais brasileiras e a atuação do IBGE. A função didática desta seção é ligar a mensuração do PIB à pergunta: <strong>o que determina o nível de produção e emprego?</strong></p><div class="grid"><div class="panel"><h3>Consumo depende da renda</h3><p>No modelo simplificado do apêndice, <strong>C = C<sub>a</sub> + cY</strong>: C<sub>a</sub> é o consumo autônomo e <em>c</em> é a propensão marginal a consumir, entre zero e um. Se a renda cresce 100 e c = 0,8, o consumo induzido cresce 80, sob as hipóteses do modelo.</p></div><div class="panel"><h3>Investimento pode oscilar</h3><p>Expectativas sobre retorno futuro e condições financeiras tornam o investimento sensível à incerteza. Quando a demanda planejada cai, a produção e o emprego podem ficar abaixo da capacidade disponível.</p></div></div><div class="formula">Modelo de dois setores: Y = C + I; com C = C<sub>a</sub> + cY, então Y = (C<sub>a</sub> + I) / (1 − c)</div><p class="tiny">Esta última igualdade explicita o multiplicador em uma economia fechada, sem governo e com preços e capacidade de oferta tratados de modo simplificado; é uma ampliação didática a partir dos slides 80–83, não uma fórmula universal para qualquer economia.</p><p class="note"><strong>Nota de atualização:</strong> a descrição do IDH no slide 57 apresenta uma metodologia histórica, com pesos antigos. A aula usa a distinção conceitual crescimento × desenvolvimento sem reproduzir essa fórmula como vigente.</p></section>
+
+<section id="questoes"><span class="badge">Estudo e avaliação</span><h2>38 questões com resposta comentada</h2>
+<details><summary>1. O PIB mede um estoque ou um fluxo?</summary><p>Um fluxo de produção durante um período, como trimestre ou ano.</p></details>
+<details><summary>2. A farinha é sempre um bem intermediário?</summary><p>Não. Depende do uso: insumo para a padaria, consumo final quando comprada pela família.</p></details>
+<details><summary>3. Por que a revenda de um carro usado não soma novamente o valor do carro ao PIB atual?</summary><p>O carro foi produzido em período anterior. Eventual serviço atual de intermediação pode integrar o PIB.</p></details>
+<details><summary>4. O que faz a despesa de um agente se relacionar à renda de outro no fluxo circular?</summary><p>A compra vira receita da unidade produtora, que se distribui como remuneração e resultado da produção.</p></details>
+<details><summary>5. Qual é o valor adicionado da farinha se ela é vendida por 400 e comprou trigo por 100?</summary><p>400 − 100 = 300.</p></details>
+<details><summary>6. Por que 100 + 400 + 1.000 não é o PIB da cadeia trigo–pão?</summary><p>Porque trigo e farinha estão incorporados no pão. Somar 1.500 conta insumos mais de uma vez; o VA soma 1.000.</p></details>
+<details><summary>7. Qual ajuste leva a soma dos VAB a preços básicos ao PIB a preços de mercado?</summary><p>Adicionar impostos sobre produtos e subtrair subsídios sobre produtos.</p></details>
+<details><summary>8. O que representam C, I e G em C + I + G + X − M?</summary><p>Consumo das famílias, investimento ou formação bruta de capital, e consumo final do governo.</p></details>
+<details><summary>9. Por que M aparece com sinal negativo?</summary><p>Para retirar dos gastos a produção importada, que ocorreu fora do território.</p></details>
+<details><summary>10. Uma máquina comprada pela fábrica entra em C ou I? E a compra de ações existentes?</summary><p>A máquina nova destinada à produção entra em I. Comprar ações existentes troca titularidade de ativo financeiro e não gera investimento produtivo corrente.</p></details>
+<details><summary>11. Pães produzidos agora e guardados no estoque contam para o PIB do período?</summary><p>Sim. A variação de estoques integra I, mesmo sem venda ao consumidor no período.</p></details>
+<details><summary>12. Na ótica simplificada dos slides, quais são as quatro remunerações da renda nacional?</summary><p>Salários, juros, aluguéis e lucros. A apresentação completa do PIB exige ajustes e categorias agregadas compatíveis.</p></details>
+<details><summary>13. Se a remuneração é 700 e o excedente bruto é 300, sem tributos líquidos, qual o PIB pela renda?</summary><p>1.000, o mesmo valor do produto final e do gasto final no exemplo.</p></details>
+<details><summary>14. Por que não se desconta depreciação ao calcular um produto bruto?</summary><p>Porque “bruto” inclui o consumo de capital fixo. O desconto produz uma medida líquida.</p></details>
+<details><summary>15. Qual a diferença entre PIB e PNB no critério dos slides?</summary><p>PIB usa território da produção; PNB ajusta a renda enviada e recebida do exterior para refletir a renda dos residentes.</p></details>
+<details><summary>16. Se a produção física não muda, mas preços sobem 10%, o que ocorre com o PIB nominal e o volume real?</summary><p>O PIB nominal tende a subir; o volume real permanece igual nesse exemplo simplificado.</p></details>
+<details><summary>17. Quais agregados aparecem no começo dos slides?</summary><p>Renda, emprego, produto, desemprego, investimento, moeda, poupança, juros, consumo, balanço de pagamentos, preços e câmbio.</p></details>
+<details><summary>18. Por que crescimento do PIB e desenvolvimento econômico não são sinônimos?</summary><p>O PIB registra produção. Desenvolvimento também considera distribuição e condições sociais e ambientais.</p></details>
+<details><summary>19. Quais são as metas macroeconômicas principais apresentadas?</summary><p>Crescimento, emprego, estabilidade de preços, equilíbrio externo e distribuição mais equitativa da renda.</p></details>
+<details><summary>20. Uma expansão do emprego sempre provoca inflação?</summary><p>Não. Dependem da capacidade ociosa, da oferta e da produtividade, entre outros fatores.</p></details>
+<details><summary>21. Diferencie inflação de demanda, de custos e inercial.</summary><p>Demanda: gasto pressiona a capacidade de oferta; custos: insumos ou salários pressionam preços; inercial: reajustes passados se propagam por contratos e expectativas.</p></details>
+<details><summary>22. Qual mercado ajuda a observar salários e emprego? E qual trata de câmbio?</summary><p>Mercado de trabalho e mercado de divisas, respectivamente.</p></details>
+<details><summary>23. Cite duas decisões de política fiscal e seu efeito possível na demanda.</summary><p>Elevar gastos pode sustentar demanda; elevar tributos pode reduzir renda disponível e parte da demanda, conforme contexto.</p></details>
+<details><summary>24. Qual a diferença entre déficit e dívida?</summary><p>Déficit é um fluxo de determinado período; dívida é um estoque acumulado.</p></details>
+<details><summary>25. Resultado primário inclui juros da dívida?</summary><p>Na apuração fiscal do resultado primário, juros da dívida ficam fora. O resultado nominal incorpora o custo financeiro segundo a metodologia aplicável.</p></details>
+<details><summary>26. Cite dois instrumentos monetários dos slides e seus canais.</summary><p>Operações de mercado aberto afetam liquidez e juros; reservas compulsórias afetam liquidez bancária e crédito.</p></details>
+<details><summary>27. Uma mudança na taxa de juros chega imediatamente e de modo uniforme aos preços?</summary><p>Não. A transmissão envolve crédito, expectativas, gasto e produção, com defasagens e efeitos diferentes entre setores.</p></details>
+<details><summary>28. Qual a diferença entre política cambial e comercial?</summary><p>A primeira lida com o regime e intervenções cambiais; a segunda usa regras e incentivos ligados ao comércio externo.</p></details>
+<details><summary>29. Importação de máquinas e envio de lucros ao exterior são a mesma conta?</summary><p>Não. A importação integra o comércio de bens e o ajuste da despesa; a remessa de lucros é renda paga ao exterior.</p></details>
+<details><summary>30. Um gráfico de “PIB 2026” pode ser comparado diretamente a PIB 2019 e a riqueza acumulada?</summary><p>Só depois de verificar se 2026 é projeção, quais preços e moedas foram usados e o que cada indicador mede. Riqueza é estoque; PIB é fluxo.</p></details>
+<details><summary>31. Se C<sub>a</sub> = 20, c = 0,8 e Y = 100, quanto vale C no modelo simples?</summary><p>C = 20 + 0,8 × 100 = 100.</p></details>
+<details><summary>32. Qual é o multiplicador 1/(1 − c) quando c = 0,8, nas hipóteses do modelo?</summary><p>5. É uma relação do modelo simples, não uma previsão empírica automática para toda economia.</p></details>
+
+<details><summary>33. Na tabela de renda da ilha, o que se obtém somando uma linha? E somando uma coluna?</summary>
+<p>A linha dá o valor adicionado de uma empresa (ótica do produto); a coluna dá o total de um tipo de renda (ótica da renda). O total geral é o mesmo.</p></details>
+
+<details><summary>34. Se a prefeitura passa a comprar parte do pão que antes as famílias compravam, o PIB muda?</summary>
+<p>Não. Muda só a composição da despesa: sai de C e entra em G. Produção e renda são as mesmas.</p></details>
+
+<details><summary>35. Por que o lucro garante que produto e renda sejam sempre iguais?</summary>
+<p>Porque o lucro é o que sobra do valor adicionado depois de pagar salários, juros e aluguéis. Qualquer mudança no valor produzido altera o lucro na mesma quantia.</p></details>
+
+<details><summary>36. Se a renda enviada ao exterior supera a recebida, o PNB é maior ou menor que o PIB?</summary>
+<p>Menor. A RLEE é positiva e PNB = PIB − RLEE.</p></details>
+
+<details><summary>37. Qual chave separa PIB a preços de mercado de PIB a custo de fatores?</summary>
+<p>Os impostos indiretos líquidos de subsídios: cf = pm − impostos indiretos + subsídios.</p></details>
+
+<details><summary>38. O PIB nominal foi de 1.000 para 1.155 e o real de 1.000 para 1.050. Quanto a economia cresceu e qual foi a inflação medida pelo deflator?</summary>
+<p>Cresceu 5% em volume. O deflator é 1.155 ÷ 1.050 = 1,10: preços 10% maiores.</p></details>
+</section></main><footer><p><strong>Fonte-base:</strong> apresentação integral “a6.macro.cont_social.pptx”, Economia 15000599, Prof. Alejandro Martins Rodriguez: capítulo 8 (fundamentos e política macroeconômica), capítulo 9 (contabilidade social), gráficos de referência e apêndices sobre história das contas e Keynes. Diagramas redesenhados e exemplos complementares assinalados no texto.</p><p>Material de revisão universitária. Valores dos exemplos são ilustrativos; não representam estatísticas brasileiras.</p></footer><script>
+(function(){
+document.querySelectorAll('.qcard').forEach(function(card){
+  var ans=card.dataset.ans.split(' ');
+  card.querySelectorAll('button').forEach(function(b){
+    b.addEventListener('click',function(){
+      card.querySelectorAll('button').forEach(function(x){x.classList.remove('ok','no')});
+      var right=ans.indexOf(b.dataset.v)>-1;
+      b.classList.add(right?'ok':'no');
+      card.querySelectorAll('button').forEach(function(x){if(ans.indexOf(x.dataset.v)>-1)x.classList.add('ok')});
+      card.classList.add('done');card.classList.toggle('wrong',!right);
+    });
+  });
+});
+var lab=document.querySelector('.lab');if(!lab)return;
+var fmt=function(n){return n.toLocaleString('pt-BR')};
+var why={
+ gov:'Merenda: o PIB não muda, só muda quem comprou. Na despesa, parte do pão sai de C e vai para G. Produção e renda continuam as mesmas.',
+ forno:'Forno: produção nova. +150 em I (despesa), +150 de valor adicionado da serralheria (produto), +100 de salários e +50 de lucro (renda). O forno não é insumo: dura vários anos.',
+ imp:'Geleia importada: C sobe 50 e M sobe 50, efeito zero no PIB. Nenhuma empresa da ilha produziu a geleia nem pagou renda com ela.',
+ exp:'Exportação: +100 em X; o agricultor tem +100 de valor adicionado e paga +70 de salários e +30 de lucro.',
+ tax:'Imposto: os compradores pagam 10% a mais pelo pão, mas as empresas ficam com o mesmo; a diferença vai ao governo. Por isso produto e renda somam os impostos para chegar ao PIB a preços de mercado.'
+};
+function row(label,v,base,sign){
+  var cls=v===0?'row zero':(v!==base?'row chg':'row');
+  return '<div class="'+cls+'"><span>'+label+'</span><span>'+(sign||'')+fmt(v)+'</span></div>';
+}
+function render(){
+  var s={};lab.querySelectorAll('input').forEach(function(i){s[i.dataset.k]=i.checked});
+  var t=s.tax?0.1:0,gb=s.gov?200:0;
+  var C=(1000-gb)*(1+t)+(s.imp?50:0),G=gb*(1+t),I=s.forno?150:0,X=s.exp?100:0,M=s.imp?50:0;
+  var tax=Math.round(1000*t);
+  var vaT=100+(s.exp?100:0),vaS=s.forno?150:0;
+  var sal=700+(s.forno?100:0)+(s.exp?70:0),luc=180+(s.forno?50:0)+(s.exp?30:0);
+  var P=vaT+300+600+vaS+tax,D=C+I+G+X-M,R=sal+50+70+luc+tax;
+  C=Math.round(C);G=Math.round(G);
+  document.getElementById('labProd').innerHTML=
+    row('VA agricultor',vaT,100)+row('VA moinho',300,300)+row('VA padaria',600,600)+row('VA serralheria',vaS,0)+row('+ impostos s/ produtos',tax,0)+
+    '<div class="row tot"><span>PIB</span><span>'+fmt(P)+'</span></div>';
+  document.getElementById('labDesp').innerHTML=
+    row('C consumo',C,1000)+row('I investimento',I,0)+row('G governo',G,0)+row('X exportações',X,0)+row('M importações',M,0,M?'− ':'')+
+    '<div class="row tot"><span>PIB</span><span>'+fmt(D)+'</span></div>';
+  document.getElementById('labRend').innerHTML=
+    row('Salários',sal,700)+row('Juros',50,50)+row('Aluguéis',70,70)+row('Lucros',luc,180)+row('+ impostos indiretos',tax,0)+
+    '<div class="row tot"><span>PIB</span><span>'+fmt(R)+'</span></div>';
+  document.getElementById('labEq').textContent='Produto '+fmt(P)+' = Despesa '+fmt(D)+' = Renda '+fmt(R)+(P===1000?'':' (antes: 1.000)');
+  var w=Object.keys(why).filter(function(k){return s[k]}).map(function(k){return '<p>'+why[k]+'</p>'}).join('');
+  document.getElementById('labWhy').innerHTML=w||'<p>Situação inicial: só famílias compram pão. As três óticas dão 1.000. Marque uma mudança acima.</p>';
+}
+lab.addEventListener('change',render);render();
+})();
+</script>
+</body></html>
