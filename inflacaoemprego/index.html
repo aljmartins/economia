@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Inflação e Emprego | Infográfico de Aula</title>
+<style>
+:root{
+  --azul:#173b63; --azul2:#285b8f; --claro:#f5f8fb; --linha:#d9e2ec;
+  --texto:#17212b; --muted:#5d6b78; --amarelo:#fff6cc; --verde:#edf7ef; --vermelho:#fff1f1;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:var(--texto);background:#fff;line-height:1.55}
+header{background:linear-gradient(135deg,#173b63,#285b8f);color:#fff;padding:28px 18px}
+.wrap{max-width:1120px;margin:auto}
+.head{display:flex;gap:18px;align-items:center}
+.head img{width:84px;height:84px;object-fit:contain;background:#fff;border-radius:14px;padding:8px}
+h1{font-size:clamp(1.9rem,4vw,3rem);line-height:1.05;margin:0 0 8px}
+.subtitle{margin:0;opacity:.92}
+nav{position:sticky;top:0;z-index:10;background:#fff;border-bottom:1px solid var(--linha);box-shadow:0 2px 8px rgba(0,0,0,.05)}
+nav .wrap{display:flex;overflow:auto;gap:6px;padding:8px 12px}
+nav a{white-space:nowrap;text-decoration:none;color:var(--azul);font-weight:760;padding:8px 11px;border-radius:9px}
+nav a:hover{background:var(--claro)}
+main{padding:26px 18px 52px}
+section{scroll-margin-top:74px;margin-bottom:36px}
+.kicker{text-transform:uppercase;letter-spacing:.11em;font-size:.8rem;font-weight:800;color:var(--azul2)}
+h2{color:var(--azul);font-size:clamp(1.55rem,3vw,2.2rem);margin:.2rem 0 1rem}
+h3{color:var(--azul);margin-top:0}
+.lead{font-size:1.08rem;color:#2f4252;max-width:950px}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.grid3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.card{border:1px solid var(--linha);border-radius:16px;padding:16px;background:#fff;box-shadow:0 3px 12px rgba(0,0,0,.05)}
+.card strong{color:var(--azul)}
+.concept{border-left:5px solid var(--azul2);background:var(--claro)}
+.note{background:var(--amarelo);border-radius:12px;padding:12px 14px}
+.good{background:var(--verde)}
+.warn{background:var(--vermelho)}
+.figure{margin:14px 0;border:1px solid var(--linha);border-radius:16px;padding:12px;background:#fff;text-align:center}
+.figure img{max-width:100%;height:auto;max-height:430px;object-fit:contain}
+.figure figcaption{font-size:.92rem;color:var(--muted);margin-top:8px}
+.formula{font-family:ui-monospace,SFMono-Regular,Consolas,monospace;background:#f0f4f8;padding:12px 14px;border-radius:10px;overflow:auto}
+.small{font-size:.92rem;color:var(--muted)}
+.flow{display:grid;grid-template-columns:1fr auto 1fr auto 1fr;gap:8px;align-items:center}
+.arrow{font-size:1.5rem;text-align:center;color:var(--azul2);font-weight:800}
+table{width:100%;border-collapse:collapse;margin:10px 0}
+th,td{border-bottom:1px solid var(--linha);padding:10px;text-align:left;vertical-align:top}
+th{background:var(--claro);color:var(--azul)}
+details{border:1px solid var(--linha);border-radius:12px;padding:10px 13px;margin:8px 0;background:#fff}
+summary{cursor:pointer;font-weight:760;color:var(--azul)}
+footer{border-top:1px solid var(--linha);padding:22px 18px;color:var(--muted);background:#fafcfe}
+@media(max-width:800px){
+  .grid,.grid3,.flow{grid-template-columns:1fr}
+  .arrow{transform:rotate(90deg)}
+  .head{align-items:flex-start}
+  .head img{width:66px;height:66px}
+}
+@media print{
+  nav{display:none}
+  .card,.figure,details{break-inside:avoid}
+}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap head">
+    <img src="IMG/logo_ufpel.png" alt="Logo da UFPel">
+    <div>
+      <div class="kicker" style="color:#dcebff">15000599 Economia</div>
+      <h1>Inflação e Emprego</h1>
+      <p class="subtitle">Resumo visual da aula · Prof. Alejandro Martins</p>
+    </div>
+  </div>
+</header>
+
+<nav>
+  <div class="wrap">
+    <a href="#visao">Visão geral</a>
+    <a href="#conceito">Conceito</a>
+    <a href="#distorcoes">Distorções</a>
+    <a href="#causas">Causas</a>
+    <a href="#imposto">Imposto inflacionário</a>
+    <a href="#phillips">Curva de Phillips</a>
+    <a href="#questoes">Questões</a>
+  </div>
+</nav>
+
+<main class="wrap">
+<section id="visao">
+  <div class="kicker">Visão geral</div>
+  <h2>Quando os preços sobem e o emprego entra na conversa</h2>
+  <p class="lead">A aula organiza o tema em cinco blocos: <strong>conceito de inflação</strong>, <strong>distorções provocadas</strong>, <strong>causas</strong>, <strong>imposto inflacionário</strong> e <strong>curva de Phillips</strong>. Em bom português: primeiro se entende o fenômeno, depois os estragos, as origens e, por fim, a conexão entre inflação, desemprego e política econômica.</p>
+
+  <div class="flow">
+    <div class="card concept"><strong>Inflação</strong><br>aumento contínuo e generalizado dos preços</div>
+    <div class="arrow">→</div>
+    <div class="card concept"><strong>Distorções</strong><br>renda, balanço de pagamentos, expectativas e capitais</div>
+    <div class="arrow">→</div>
+    <div class="card concept"><strong>Emprego</strong><br>trade-off e curva de Phillips</div>
+  </div>
+
+  <p class="note"><strong>Frase-guia:</strong> no curto prazo alguns grupos podem até parecer ganhar com a inflação, mas <strong>no longo prazo ninguém ganha</strong>; ela desorganiza o sistema econômico, corrói salários e compromete produção e emprego.</p>
+</section>
+
+<section id="conceito">
+  <div class="kicker">1 · Conceito</div>
+  <h2>O que é inflação?</h2>
+
+  <div class="grid">
+    <div class="card">
+      <h3>Definição central</h3>
+      <p>Inflação é o <strong>aumento contínuo e generalizado no nível de preços</strong>.</p>
+      <p>Não é a alta isolada de um produto; é um movimento persistente que afeta o conjunto da economia.</p>
+    </div>
+    <div class="card">
+      <h3>Chave de leitura</h3>
+      <p>Quando a inflação acelera, o valor da moeda se deteriora. Isso mexe com salários reais, decisões de investimento, comércio exterior e expectativas sobre o futuro.</p>
+    </div>
+  </div>
+</section>
+
+<section id="distorcoes">
+  <div class="kicker">2 · Distorções provocadas</div>
+  <h2>Os efeitos da inflação sobre a economia</h2>
+
+  <div class="grid3">
+    <div class="card">
+      <h3>Distribuição de renda</h3>
+      <p>Os trabalhadores de baixa renda tendem a perder mais, porque gastam quase toda a renda em subsistência e têm pouca proteção financeira. Empresas com poder de repasse e o governo podem mitigar melhor suas perdas no curto prazo.</p>
+    </div>
+    <div class="card">
+      <h3>Balanço de pagamentos</h3>
+      <p>Se os preços internos sobem mais que os internacionais, o produto nacional encarece, a importação é estimulada e a exportação perde competitividade. Isso pode piorar a balança comercial.</p>
+    </div>
+    <div class="card">
+      <h3>Expectativas e investimento</h3>
+      <p>Ambiente inflacionário aumenta incertezas, compromete a produção futura, reduz previsibilidade e afeta decisões de investimento e nível de emprego.</p>
+    </div>
+  </div>
+
+  <div class="grid">
+    <div class="card">
+      <h3>Mercado de capitais</h3>
+      <p>Com a deterioração do valor da moeda, pode haver estímulo à aplicação em bens reais, como terra e imóveis, e desestímulo às aplicações financeiras, salvo quando mecanismos de correção monetária atenuam esse efeito.</p>
+    </div>
+    <div class="card warn">
+      <h3>Conclusão de longo prazo</h3>
+      <p>Mesmo que alguns setores consigam ganhos momentâneos, no longo prazo a inflação corrói salários, reduz consumo, compromete vendas e enfraquece a arrecadação. É aquela “vantagem” que chega cobrando juros — e ainda sem carência.</p>
+    </div>
+  </div>
+</section>
+
+<section id="causas">
+  <div class="kicker">3 · Causas</div>
+  <h2>Por que a inflação acontece?</h2>
+  <p class="lead">A aula destaca três núcleos explicativos: <strong>inflação de demanda</strong>, <strong>inflação de custos</strong> e <strong>outras causas</strong>, como inércia e expectativas.</p>
+
+  <div class="grid">
+    <div class="card good">
+      <h3>Inflação de demanda</h3>
+      <p>É o clássico caso de <strong>“dinheiro demais à procura de poucos bens”</strong>. Surge quando a demanda agregada excede a produção disponível, sobretudo quando a economia está próxima do pleno emprego.</p>
+      <p class="small">Abaixo do pleno emprego, aumentos de demanda podem elevar produção e emprego sem necessariamente gerar alta generalizada de preços.</p>
+    </div>
+    <div class="card">
+      <h3>Política usual</h3>
+      <p>Como a demanda agregada reage mais rapidamente às políticas econômicas que a oferta agregada no curto prazo, o combate costuma envolver medidas para reduzir a procura por bens e serviços.</p>
+    </div>
+  </div>
+
+  <div class="grid">
+    <div class="card">
+      <h3>Inflação de custos</h3>
+      <p>É uma inflação de <strong>oferta</strong>. A demanda não precisa subir; basta que custos de certos insumos aumentem e sejam repassados aos preços finais.</p>
+      <p>Também pode estar associada a estruturas de mercado com monopólio ou oligopólio, capazes de elevar margens acima do aumento de custos.</p>
+    </div>
+    <div class="card">
+      <h3>Choques e controle</h3>
+      <p>Choques de matérias-primas, como petróleo ou produtos agrícolas, podem deflagrar esse processo. A aula cita políticas de controle direto de preços, política salarial rígida e fiscalização de lucros como respostas possíveis.</p>
+    </div>
+  </div>
+
+  <div class="grid">
+    <div class="card concept">
+      <h3>Inércia inflacionária</h3>
+      <p>Perpetuação das taxas passadas: a inflação de ontem é repassada para os preços de hoje.</p>
+    </div>
+    <div class="card concept">
+      <h3>Inflação de expectativas</h3>
+      <p>Agentes elevam preços hoje porque esperam inflação maior amanhã, tentando proteger margens de lucro e poder de compra.</p>
+    </div>
+  </div>
+</section>
+
+<section id="imposto">
+  <div class="kicker">4 · Imposto inflacionário</div>
+  <h2>Quem paga a conta silenciosa?</h2>
+
+  <div class="grid">
+    <div class="card">
+      <h3>Ideia central</h3>
+      <p>O imposto inflacionário é uma <strong>receita para o governo</strong> derivada do monopólio de emissão de moeda. Ao pagar compromissos com moeda emitida a custo quase nulo, o governo se beneficia da perda de poder de compra dos saldos monetários do público.</p>
+    </div>
+    <div class="card warn">
+      <h3>Por que é regressivo?</h3>
+      <p>Porque recai com maior intensidade sobre as classes de renda mais baixa, que mantêm menos aplicações financeiras e têm menos instrumentos para se proteger da corrosão inflacionária.</p>
+    </div>
+  </div>
+
+  <p class="note"><strong>Leitura distributiva:</strong> sem inflação — e, portanto, sem imposto inflacionário — o consumo das classes sociais mais baixas tende a ser maior, pois menos renda é perdida na erosão do poder de compra.</p>
+</section>
+
+<section id="phillips">
+  <div class="kicker">5 · Inflação e emprego</div>
+  <h2>A curva de Phillips</h2>
+  <p class="lead">A curva de Phillips expressa a <strong>relação inversa</strong> entre inflação e desemprego, isto é, um possível <strong>trade-off</strong> entre essas variáveis, sobretudo no curto prazo.</p>
+
+  <div class="grid">
+    <div class="card">
+      <h3>Versão intuitiva</h3>
+      <p>Abaixo do pleno emprego, a economia pode aumentar produção e emprego com preços relativamente rígidos, na tradição keynesiana. Próximo do pleno emprego, aumentos de demanda tendem a pressionar mais os preços do que a produção.</p>
+    </div>
+    <div class="card">
+      <h3>Versão moderna</h3>
+      <div class="formula">π = πᵉ − β (U − Uₙ) + E</div>
+      <p class="small">π: inflação; πᵉ: inflação esperada; U: desemprego; Uₙ: desemprego natural; E: choques de oferta.</p>
+    </div>
+  </div>
+
+  <figure class="figure">
+    <img src="IMG/curva_phillips.png" alt="Esquema da curva de Phillips">
+    <figcaption>Representação da curva de Phillips utilizada na aula.</figcaption>
+  </figure>
+
+  <div class="grid">
+    <figure class="figure">
+      <img src="IMG/desemprego_recessoes.jpg" alt="Visualização sobre desemprego e recessões">
+      <figcaption>Material complementar da aula: a baixa taxa de desemprego pode anteceder reversões do ciclo e recessões.</figcaption>
+    </figure>
+    <figure class="figure">
+      <img src="IMG/desemprego_recessoes_2.jpeg" alt="Material complementar sobre desemprego e recessões">
+      <figcaption>Complemento visual sobre a relação entre mercado de trabalho, política monetária e desaceleração econômica.</figcaption>
+    </figure>
+  </div>
+
+  <div class="grid">
+    <div class="card">
+      <h3>Problemas contemporâneos</h3>
+      <p>A própria aula mostra que o trade-off entre inflação e desemprego <strong>não é tão claro</strong> na realidade recente. Mudanças no poder de barganha dos trabalhadores, choques de oferta e respostas do banco central podem enfraquecer a relação tradicional.</p>
+    </div>
+    <div class="card">
+      <h3>Ligação com política monetária</h3>
+      <p>Se o banco central eleva juros para combater a inflação, pode esfriar a demanda agregada, reduzir a pressão sobre os preços e, ao mesmo tempo, aumentar o risco de desaceleração e desemprego.</p>
+    </div>
+  </div>
+
+  <div class="grid">
+    <figure class="figure">
+      <img src="IMG/phillips_artigo_1.jpeg" alt="Artigo visual complementar sobre a curva de Phillips">
+      <figcaption>Recorte complementar incorporado na aula para ampliar a discussão sobre a curva de Phillips.</figcaption>
+    </figure>
+    <figure class="figure">
+      <img src="IMG/phillips_artigo_2.jpeg" alt="Artigo visual complementar sobre inflação e emprego">
+      <figcaption>Imagem complementar sobre emprego, inflação e mudança na interpretação do trade-off.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section id="sintese">
+  <div class="kicker">Síntese final</div>
+  <h2>O que precisa ficar</h2>
+  <div class="grid">
+    <div class="card"><strong>Inflação</strong>: aumento contínuo e generalizado dos preços.</div>
+    <div class="card"><strong>Distorções</strong>: afeta distribuição de renda, setor externo, expectativas e mercado de capitais.</div>
+    <div class="card"><strong>Causas</strong>: demanda, custos, inércia e expectativas.</div>
+    <div class="card"><strong>Imposto inflacionário</strong>: pesa mais sobre quem tem menos proteção financeira.</div>
+    <div class="card"><strong>Curva de Phillips</strong>: trade-off entre inflação e desemprego, sobretudo no curto prazo.</div>
+    <div class="card"><strong>Atualidade</strong>: choques de oferta e política monetária tornaram a relação mais complexa.</div>
+  </div>
+</section>
+
+<section id="questoes">
+  <div class="kicker">Estudo e avaliação</div>
+  <h2>20 questões para revisar a aula</h2>
+  <p class="small">A maioria pode ser respondida diretamente com o material; as últimas exigem integração dos conceitos.</p>
+
+  <details><summary>1. Defina inflação e explique por que a alta de um único preço não basta para caracterizá-la.</summary></details>
+  <details><summary>2. Como a inflação afeta a distribuição de renda? Quem tende a perder mais?</summary></details>
+  <details><summary>3. Por que algumas empresas conseguem se proteger melhor da inflação no curto prazo?</summary></details>
+  <details><summary>4. Como uma inflação doméstica maior que a internacional pode afetar o balanço de pagamentos?</summary></details>
+  <details><summary>5. De que forma a inflação interfere nas expectativas e nas decisões de investimento?</summary></details>
+  <details><summary>6. Qual é o efeito da inflação sobre o mercado de capitais e sobre aplicações em bens reais?</summary></details>
+  <details><summary>7. Explique por que, no longo prazo, a aula afirma que ninguém ganha com a inflação.</summary></details>
+  <details><summary>8. O que é inflação de demanda?</summary></details>
+  <details><summary>9. Em que situação a inflação de demanda tende a aparecer com mais força?</summary></details>
+  <details><summary>10. Por que aumentos de demanda abaixo do pleno emprego não geram necessariamente inflação?</summary></details>
+  <details><summary>11. O que é inflação de custos?</summary></details>
+  <details><summary>12. Como choques de matérias-primas podem provocar inflação?</summary></details>
+  <details><summary>13. O que se entende por inércia inflacionária?</summary></details>
+  <details><summary>14. O que é inflação de expectativas?</summary></details>
+  <details><summary>15. Defina imposto inflacionário e explique por que ele é regressivo.</summary></details>
+  <details><summary>16. Como a ausência de inflação poderia beneficiar o consumo das classes de menor renda?</summary></details>
+  <details><summary>17. O que a curva de Phillips procura explicar?</summary></details>
+  <details><summary>18. Interprete a expressão π = πᵉ − β(U − Uₙ) + E.</summary></details>
+  <details><summary>19. Por que a relação entre inflação e desemprego não é tão estável quanto a versão tradicional da curva de Phillips sugere?</summary></details>
+  <details><summary>20. Integração: explique como uma alta de juros pode combater a inflação e, ao mesmo tempo, aumentar o risco de desaceleração e desemprego.</summary></details>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <strong>15000599 Economia — UFPel</strong><br>
+    Infográfico elaborado a partir da aula “Inflação e Emprego”.<br>
+    <span class="small">Todos os recursos visuais estão em <code>IMG/</code> e são referenciados por caminhos relativos.</span>
+  </div>
+</footer>
+</body>
+</html>

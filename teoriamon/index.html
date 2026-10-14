@@ -1,0 +1,341 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Teoria Monetária e Sistema Financeiro | Infográfico de Aula</title>
+<style>
+:root{
+  --azul:#173b63; --azul2:#285b8f; --claro:#f5f8fb; --linha:#d8e2ec;
+  --texto:#17212b; --muted:#5c6b79; --amarelo:#fff6cc; --verde:#edf7ef; --vermelho:#fff1f1;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:var(--texto);background:#fff;line-height:1.55}
+header{background:linear-gradient(135deg,#173b63,#285b8f);color:#fff;padding:28px 18px}
+.wrap{max-width:1120px;margin:auto}
+.head{display:flex;gap:18px;align-items:center}
+.head img{width:84px;height:84px;object-fit:contain;background:#fff;border-radius:14px;padding:8px}
+h1{font-size:clamp(1.9rem,4vw,3rem);line-height:1.05;margin:0 0 8px}
+.subtitle{margin:0;opacity:.92}
+nav{position:sticky;top:0;z-index:10;background:#fff;border-bottom:1px solid var(--linha);box-shadow:0 2px 8px rgba(0,0,0,.05)}
+nav .wrap{display:flex;overflow:auto;gap:6px;padding:8px 12px}
+nav a{white-space:nowrap;text-decoration:none;color:var(--azul);font-weight:760;padding:8px 11px;border-radius:9px}
+nav a:hover{background:var(--claro)}
+main{padding:26px 18px 52px}
+section{scroll-margin-top:74px;margin-bottom:36px}
+.kicker{text-transform:uppercase;letter-spacing:.11em;font-size:.8rem;font-weight:800;color:var(--azul2)}
+h2{color:var(--azul);font-size:clamp(1.55rem,3vw,2.2rem);margin:.2rem 0 1rem}
+h3{color:var(--azul);margin-top:0}
+.lead{font-size:1.08rem;color:#2f4252;max-width:950px}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.grid3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.card{border:1px solid var(--linha);border-radius:16px;padding:16px;background:#fff;box-shadow:0 3px 12px rgba(0,0,0,.05)}
+.card strong{color:var(--azul)}
+.concept{border-left:5px solid var(--azul2);background:var(--claro)}
+.note{background:var(--amarelo);border-radius:12px;padding:12px 14px}
+.good{background:var(--verde)}
+.warn{background:var(--vermelho)}
+.figure{margin:14px 0;border:1px solid var(--linha);border-radius:16px;padding:12px;background:#fff;text-align:center}
+.figure img{max-width:100%;height:auto;max-height:430px;object-fit:contain}
+.figure figcaption{font-size:.92rem;color:var(--muted);margin-top:8px}
+.formula{font-family:ui-monospace,SFMono-Regular,Consolas,monospace;background:#f0f4f8;padding:12px 14px;border-radius:10px;overflow:auto}
+.small{font-size:.92rem;color:var(--muted)}
+.pill{display:inline-block;background:#eaf1f8;color:var(--azul);font-weight:700;border-radius:999px;padding:5px 9px;margin:3px}
+.flow{display:grid;grid-template-columns:1fr auto 1fr auto 1fr;gap:8px;align-items:center}
+.arrow{font-size:1.5rem;text-align:center;color:var(--azul2);font-weight:800}
+table{width:100%;border-collapse:collapse;margin:10px 0}
+th,td{border-bottom:1px solid var(--linha);padding:10px;text-align:left;vertical-align:top}
+th{background:var(--claro);color:var(--azul)}
+details{border:1px solid var(--linha);border-radius:12px;padding:10px 13px;margin:8px 0;background:#fff}
+summary{cursor:pointer;font-weight:760;color:var(--azul)}
+footer{border-top:1px solid var(--linha);padding:22px 18px;color:var(--muted);background:#fafcfe}
+@media(max-width:800px){
+  .grid,.grid3,.flow{grid-template-columns:1fr}
+  .arrow{transform:rotate(90deg)}
+  .head{align-items:flex-start}
+  .head img{width:66px;height:66px}
+}
+@media print{
+  nav{display:none}
+  .card,.figure,details{break-inside:avoid}
+}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap head">
+    <img src="IMG/logo_ufpel.png" alt="Logo da UFPel">
+    <div>
+      <div class="kicker" style="color:#dcebff">15000599 Economia</div>
+      <h1>Teoria Monetária e Sistema Financeiro</h1>
+      <p class="subtitle">Resumo visual da aula · Prof. Alejandro Martins</p>
+    </div>
+  </div>
+</header>
+
+<nav>
+  <div class="wrap">
+    <a href="#visao">Visão geral</a>
+    <a href="#moeda">Moeda</a>
+    <a href="#oferta">Oferta de moeda</a>
+    <a href="#politica">Política monetária</a>
+    <a href="#demanda">Demanda e equilíbrio</a>
+    <a href="#sfn">SFN</a>
+    <a href="#questoes">Questões</a>
+  </div>
+</nav>
+
+<main class="wrap">
+<section id="visao">
+  <div class="kicker">Visão geral</div>
+  <h2>O lado monetário da economia</h2>
+  <p class="lead">Esta aula reúne quatro eixos centrais: <strong>moeda</strong>, <strong>meios de pagamento</strong>, <strong>oferta e demanda por moeda</strong> e <strong>estrutura do Sistema Financeiro Nacional</strong>. A lógica é simples: a moeda viabiliza trocas, o sistema bancário afeta sua quantidade, o Banco Central a regula, e dessa interação surgem liquidez, juros e impactos sobre a atividade econômica.</p>
+
+  <div class="flow">
+    <div class="card concept"><strong>Moeda</strong><br>meio de troca, unidade de conta e reserva de valor</div>
+    <div class="arrow">→</div>
+    <div class="card concept"><strong>Liquidez</strong><br>meios de pagamento e agregados monetários</div>
+    <div class="arrow">→</div>
+    <div class="card concept"><strong>Juros e atividade</strong><br>política monetária e equilíbrio monetário</div>
+  </div>
+
+  <p class="note"><strong>Ideia-forte:</strong> o que determina a riqueza de um país é sua <strong>produção global</strong>, e não simplesmente a quantidade de moeda em circulação. Confundir uma coisa com a outra é cair na velha falácia da composição.</p>
+</section>
+
+<section id="moeda">
+  <div class="kicker">1 · Conceito de moeda</div>
+  <h2>O que é moeda e para que ela serve?</h2>
+
+  <div class="grid">
+    <div class="card">
+      <h3>Definição</h3>
+      <p>Moeda é um <strong>objeto de aceitação geral</strong>, utilizado na troca de bens e serviços, com aceitação garantida por lei.</p>
+    </div>
+    <div class="card">
+      <h3>Moeda fiduciária</h3>
+      <p>Ela <strong>não precisa ter valor intrínseco</strong> nem ser lastreada em metal precioso. Basta haver confiança e aceitação geral pelos agentes econômicos.</p>
+    </div>
+  </div>
+
+  <div class="grid3">
+    <div class="card"><h3>Meio de troca</h3><p>Facilita o intercâmbio de bens e serviços e evita a economia de escambo.</p></div>
+    <div class="card"><h3>Unidade de conta</h3><p>Permite medir e comparar valores monetários.</p></div>
+    <div class="card"><h3>Reserva de valor</h3><p>Preserva poder de compra, embora a inflação possa corroer essa função.</p></div>
+  </div>
+</section>
+
+<section id="oferta">
+  <div class="kicker">2 · Meios de pagamento e oferta de moeda</div>
+  <h2>Do M1 ao M4, da base monetária ao multiplicador</h2>
+  <p class="lead">Os meios de pagamento representam os haveres com liquidez imediata em poder do público, excluído o setor bancário. Eles são um bom termômetro da liquidez da economia.</p>
+
+  <div class="card concept">
+    <h3>Conceito básico</h3>
+    <div class="formula">M = PMPP + DV</div>
+    <p class="small">M: meios de pagamento; PMPP: papel-moeda em poder do público; DV: depósitos à vista.</p>
+  </div>
+
+  <figure class="figure">
+    <img src="IMG/agregados_monetarios.png" alt="Esquema visual dos agregados monetários M1, M2, M3 e M4">
+    <figcaption>Esquema visual da aula para a composição dos agregados monetários.</figcaption>
+  </figure>
+
+  <div class="grid">
+    <div class="card">
+      <h3>Agregados monetários</h3>
+      <p><strong>M1</strong> contém os ativos com liquidez mais imediata.<br>
+      <strong>M2</strong>, <strong>M3</strong> e <strong>M4</strong> ampliam esse conceito com ativos menos líquidos, chamados de <strong>quase-moeda</strong>.</p>
+    </div>
+    <div class="card">
+      <h3>Monetização e desmonetização</h3>
+      <p>O aumento da relação <strong>M4/M1</strong>, típico de processos inflacionários, é chamado de <strong>desmonetização</strong>. A redução dessa relação é chamada de <strong>monetização</strong>.</p>
+    </div>
+  </div>
+
+  <div class="grid">
+    <div class="card">
+      <h3>Criação e destruição de moeda</h3>
+      <p>Bancos comerciais podem criar ou destruir moeda ao expandir ou contrair crédito. Já o setor não bancário apenas transfere recursos entre poupadores e tomadores.</p>
+      <img src="IMG/criacao_destruicao_moeda.png" alt="Quadro da aula sobre criação e destruição de moeda" style="max-width:100%;height:auto">
+    </div>
+    <div class="card">
+      <h3>Base monetária</h3>
+      <div class="formula">B = PMPP + Reservas dos Bancos Comerciais</div>
+      <p class="small">Também chamada de moeda de alta potência, passivo monetário do Banco Central ou emissão primária de moeda.</p>
+    </div>
+  </div>
+
+  <div class="grid">
+    <div class="card">
+      <h3>Multiplicador monetário</h3>
+      <p>Mostra o grau de expansão da base monetária via sistema bancário, convertendo moeda primária em meios de pagamento.</p>
+      <div class="formula">m = M/B = (c + 1) / (c + r)</div>
+      <p class="small">c: taxa de retenção do público; r: taxa de encaixe dos bancos comerciais.</p>
+    </div>
+    <figure class="figure">
+      <img src="IMG/multiplicador_monetario.png" alt="Esquema visual do multiplicador monetário">
+      <figcaption>Representação presente na aula sobre o multiplicador monetário.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section id="politica">
+  <div class="kicker">3 · Política monetária</div>
+  <h2>Objetivos e instrumentos do Banco Central</h2>
+  <p class="lead">A política monetária busca regular o ritmo da demanda agregada no curto prazo, evitando que cresça mais rápido que a oferta agregada e gere pressões inflacionárias.</p>
+
+  <div class="grid">
+    <div class="card good">
+      <h3>Compulsório</h3>
+      <p>Parcela dos depósitos à vista que os bancos devem manter no Bacen. Se o compulsório sobe, cai a disponibilidade de recursos para empréstimos e a oferta de moeda tende a diminuir.</p>
+    </div>
+    <div class="card">
+      <h3>Redesconto</h3>
+      <p>Linha de empréstimo do BC aos bancos em falta temporária de liquidez. Em geral, aumento da taxa de redesconto desestimula a expansão do crédito.</p>
+    </div>
+    <div class="card">
+      <h3>Open market</h3>
+      <p>Compra e venda de títulos públicos pelo Bacen para ajustar liquidez. Compra de títulos injeta moeda; venda de títulos retira moeda.</p>
+    </div>
+    <div class="card">
+      <h3>Controle do crédito</h3>
+      <p>Inclui regulação, persuasão moral, supervisão e fiscalização bancária, afetando a disposição dos bancos em conceder crédito.</p>
+    </div>
+  </div>
+
+  <div class="card concept">
+    <h3>BACEN em uma linha</h3>
+    <p>É o <strong>órgão executivo central do SFN</strong>, banco dos bancos, banco emissor e executor da política monetária. É por meio dele que o Estado intervém diretamente no sistema financeiro e, por tabela, na economia.</p>
+  </div>
+</section>
+
+<section id="demanda">
+  <div class="kicker">4 · Demanda por moeda e equilíbrio monetário</div>
+  <h2>Por que manter moeda? O que determina os juros?</h2>
+
+  <div class="grid">
+    <div class="card">
+      <h3>Demanda por moeda em Keynes</h3>
+      <p><strong>Transação:</strong> para pagar compromissos correntes.</p>
+      <p><strong>Precaução:</strong> para lidar com incertezas.</p>
+      <p><strong>Especulação:</strong> para aproveitar oportunidades de investimento; relação inversa com a taxa de juros.</p>
+    </div>
+    <div class="card">
+      <h3>Leitura rápida</h3>
+      <p>A demanda por moeda cresce com a renda e tende a cair quando os juros sobem, pois ativos financeiros passam a parecer mais atraentes.</p>
+    </div>
+  </div>
+
+  <div class="grid">
+    <div class="card">
+      <h3>Teoria Quantitativa da Moeda</h3>
+      <div class="formula">M · v = P · y</div>
+      <p>Essa equação liga o lado monetário ao lado real da economia.</p>
+      <p class="small">M: meios de pagamento; v: velocidade-renda da moeda; P: nível geral de preços; y: renda real.</p>
+    </div>
+    <div class="card">
+      <h3>Interpretação clássica</h3>
+      <p>Se a velocidade da moeda for constante no curto prazo, aumentos de M podem elevar o produto, os preços, ou ambos, dependendo do grau de desemprego e do nível de capacidade produtiva.</p>
+    </div>
+  </div>
+
+  <figure class="figure">
+    <img src="IMG/equilibrio_monetario.png" alt="Gráficos de equilíbrio monetário presentes na aula">
+    <figcaption>Representação do equilíbrio monetário e dos deslocamentos discutidos em aula.</figcaption>
+  </figure>
+
+  <div class="grid">
+    <div class="card">
+      <h3>Taxa de juros</h3>
+      <p>É o valor do dinheiro no tempo: rentabilidade para quem aplica e custo para quem toma empréstimo.</p>
+      <p>Juros altos tendem a frear consumo e investimento, incentivar entrada de capitais e aumentar o custo da dívida pública.</p>
+    </div>
+    <div class="card">
+      <h3>Paridade de Fisher</h3>
+      <p>A taxa real de juros é obtida ao descontar da taxa nominal a inflação esperada.</p>
+      <img src="IMG/fisher_juros.png" alt="Expressão visual da paridade de Fisher" style="max-width:100%;height:auto">
+    </div>
+  </div>
+</section>
+
+<section id="sfn">
+  <div class="kicker">5 · Sistema Financeiro Nacional</div>
+  <h2>Quem regula, quem fiscaliza e quem opera</h2>
+  <p class="lead">A parte final da aula apresenta a estrutura do SFN, dividida entre <strong>subsistema normativo</strong> e <strong>subsistema operativo</strong>. Traduzindo: uns definem as regras; outros colocam a máquina para funcionar.</p>
+
+  <figure class="figure">
+    <img src="IMG/estrutura_sfn.png" alt="Estrutura do Sistema Financeiro Nacional">
+    <figcaption>Visão estrutural do Sistema Financeiro Nacional presente na aula.</figcaption>
+  </figure>
+
+  <div class="grid">
+    <div class="card">
+      <h3>Subsistema normativo</h3>
+      <table>
+        <tr><th>Órgão</th><th>Papel principal</th></tr>
+        <tr><td><strong>CMN</strong></td><td>Define diretrizes gerais da política monetária, creditícia e financeira.</td></tr>
+        <tr><td><strong>BACEN</strong></td><td>Executa a política monetária e fiscaliza instituições financeiras.</td></tr>
+        <tr><td><strong>CVM</strong></td><td>Normatiza e fiscaliza o mercado de valores mobiliários.</td></tr>
+        <tr><td><strong>SUSEP / PREVIC</strong></td><td>Fiscalizam seguros e previdência complementar.</td></tr>
+      </table>
+    </div>
+    <div class="card">
+      <h3>Subsistema operativo</h3>
+      <p>É composto pelas instituições bancárias e não bancárias que realizam a intermediação financeira.</p>
+      <p><strong>Exemplos:</strong> bancos comerciais, bancos de investimento, bancos de desenvolvimento, cooperativas de crédito, corretoras, distribuidoras, seguradoras e entidades de previdência.</p>
+      <p class="small">A aula ainda detalha o papel de instituições especiais como BB, BNDES e CEF.</p>
+    </div>
+  </div>
+</section>
+
+<section id="sintese">
+  <div class="kicker">Síntese final</div>
+  <h2>O que precisa ficar na cabeça</h2>
+  <div class="grid">
+    <div class="card"><strong>Moeda</strong>: não é riqueza em si; é o instrumento que viabiliza as transações.</div>
+    <div class="card"><strong>Meios de pagamento</strong>: medem a liquidez imediata da economia.</div>
+    <div class="card"><strong>Bancos comerciais</strong>: expandem ou contraem moeda via crédito.</div>
+    <div class="card"><strong>Banco Central</strong>: controla base monetária, liquidez e influencia juros.</div>
+    <div class="card"><strong>Demanda por moeda</strong>: depende da renda, da precaução e das oportunidades de investimento.</div>
+    <div class="card"><strong>SFN</strong>: organiza a regulação, a fiscalização e a intermediação financeira.</div>
+  </div>
+</section>
+
+<section id="questoes">
+  <div class="kicker">Estudo e avaliação</div>
+  <h2>20 questões para revisar a aula</h2>
+  <p class="small">A maior parte é diretamente respondível a partir do conteúdo da aula; as últimas exigem pequena integração de conceitos.</p>
+
+  <details><summary>1. Defina moeda e apresente suas três funções clássicas.</summary></details>
+  <details><summary>2. O que significa dizer que a moeda moderna é fiduciária?</summary></details>
+  <details><summary>3. Por que não se pode confundir quantidade de moeda com riqueza de um país?</summary></details>
+  <details><summary>4. O que são meios de pagamento e como se compõe o M1?</summary></details>
+  <details><summary>5. Diferencie M1, M2, M3 e M4 em termos de liquidez.</summary></details>
+  <details><summary>6. O que a aula chama de quase-moeda?</summary></details>
+  <details><summary>7. Explique o que significam monetização e desmonetização.</summary></details>
+  <details><summary>8. Como os bancos comerciais podem criar moeda?</summary></details>
+  <details><summary>9. O que é base monetária e por que ela é chamada de moeda de alta potência?</summary></details>
+  <details><summary>10. Quais fatores podem expandir ou contrair a base monetária?</summary></details>
+  <details><summary>11. O que é o multiplicador monetário e de que variáveis ele depende?</summary></details>
+  <details><summary>12. Como o aumento do compulsório afeta a oferta de moeda?</summary></details>
+  <details><summary>13. O que é open market e por que ele é considerado um instrumento de grande eficiência?</summary></details>
+  <details><summary>14. Apresente os três motivos keynesianos para a demanda por moeda.</summary></details>
+  <details><summary>15. Escreva e interprete a equação de trocas da Teoria Quantitativa da Moeda.</summary></details>
+  <details><summary>16. Como a renda, os juros e a inflação afetam a demanda por moeda?</summary></details>
+  <details><summary>17. O que representa a taxa de juros para aplicadores e tomadores de recursos?</summary></details>
+  <details><summary>18. Diferencie taxa nominal e taxa real de juros com base na paridade de Fisher.</summary></details>
+  <details><summary>19. Qual é a diferença entre subsistema normativo e subsistema operativo no SFN?</summary></details>
+  <details><summary>20. Integração: se o Banco Central compra títulos públicos no mercado aberto, explique o efeito esperado sobre liquidez, oferta de moeda e taxa de juros.</summary></details>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <strong>15000599 Economia — UFPel</strong><br>
+    Infográfico elaborado a partir da aula “Teoria Monetária e Sistema Financeiro”.<br>
+    <span class="small">Todos os recursos visuais estão em <code>IMG/</code> e são referenciados por caminhos relativos.</span>
+  </div>
+</footer>
+</body>
+</html>

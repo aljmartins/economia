@@ -1,0 +1,310 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política Fiscal e Déficit Público | Infográfico de Aula</title>
+<style>
+:root{
+  --azul:#173b63; --azul2:#285b8f; --claro:#f5f8fb; --linha:#d9e2ec;
+  --texto:#17212b; --muted:#5d6b78; --amarelo:#fff6cc; --verde:#edf7ef; --vermelho:#fff1f1;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:var(--texto);background:#fff;line-height:1.55}
+header{background:linear-gradient(135deg,#173b63,#285b8f);color:#fff;padding:28px 18px}
+.wrap{max-width:1120px;margin:auto}
+.head{display:flex;gap:18px;align-items:center}
+.head img{width:96px;height:96px;object-fit:contain;background:#fff;border-radius:14px;padding:8px}
+h1{font-size:clamp(1.9rem,4vw,3rem);line-height:1.05;margin:0 0 8px}
+.subtitle{margin:0;opacity:.92}
+nav{position:sticky;top:0;z-index:10;background:#fff;border-bottom:1px solid var(--linha);box-shadow:0 2px 8px rgba(0,0,0,.05)}
+nav .wrap{display:flex;overflow:auto;gap:6px;padding:8px 12px}
+nav a{white-space:nowrap;text-decoration:none;color:var(--azul);font-weight:760;padding:8px 11px;border-radius:9px}
+nav a:hover{background:var(--claro)}
+main{padding:26px 18px 52px}
+section{scroll-margin-top:74px;margin-bottom:36px}
+.kicker{text-transform:uppercase;letter-spacing:.11em;font-size:.8rem;font-weight:800;color:var(--azul2)}
+h2{color:var(--azul);font-size:clamp(1.55rem,3vw,2.2rem);margin:.2rem 0 1rem}
+h3{color:var(--azul);margin-top:0}
+.lead{font-size:1.08rem;color:#2f4252;max-width:950px}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.grid3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.card{border:1px solid var(--linha);border-radius:16px;padding:16px;background:#fff;box-shadow:0 3px 12px rgba(0,0,0,.05)}
+.card strong{color:var(--azul)}
+.concept{border-left:5px solid var(--azul2);background:var(--claro)}
+.note{background:var(--amarelo);border-radius:12px;padding:12px 14px}
+.good{background:var(--verde)}
+.warn{background:var(--vermelho)}
+.figure{margin:14px 0;border:1px solid var(--linha);border-radius:16px;padding:12px;background:#fff;text-align:center}
+.figure img{max-width:100%;height:auto;max-height:430px;object-fit:contain}
+.figure figcaption{font-size:.92rem;color:var(--muted);margin-top:8px}
+.formula{font-family:ui-monospace,SFMono-Regular,Consolas,monospace;background:#f0f4f8;padding:12px 14px;border-radius:10px;overflow:auto}
+.small{font-size:.92rem;color:var(--muted)}
+.flow{display:grid;grid-template-columns:1fr auto 1fr auto 1fr;gap:8px;align-items:center}
+.arrow{font-size:1.5rem;text-align:center;color:var(--azul2);font-weight:800}
+details{border:1px solid var(--linha);border-radius:12px;padding:10px 13px;margin:8px 0;background:#fff}
+summary{cursor:pointer;font-weight:760;color:var(--azul)}
+table{width:100%;border-collapse:collapse;margin:10px 0}
+th,td{border-bottom:1px solid var(--linha);padding:10px;text-align:left;vertical-align:top}
+th{background:var(--claro);color:var(--azul)}
+footer{border-top:1px solid var(--linha);padding:22px 18px;color:var(--muted);background:#fafcfe}
+@media(max-width:800px){
+  .grid,.grid3,.flow{grid-template-columns:1fr}
+  .arrow{transform:rotate(90deg)}
+  .head{align-items:flex-start}
+  .head img{width:74px;height:74px}
+}
+@media print{
+  nav{display:none}
+  .card,.figure,details{break-inside:avoid}
+}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap head">
+    <img src="IMG/capa_estatisticas_fiscais.jpg" alt="Capa de estatísticas fiscais do Banco Central do Brasil">
+    <div>
+      <div class="kicker" style="color:#dcebff">15000599 Economia</div>
+      <h1>Política Fiscal e Déficit Público</h1>
+      <p class="subtitle">Resumo visual da aula · com base na nota de Estatísticas Fiscais de 31/03/2023</p>
+    </div>
+  </div>
+</header>
+
+<nav>
+  <div class="wrap">
+    <a href="#visao">Visão geral</a>
+    <a href="#conceitos">Conceitos</a>
+    <a href="#resultados">Resultados fiscais</a>
+    <a href="#divida">Dívida pública</a>
+    <a href="#leitura">Leitura dos dados</a>
+    <a href="#questoes">Questões</a>
+  </div>
+</nav>
+
+<main class="wrap">
+<section id="visao">
+  <div class="kicker">Visão geral</div>
+  <h2>O lado fiscal do Estado</h2>
+  <p class="lead">A política fiscal trata das decisões do governo sobre <strong>gasto público</strong>, <strong>tributação</strong> e <strong>endividamento</strong>. Nesta aula, o foco recai sobre os principais indicadores das contas públicas: <strong>resultado primário</strong>, <strong>juros nominais</strong>, <strong>resultado nominal</strong>, <strong>DLSP</strong> e <strong>DBGG</strong>.</p>
+
+  <div class="flow">
+    <div class="card concept"><strong>Receitas e despesas</strong><br>origem do resultado primário</div>
+    <div class="arrow">→</div>
+    <div class="card concept"><strong>Juros nominais</strong><br>custo financeiro da dívida</div>
+    <div class="arrow">→</div>
+    <div class="card concept"><strong>Dívida pública</strong><br>estoque acumulado das necessidades fiscais</div>
+  </div>
+
+  <p class="note"><strong>Ideia-chave:</strong> superávit ou déficit fiscal não é só contabilidade. Afeta confiança, juros, dívida, espaço para políticas públicas e a capacidade do governo de responder a crises.</p>
+</section>
+
+<section id="conceitos">
+  <div class="kicker">1 · Conceitos principais</div>
+  <h2>O vocabulário básico da política fiscal</h2>
+
+  <div class="grid3">
+    <div class="card">
+      <h3>Resultado primário</h3>
+      <p>É a diferença entre <strong>receitas</strong> e <strong>despesas não financeiras</strong> do setor público. Exclui os juros da dívida.</p>
+    </div>
+    <div class="card">
+      <h3>Juros nominais</h3>
+      <p>Representam o custo financeiro do endividamento público, apropriado por competência.</p>
+    </div>
+    <div class="card">
+      <h3>Resultado nominal</h3>
+      <p>É o resultado primário <strong>mais</strong> os juros nominais. Mostra o saldo final das contas públicas no período.</p>
+    </div>
+  </div>
+
+  <div class="grid">
+    <div class="card">
+      <h3>DLSP</h3>
+      <p><strong>Dívida Líquida do Setor Público</strong>: considera passivos menos ativos financeiros do setor público. É uma medida líquida do endividamento.</p>
+    </div>
+    <div class="card">
+      <h3>DBGG</h3>
+      <p><strong>Dívida Bruta do Governo Geral</strong>: soma os passivos brutos do Governo Federal, INSS e governos estaduais e municipais. É a medida mais usada em comparações internacionais.</p>
+    </div>
+  </div>
+
+  <div class="card concept">
+    <h3>Conteúdo de ampliação didática</h3>
+    <p><strong>Política fiscal expansionista</strong> tende a elevar gastos e/ou reduzir tributos para estimular a atividade econômica. <strong>Política fiscal contracionista</strong> faz o contrário, buscando conter a demanda, a inflação ou o crescimento da dívida.</p>
+  </div>
+</section>
+
+<section id="resultados">
+  <div class="kicker">2 · Resultados fiscais</div>
+  <h2>O que a nota fiscal de 31/03/2023 mostra</h2>
+  <p class="lead">O material resume os números de fevereiro de 2023 para o setor público consolidado, com comparação ao mesmo período do ano anterior e leitura em 12 meses.</p>
+
+  <div class="grid">
+    <figure class="figure">
+      <img src="IMG/resultado_primario.png" alt="Gráfico de resultado primário do setor público">
+      <figcaption>Resultado primário por esfera do setor público: setor público consolidado, governo central, governos regionais e empresas estatais.</figcaption>
+    </figure>
+    <figure class="figure">
+      <img src="IMG/juros_nominais.png" alt="Gráfico de juros nominais do setor público consolidado">
+      <figcaption>Juros nominais do setor público consolidado: comparação entre fevereiro e acumulado em 12 meses.</figcaption>
+    </figure>
+  </div>
+
+  <div class="grid">
+    <div class="card warn">
+      <h3>Resultado primário em fevereiro de 2023</h3>
+      <p>O setor público consolidado registrou <strong>déficit primário de R$ 26,5 bilhões</strong>, ante superávit de <strong>R$ 3,5 bilhões</strong> em fevereiro de 2022.</p>
+      <p>No detalhamento:
+      <ul>
+        <li><strong>Governo Central:</strong> déficit de R$ 39,2 bilhões</li>
+        <li><strong>Governos regionais:</strong> superávit de R$ 11,8 bilhões</li>
+        <li><strong>Empresas estatais:</strong> superávit de R$ 938 milhões</li>
+      </ul></p>
+    </div>
+    <div class="card">
+      <h3>Leitura em 12 meses</h3>
+      <p>Nos doze meses até fevereiro de 2023, o setor público consolidado acumulou <strong>superávit primário de R$ 93,2 bilhões</strong>, equivalente a <strong>0,93% do PIB</strong>.</p>
+      <p>Apesar do superávit, o valor foi <strong>0,31 ponto percentual do PIB menor</strong> que o acumulado até janeiro, sinalizando piora relativa do resultado.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <h3>Juros e resultado nominal</h3>
+    <p>Os <strong>juros nominais</strong> somaram <strong>R$ 64,2 bilhões</strong> em fevereiro de 2023, contra R$ 26,0 bilhões em fevereiro de 2022. No acumulado em doze meses, chegaram a <strong>R$ 659,1 bilhões</strong>, o equivalente a <strong>6,54% do PIB</strong>.</p>
+    <p>Com isso, o <strong>resultado nominal</strong> do setor público consolidado foi <strong>deficitário em R$ 90,6 bilhões</strong> no mês, e o déficit nominal acumulado em 12 meses alcançou <strong>R$ 565,9 bilhões</strong> (<strong>5,62% do PIB</strong>).</p>
+  </div>
+</section>
+
+<section id="divida">
+  <div class="kicker">3 · Dívida pública</div>
+  <h2>DLSP e DBGG</h2>
+
+  <figure class="figure">
+    <img src="IMG/dlsp_dbgg.png" alt="Gráfico da DLSP e da DBGG como proporção do PIB">
+    <figcaption>Evolução da Dívida Líquida do Setor Público (DLSP) e da Dívida Bruta do Governo Geral (DBGG).</figcaption>
+  </figure>
+
+  <div class="grid">
+    <div class="card">
+      <h3>DLSP em fevereiro de 2023</h3>
+      <p>A DLSP atingiu <strong>56,6% do PIB</strong> (R$ 5,7 trilhões), com aumento de <strong>0,5 p.p.</strong> no mês.</p>
+      <p>Os principais fatores foram:
+      <ul>
+        <li>juros nominais apropriados: <strong>+0,6 p.p.</strong></li>
+        <li>déficit primário: <strong>+0,3 p.p.</strong></li>
+        <li>variação do PIB nominal: <strong>-0,4 p.p.</strong></li>
+        <li>desvalorização cambial de 2,1%: <strong>-0,3 p.p.</strong></li>
+      </ul></p>
+    </div>
+    <div class="card">
+      <h3>DBGG em fevereiro de 2023</h3>
+      <p>A DBGG atingiu <strong>73,0% do PIB</strong> (R$ 7,4 trilhões), também com aumento de <strong>0,5 p.p.</strong> frente ao mês anterior.</p>
+      <p>Pesaram mais:
+      <ul>
+        <li>juros nominais apropriados: <strong>+0,6 p.p.</strong></li>
+        <li>emissões líquidas de dívida: <strong>+0,2 p.p.</strong></li>
+        <li>variação do PIB nominal: <strong>-0,5 p.p.</strong></li>
+      </ul></p>
+    </div>
+  </div>
+
+  <div class="grid">
+    <div class="card concept">
+      <h3>Elasticidades da dívida</h3>
+      <p>Segundo a nota, um <strong>aumento de 1 p.p. na Selic</strong>, mantido por doze meses, eleva aproximadamente:
+      <ul>
+        <li><strong>DLSP:</strong> R$ 40,6 bilhões (0,40 p.p. do PIB)</li>
+        <li><strong>DBGG:</strong> R$ 38,6 bilhões (0,38 p.p. do PIB)</li>
+      </ul></p>
+    </div>
+    <div class="card">
+      <h3>Outras sensibilidades</h3>
+      <p>A nota também mostra que:
+      <ul>
+        <li>uma <strong>desvalorização de 1%</strong> do câmbio reduz a DLSP em 0,07 p.p. do PIB, mas eleva a DBGG em 0,09 p.p.;</li>
+        <li>um <strong>aumento de 1 p.p. nos índices de preços</strong> eleva tanto a DLSP quanto a DBGG em cerca de 0,17 p.p. do PIB.</li>
+      </ul></p>
+    </div>
+  </div>
+</section>
+
+<section id="leitura">
+  <div class="kicker">4 · Como interpretar os dados</div>
+  <h2>Leitura econômica do caso</h2>
+
+  <div class="grid">
+    <div class="card">
+      <h3>Quando o primário piora</h3>
+      <p>Se as receitas não acompanham as despesas primárias, o setor público precisa recorrer mais ao endividamento ou reduzir gastos futuros. Isso pressiona a sustentabilidade fiscal.</p>
+    </div>
+    <div class="card">
+      <h3>Quando os juros sobem</h3>
+      <p>Mesmo com um resultado primário razoável, juros elevados podem transformar o quadro nominal em déficit. É o velho recado da macroeconomia: a conta chega, e ela costuma vir com Selic.</p>
+    </div>
+  </div>
+
+  <div class="grid">
+    <div class="card good">
+      <h3>Por que olhar DLSP e DBGG?</h3>
+      <p>A DLSP ajuda a captar o endividamento líquido; a DBGG mostra o estoque bruto da dívida. Olhar apenas uma delas pode esconder parte da história.</p>
+    </div>
+    <div class="card">
+      <h3>Ligação com política fiscal</h3>
+      <p>Resultados persistentes de déficit, combinados com juros altos, tendem a elevar a dívida. Isso pode reduzir o espaço para políticas públicas e aumentar a sensibilidade do país a choques econômicos.</p>
+    </div>
+  </div>
+</section>
+
+<section id="sintese">
+  <div class="kicker">Síntese final</div>
+  <h2>O que precisa ficar</h2>
+  <div class="grid">
+    <div class="card"><strong>Resultado primário</strong>: receitas menos despesas não financeiras.</div>
+    <div class="card"><strong>Resultado nominal</strong>: resultado primário somado aos juros nominais.</div>
+    <div class="card"><strong>Juros altos</strong>: podem deteriorar fortemente o resultado nominal.</div>
+    <div class="card"><strong>DLSP</strong>: medida líquida da dívida pública.</div>
+    <div class="card"><strong>DBGG</strong>: medida bruta do endividamento do governo geral.</div>
+    <div class="card"><strong>Política fiscal</strong>: envolve escolhas sobre gasto, arrecadação e financiamento do Estado.</div>
+  </div>
+</section>
+
+<section id="questoes">
+  <div class="kicker">Estudo e avaliação</div>
+  <h2>20 questões para revisar a aula</h2>
+  <p class="small">A maioria pode ser respondida diretamente a partir do material; algumas pedem interpretação econômica.</p>
+
+  <details><summary>1. O que é política fiscal?</summary></details>
+  <details><summary>2. Diferencie resultado primário e resultado nominal.</summary></details>
+  <details><summary>3. Por que os juros nominais são excluídos do resultado primário?</summary></details>
+  <details><summary>4. O que significa dizer que houve déficit primário?</summary></details>
+  <details><summary>5. Qual foi o resultado primário do setor público consolidado em fevereiro de 2023?</summary></details>
+  <details><summary>6. Como se comportaram, no mesmo mês, o Governo Central, os governos regionais e as empresas estatais?</summary></details>
+  <details><summary>7. Qual foi o superávit primário acumulado em 12 meses até fevereiro de 2023?</summary></details>
+  <details><summary>8. Quanto somaram os juros nominais em fevereiro de 2023? E em 12 meses?</summary></details>
+  <details><summary>9. O que é DLSP?</summary></details>
+  <details><summary>10. O que é DBGG?</summary></details>
+  <details><summary>11. Qual foi o valor da DLSP em fevereiro de 2023 como proporção do PIB?</summary></details>
+  <details><summary>12. Qual foi o valor da DBGG em fevereiro de 2023 como proporção do PIB?</summary></details>
+  <details><summary>13. Cite dois fatores que explicaram a alta da DLSP no mês.</summary></details>
+  <details><summary>14. Cite dois fatores que explicaram a alta da DBGG no mês.</summary></details>
+  <details><summary>15. Como um aumento da taxa Selic afeta a DLSP e a DBGG, segundo a tabela de elasticidades?</summary></details>
+  <details><summary>16. Como a desvalorização cambial afeta, segundo a nota, a DLSP e a DBGG?</summary></details>
+  <details><summary>17. Por que uma política fiscal expansionista pode elevar o déficit público?</summary></details>
+  <details><summary>18. Como juros altos podem piorar o resultado nominal mesmo com melhora do primário?</summary></details>
+  <details><summary>19. Por que é importante analisar a dívida pública como proporção do PIB?</summary></details>
+  <details><summary>20. Integração: explique como resultado primário, juros nominais e dívida pública se conectam.</summary></details>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <strong>15000599 Economia — UFPel</strong><br>
+    Infográfico elaborado a partir do arquivo de aula “política fiscal / déficit público” e da nota de Estatísticas Fiscais destacada no material.<br>
+    <span class="small">Todos os recursos visuais estão em <code>IMG/</code> e são referenciados por caminhos relativos.</span>
+  </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,362 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Setor Externo | Infográfico de Aula</title>
+<style>
+:root{
+  --azul:#173b63; --azul2:#285b8f; --claro:#f5f8fb; --linha:#d8e2ec;
+  --texto:#18222d; --muted:#5d6d7d; --amarelo:#fff7d6; --verde:#edf8f2; --vermelho:#fff1f1;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;line-height:1.55;color:var(--texto);background:#fff}
+header{background:linear-gradient(135deg,#173b63,#285b8f);color:#fff;padding:28px 18px}
+.wrap{max-width:1120px;margin:auto}
+.head{display:flex;gap:18px;align-items:center}
+.head img{width:84px;height:84px;object-fit:contain;background:#fff;border-radius:14px;padding:8px}
+h1{font-size:clamp(1.9rem,4vw,3rem);line-height:1.06;margin:0 0 6px}
+.subtitle{margin:0;opacity:.92}
+nav{position:sticky;top:0;z-index:10;background:#fff;border-bottom:1px solid var(--linha);box-shadow:0 2px 8px rgba(0,0,0,.05)}
+nav .wrap{display:flex;overflow:auto;gap:6px;padding:8px 12px}
+nav a{white-space:nowrap;text-decoration:none;color:var(--azul);font-weight:750;padding:8px 11px;border-radius:9px}
+nav a:hover{background:var(--claro)}
+main{padding:26px 18px 54px}
+section{scroll-margin-top:74px;margin-bottom:36px}
+.kicker{text-transform:uppercase;letter-spacing:.11em;font-size:.8rem;font-weight:800;color:var(--azul2)}
+h2{color:var(--azul);font-size:clamp(1.55rem,3vw,2.2rem);margin:.2rem 0 1rem}
+h3{color:var(--azul);margin:.1rem 0 .7rem}
+.lead{font-size:1.08rem;color:#2c4052;max-width:930px}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.grid3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.card{border:1px solid var(--linha);border-radius:16px;padding:16px;background:#fff;box-shadow:0 3px 12px rgba(0,0,0,.05)}
+.card strong{color:var(--azul)}
+.concept{border-left:5px solid var(--azul2);background:var(--claro)}
+.note{background:var(--amarelo);border-radius:12px;padding:12px 14px}
+.good{background:var(--verde)}
+.warn{background:var(--vermelho)}
+.figure{margin:14px 0;border:1px solid var(--linha);border-radius:16px;padding:12px;background:#fff;text-align:center}
+.figure img{max-width:100%;height:auto;max-height:390px;object-fit:contain}
+.figure figcaption{font-size:.92rem;color:var(--muted);margin-top:8px}
+.formula{font-family:ui-monospace,SFMono-Regular,Consolas,monospace;background:#f0f4f8;padding:12px 14px;border-radius:10px;overflow:auto}
+.pill{display:inline-block;background:#eaf1f8;color:var(--azul);font-weight:700;border-radius:999px;padding:5px 9px;margin:3px}
+.flow{display:grid;grid-template-columns:1fr auto 1fr auto 1fr;gap:8px;align-items:center}
+.arrow{font-size:1.5rem;text-align:center;color:var(--azul2);font-weight:800}
+.small{font-size:.92rem;color:var(--muted)}
+table{width:100%;border-collapse:collapse;margin:10px 0}
+th,td{border-bottom:1px solid var(--linha);padding:10px;text-align:left;vertical-align:top}
+th{background:var(--claro);color:var(--azul)}
+details{border:1px solid var(--linha);border-radius:12px;padding:10px 13px;margin:8px 0;background:#fff}
+summary{cursor:pointer;font-weight:760;color:var(--azul)}
+ul{padding-left:20px}
+footer{border-top:1px solid var(--linha);padding:22px 18px;color:var(--muted);background:#fafcfe}
+@media(max-width:780px){
+  .grid,.grid3,.flow{grid-template-columns:1fr}
+  .arrow{transform:rotate(90deg)}
+  .head{align-items:flex-start}
+  .head img{width:66px;height:66px}
+}
+@media print{
+  nav{display:none}
+  .card,.figure,details{break-inside:avoid}
+}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap head">
+    <img src="IMG/logo_ufpel.png" alt="Logo da UFPel">
+    <div>
+      <div class="kicker" style="color:#dcebff">15000599 Economia</div>
+      <h1>Setor Externo</h1>
+      <p class="subtitle">Resumo visual da aula · Prof. Alejandro Martins</p>
+    </div>
+  </div>
+</header>
+
+<nav>
+  <div class="wrap">
+    <a href="#visao">Visão geral</a>
+    <a href="#fundamentos">Comércio internacional</a>
+    <a href="#cambio">Câmbio</a>
+    <a href="#efeitos">Efeitos do câmbio</a>
+    <a href="#balanco">Balanço de pagamentos</a>
+    <a href="#globalizacao">Internacionalização</a>
+    <a href="#exemplos">Exemplos</a>
+    <a href="#questoes">Questões</a>
+  </div>
+</nav>
+
+<main class="wrap">
+<section id="visao">
+  <div class="kicker">Visão geral</div>
+  <h2>Como a economia se relaciona com o resto do mundo</h2>
+  <p class="lead">A aula reúne sete ideias centrais: <strong>vantagens comparativas</strong>, <strong>taxa de câmbio</strong>, <strong>efeitos do câmbio sobre exportações, importações, inflação e dívida</strong>, <strong>variáveis que afetam a balança comercial</strong>, <strong>políticas externas</strong>, <strong>balanço de pagamentos</strong> e <strong>internacionalização da economia</strong>.</p>
+
+  <div class="flow">
+    <div class="card concept"><strong>Trocas internacionais</strong><br>especialização e comércio</div>
+    <div class="arrow">→</div>
+    <div class="card concept"><strong>Câmbio</strong><br>preço da moeda estrangeira</div>
+    <div class="arrow">→</div>
+    <div class="card concept"><strong>Contas externas</strong><br>balança comercial, conta corrente e capitais</div>
+  </div>
+
+  <p class="note"><strong>Ideia-força:</strong> o setor externo não é um “capítulo à parte”. Câmbio, juros, inflação, comércio e crescimento se misturam o tempo inteiro. Economia aberta é assim: ninguém fica sozinho no baile.</p>
+</section>
+
+<section id="fundamentos">
+  <div class="kicker">1 · Fundamentos do comércio internacional</div>
+  <h2>Por que os países comercializam?</h2>
+
+  <div class="grid">
+    <div class="card">
+      <h3>Vantagens comparativas</h3>
+      <p>Segundo David Ricardo, cada país tende a se especializar na produção do bem em que é <strong>relativamente mais eficiente</strong> ou tem <strong>custo relativamente menor</strong>. Esse bem tende a ser exportado; os demais, importados.</p>
+    </div>
+    <div class="card">
+      <h3>Especialização e troca</h3>
+      <p>A especialização permite ampliar a eficiência produtiva e explicar por que países com estruturas diferentes trocam bens entre si. O ganho não vem de fazer tudo, mas de fazer relativamente melhor aquilo em que se é mais competitivo.</p>
+    </div>
+  </div>
+
+  <figure class="figure">
+    <img src="IMG/mapa_comercial_mundial.png" alt="Mapa temático sobre comércio internacional">
+    <figcaption>Representação visual da inserção comercial internacional presente na aula.</figcaption>
+  </figure>
+</section>
+
+<section id="cambio">
+  <div class="kicker">2 · Taxa de câmbio</div>
+  <h2>O preço da moeda estrangeira</h2>
+
+  <div class="grid">
+    <div class="card">
+      <h3>Definição</h3>
+      <p>Taxa de câmbio é o preço da moeda estrangeira em termos da moeda nacional, ou vice-versa. No Brasil usa-se a <strong>convenção do incerto</strong>: por exemplo, US$ 1 = R$ x.</p>
+      <p><strong>A taxa sobe:</strong> desvalorização cambial.<br><strong>A taxa cai:</strong> valorização cambial.</p>
+    </div>
+    <div class="card">
+      <h3>Oferta e demanda de divisas</h3>
+      <p><strong>Oferta de divisas:</strong> exportações e entrada de capitais externos.</p>
+      <p><strong>Demanda de divisas:</strong> importações e saída de capitais, como amortizações, juros e remessas de lucros.</p>
+    </div>
+  </div>
+
+  <div class="grid">
+    <figure class="figure">
+      <img src="IMG/moedas_cambio.png" alt="Ícones de moedas estrangeiras">
+      <figcaption>Moedas e taxas de câmbio: uma leitura visual do mercado cambial.</figcaption>
+    </figure>
+    <div class="card concept">
+      <h3>Regimes cambiais</h3>
+      <p><strong>Fixo:</strong> BC determina a taxa.</p>
+      <p><strong>Flutuante:</strong> mercado determina a taxa.</p>
+      <p><strong>Dirty floating:</strong> regime flutuante com atuação frequente do BC, o caso mais comum nas economias modernas.</p>
+    </div>
+  </div>
+
+  <figure class="figure">
+    <img src="IMG/regimes_cambiais_continuum.png" alt="Continuum dos regimes cambiais">
+    <figcaption>Da flexibilidade total à rigidez cambial: continuum dos regimes cambiais.</figcaption>
+  </figure>
+
+  <div class="card">
+    <h3>Câmbio nominal e câmbio real</h3>
+    <p>A competitividade externa depende mais da <strong>taxa de câmbio real</strong> do que da nominal, porque é preciso considerar a inflação doméstica e os preços externos.</p>
+    <div class="formula">variação real do câmbio ≈ ((1 + variação nominal) / (1 + inflação doméstica)) × (1 + inflação externa) − 1</div>
+    <p class="small">Se a desvalorização nominal for anulada pela inflação interna, pode não haver ganho real de competitividade.</p>
+  </div>
+</section>
+
+<section id="efeitos">
+  <div class="kicker">3 · Efeitos das variações cambiais</div>
+  <h2>Exportações, importações, inflação, dívida e juros</h2>
+
+  <div class="grid">
+    <div class="card good">
+      <h3>Desvalorização cambial</h3>
+      <p>Tende a <strong>estimular exportações</strong> e <strong>desestimular importações</strong>, pois o produto nacional fica relativamente mais barato para o estrangeiro e o importado fica mais caro em reais.</p>
+    </div>
+    <div class="card warn">
+      <h3>Valorização cambial</h3>
+      <p>Tende a <strong>desestimular exportações</strong> e <strong>estimular importações</strong>. Pode ser usada como âncora anti-inflacionária, mas cobra um preço em competitividade externa.</p>
+    </div>
+  </div>
+
+  <div class="grid">
+    <div class="card">
+      <h3>Efeito sobre a inflação</h3>
+      <p><strong>Valorização:</strong> reduz preço dos importados e aumenta concorrência, ajudando a conter inflação.</p>
+      <p><strong>Desvalorização:</strong> encarece importados — inclusive bens essenciais e insumos — e pressiona custos de produção.</p>
+    </div>
+    <div class="card">
+      <h3>Efeito sobre a dívida externa</h3>
+      <p>Se a dívida é denominada em dólares, a <strong>desvalorização</strong> aumenta o estoque em reais; a <strong>valorização</strong>, ao contrário, reduz esse estoque em moeda nacional.</p>
+    </div>
+  </div>
+
+  <div class="card concept">
+    <h3>Juros e câmbio</h3>
+    <p>Se a <strong>taxa real de juros interna</strong> sobe em relação à externa, tende a ocorrer entrada de capitais, aumento da oferta de divisas e valorização da moeda nacional. Ao mesmo tempo, nacionais podem preferir aplicar internamente, reduzindo a saída de divisas.</p>
+  </div>
+
+  <div class="grid">
+    <div class="card">
+      <h3>Exportações agregadas</h3>
+      <div class="formula">X = f(Pext, Pdom, tc, Yw, Sub)</div>
+      <p class="small">Aumentam com preços externos, taxa de câmbio, renda mundial e subsídios; caem com preços domésticos em dólar.</p>
+    </div>
+    <div class="card">
+      <h3>Importações agregadas</h3>
+      <div class="formula">M = f(Pext, Pdom, tc, y, Tm)</div>
+      <p class="small">Caem com preços externos, taxa de câmbio e tarifas; aumentam com preços domésticos e renda nacional.</p>
+    </div>
+  </div>
+</section>
+
+<section id="balanco">
+  <div class="kicker">4 · Balanço de pagamentos</div>
+  <h2>Como o país registra suas transações com o exterior</h2>
+
+  <div class="grid">
+    <div class="card">
+      <h3>Definição</h3>
+      <p>É o registro contábil de todas as transações de um país com o resto do mundo: comércio de bens, serviços, rendas, transferências e fluxos de capitais físicos e financeiros.</p>
+    </div>
+    <div class="card">
+      <h3>Componentes principais</h3>
+      <p><strong>Balança comercial</strong>, <strong>serviços e rendas</strong>, <strong>transferências unilaterais</strong>, <strong>conta corrente</strong>, <strong>conta de capitais</strong> e <strong>conta financeira</strong>.</p>
+    </div>
+  </div>
+
+  <div class="grid">
+    <figure class="figure">
+      <img src="IMG/resultado_balanco_pagamentos.png" alt="Tabela do resultado do balanço de pagamentos">
+      <figcaption>Exemplo de resultado do balanço de pagamentos presente na aula.</figcaption>
+    </figure>
+    <figure class="figure">
+      <img src="IMG/balanca_comercial_trend.png" alt="Tendência da balança comercial brasileira">
+      <figcaption>Visual da balança comercial para ilustrar a dinâmica recente de exportações e importações.</figcaption>
+    </figure>
+  </div>
+
+  <div class="card">
+    <h3>Leitura rápida das contas externas</h3>
+    <table>
+      <tr><th>Conta</th><th>O que registra</th></tr>
+      <tr><td><strong>Balança comercial</strong></td><td>Exportações e importações de bens.</td></tr>
+      <tr><td><strong>Serviços e rendas</strong></td><td>Fretes, seguros, turismo, juros, lucros, dividendos, royalties etc.</td></tr>
+      <tr><td><strong>Conta corrente</strong></td><td>Soma da balança comercial, serviços/rendas e transferências unilaterais.</td></tr>
+      <tr><td><strong>Conta financeira</strong></td><td>IDE, investimentos em carteira, derivativos e outros investimentos.</td></tr>
+    </table>
+  </div>
+</section>
+
+<section id="globalizacao">
+  <div class="kicker">5 · Internacionalização da economia</div>
+  <h2>Globalização produtiva e financeira</h2>
+
+  <div class="grid">
+    <div class="card">
+      <h3>Globalização produtiva</h3>
+      <p>Integra produção e distribuição de valor em redes mundiais. Pode elevar eficiência e padrão de vida, mas também intensifica concorrência, pode aumentar desemprego estrutural e estimular desnacionalização produtiva.</p>
+    </div>
+    <div class="card">
+      <h3>Globalização financeira</h3>
+      <p>Amplia o fluxo internacional de capitais, com forte influência de expectativas, política monetária e diferencial de juros. É mais veloz, mais sensível e, às vezes, mais nervosa que muito investidor em dia de Copom.</p>
+    </div>
+  </div>
+
+  <div class="card concept">
+    <h3>Grau de abertura</h3>
+    <div class="formula">Grau de abertura = (Exportações + Importações) / PIB</div>
+    <p>Esse indicador mostra o peso do comércio internacional na economia. Economias pequenas e muito integradas tendem a exibir valores bem maiores que economias continentais e mais fechadas.</p>
+  </div>
+
+  <figure class="figure">
+    <img src="IMG/grau_abertura_mapa.png" alt="Mapa do grau de abertura comercial no mundo">
+    <figcaption>Mapa de abertura comercial utilizado na aula.</figcaption>
+  </figure>
+</section>
+
+<section id="exemplos">
+  <div class="kicker">6 · Exemplos pesquisados</div>
+  <h2>Aplicações e fatos para conectar a teoria</h2>
+  <p class="lead">Além do material da aula, os exemplos abaixo foram incluídos para dar chão às ideias do setor externo. Eles podem ser usados em discussão, prova ou trabalho.</p>
+
+  <div class="grid">
+    <div class="card good">
+      <h3>Exemplo 1 — Abertura comercial: Brasil × Singapura</h3>
+      <p>Segundo o <strong>World Bank</strong>, o indicador <em>Trade (% of GDP)</em> mostra que, no dado mais recente exibido, o <strong>Brasil</strong> aparece com cerca de <strong>35%</strong> do PIB, enquanto <strong>Singapura</strong> aparece com cerca de <strong>320%</strong>.</p>
+      <p class="small">Leitura didática: o Brasil é uma economia relativamente mais fechada; Singapura é extremamente aberta e integrada ao comércio global.</p>
+    </div>
+    <div class="card">
+      <h3>Exemplo 2 — Contas externas do Brasil</h3>
+      <p>Nas estatísticas do setor externo do <strong>Banco Central do Brasil</strong>, o acumulado em doze meses até <strong>agosto de 2026</strong> mostrou <strong>déficit em transações correntes de US$ 63,0 bilhões</strong> (2,47% do PIB). No mesmo mês, a <strong>balança comercial</strong> registrou <strong>superávit de US$ 6,6 bilhões</strong>, com exportações de <strong>US$ 33,3 bilhões</strong> e importações de <strong>US$ 26,7 bilhões</strong>.</p>
+      <p class="small">Isso ajuda a mostrar por que um superávit comercial não garante, sozinho, saldo positivo em conta corrente.</p>
+    </div>
+  </div>
+
+  <div class="grid">
+    <div class="card">
+      <h3>Exemplo 3 — Câmbio e inflação</h3>
+      <p>Quando o real se desvaloriza, itens importados ou fortemente dependentes do exterior — como combustíveis, fertilizantes, peças eletrônicas e trigo — tendem a pressionar custos internos. É o raciocínio do <strong>pass-through cambial</strong>.</p>
+    </div>
+    <div class="card">
+      <h3>Exemplo 4 — Juros e fluxo de capitais</h3>
+      <p>Se os juros internos sobem em relação aos externos, capitais financeiros podem entrar no país em busca de rentabilidade. Isso amplia a oferta de divisas e pode levar à valorização cambial, ao menos enquanto a percepção de risco não estragar a festa.</p>
+    </div>
+  </div>
+</section>
+
+<section id="sintese">
+  <div class="kicker">Síntese final</div>
+  <h2>O que o estudante deve lembrar</h2>
+  <div class="grid">
+    <div class="card"><strong>Vantagens comparativas</strong>: explicam a especialização e o comércio entre países.</div>
+    <div class="card"><strong>Câmbio</strong>: depende de oferta e demanda de divisas.</div>
+    <div class="card"><strong>Desvalorização</strong>: tende a favorecer exportações e encarecer importações.</div>
+    <div class="card"><strong>Valorização</strong>: ajuda a conter inflação, mas pode reduzir competitividade.</div>
+    <div class="card"><strong>Balanço de pagamentos</strong>: registra todas as transações do país com o exterior.</div>
+    <div class="card"><strong>Globalização</strong>: amplia integração produtiva e financeira, com ganhos e custos.</div>
+  </div>
+</section>
+
+<section id="questoes">
+  <div class="kicker">Estudo e avaliação</div>
+  <h2>20 questões para revisar a aula</h2>
+  <p class="small">A maioria pode ser respondida diretamente pelo material; as últimas usam os exemplos pesquisados.</p>
+
+  <details><summary>1. O que a teoria das vantagens comparativas procura explicar?</summary></details>
+  <details><summary>2. Segundo Ricardo, por que um país deve se especializar em determinado bem?</summary></details>
+  <details><summary>3. Defina taxa de câmbio e explique a convenção do incerto.</summary></details>
+  <details><summary>4. O que significa dizer que a taxa de câmbio subiu? Isso representa valorização ou desvalorização cambial?</summary></details>
+  <details><summary>5. Quais fatores compõem a oferta de divisas? E a demanda de divisas?</summary></details>
+  <details><summary>6. Diferencie regime cambial fixo, flutuante e dirty floating.</summary></details>
+  <details><summary>7. Como a desvalorização cambial afeta exportações e importações?</summary></details>
+  <details><summary>8. Como a valorização cambial pode ser usada para ajudar no controle da inflação?</summary></details>
+  <details><summary>9. Por que a desvalorização cambial pode pressionar a inflação no curto prazo?</summary></details>
+  <details><summary>10. Diferencie câmbio nominal e câmbio real.</summary></details>
+  <details><summary>11. Como a variação dos juros internos em relação aos externos pode afetar o câmbio?</summary></details>
+  <details><summary>12. Quais variáveis afetam as exportações agregadas?</summary></details>
+  <details><summary>13. Quais variáveis afetam as importações agregadas?</summary></details>
+  <details><summary>14. O que é o balanço de pagamentos?</summary></details>
+  <details><summary>15. Diferencie balança comercial, conta corrente e conta financeira.</summary></details>
+  <details><summary>16. O que o grau de abertura econômica mede?</summary></details>
+  <details><summary>17. Exemplo pesquisado: por que Singapura apresenta grau de abertura muito maior que o Brasil?</summary></details>
+  <details><summary>18. Exemplo pesquisado: como o Brasil pode ter superávit comercial e, ainda assim, déficit em transações correntes?</summary></details>
+  <details><summary>19. Dê dois exemplos de produtos ou insumos cujo preço interno pode subir com a desvalorização cambial.</summary></details>
+  <details><summary>20. Integração: explique como câmbio, juros e fluxo de capitais podem se retroalimentar em uma economia aberta.</summary></details>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <strong>15000599 Economia — UFPel</strong><br>
+    Infográfico elaborado a partir da aula “Setor Externo”, com exemplos adicionais pesquisados em fontes oficiais.<br>
+    <span class="small">Exemplos adicionais baseados em Banco Central do Brasil (estatísticas do setor externo) e World Bank (Trade %% of GDP). Todos os recursos visuais estão em <code>IMG/</code> e são referenciados por caminhos relativos.</span>
+  </div>
+</footer>
+</body>
+</html>

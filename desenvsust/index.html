@@ -1,0 +1,341 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Crescimento e Desenvolvimento Econômico | Infográfico de Aula</title>
+<style>
+:root{
+  --azul:#173b63; --azul2:#285b8f; --claro:#f5f8fb; --linha:#d8e2ec;
+  --texto:#18222d; --muted:#5d6d7d; --amarelo:#fff7d6; --verde:#edf8f2; --vermelho:#fff1f1;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;line-height:1.55;color:var(--texto);background:#fff}
+header{background:linear-gradient(135deg,#173b63,#285b8f);color:#fff;padding:28px 18px}
+.wrap{max-width:1120px;margin:auto}
+.head{display:flex;gap:18px;align-items:center}
+.head img{width:84px;height:84px;object-fit:contain;background:#fff;border-radius:14px;padding:8px}
+h1{font-size:clamp(1.9rem,4vw,3rem);line-height:1.06;margin:0 0 6px}
+.subtitle{margin:0;opacity:.92}
+nav{position:sticky;top:0;z-index:10;background:#fff;border-bottom:1px solid var(--linha);box-shadow:0 2px 8px rgba(0,0,0,.05)}
+nav .wrap{display:flex;overflow:auto;gap:6px;padding:8px 12px}
+nav a{white-space:nowrap;text-decoration:none;color:var(--azul);font-weight:750;padding:8px 11px;border-radius:9px}
+nav a:hover{background:var(--claro)}
+main{padding:26px 18px 54px}
+section{scroll-margin-top:74px;margin-bottom:36px}
+.kicker{text-transform:uppercase;letter-spacing:.11em;font-size:.8rem;font-weight:800;color:var(--azul2)}
+h2{color:var(--azul);font-size:clamp(1.55rem,3vw,2.2rem);margin:.2rem 0 1rem}
+h3{color:var(--azul);margin:.1rem 0 .7rem}
+.lead{font-size:1.08rem;color:#2c4052;max-width:940px}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.grid3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.card{border:1px solid var(--linha);border-radius:16px;padding:16px;background:#fff;box-shadow:0 3px 12px rgba(0,0,0,.05)}
+.card strong{color:var(--azul)}
+.concept{border-left:5px solid var(--azul2);background:var(--claro)}
+.note{background:var(--amarelo);border-radius:12px;padding:12px 14px}
+.good{background:var(--verde)}
+.warn{background:var(--vermelho)}
+.figure{margin:14px 0;border:1px solid var(--linha);border-radius:16px;padding:12px;background:#fff;text-align:center}
+.figure img{max-width:100%;height:auto;max-height:410px;object-fit:contain}
+.figure figcaption{font-size:.92rem;color:var(--muted);margin-top:8px}
+.formula{font-family:ui-monospace,SFMono-Regular,Consolas,monospace;background:#f0f4f8;padding:12px 14px;border-radius:10px;overflow:auto}
+.pill{display:inline-block;background:#eaf1f8;color:var(--azul);font-weight:700;border-radius:999px;padding:5px 9px;margin:3px}
+.flow{display:grid;grid-template-columns:1fr auto 1fr auto 1fr;gap:8px;align-items:center}
+.arrow{font-size:1.5rem;text-align:center;color:var(--azul2);font-weight:800}
+.small{font-size:.92rem;color:var(--muted)}
+details{border:1px solid var(--linha);border-radius:12px;padding:10px 13px;margin:8px 0;background:#fff}
+summary{cursor:pointer;font-weight:760;color:var(--azul)}
+table{width:100%;border-collapse:collapse;margin:10px 0}
+th,td{border-bottom:1px solid var(--linha);padding:10px;text-align:left;vertical-align:top}
+th{background:var(--claro);color:var(--azul)}
+footer{border-top:1px solid var(--linha);padding:22px 18px;color:var(--muted);background:#fafcfe}
+@media(max-width:780px){
+  .grid,.grid3,.flow{grid-template-columns:1fr}
+  .arrow{transform:rotate(90deg)}
+  .head{align-items:flex-start}
+  .head img{width:66px;height:66px}
+}
+@media print{
+  nav{display:none}
+  .card,.figure,details{break-inside:avoid}
+}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap head">
+    <img src="IMG/logo_ufpel.png" alt="Logo da UFPel">
+    <div>
+      <div class="kicker" style="color:#dcebff">15000599 Economia</div>
+      <h1>Crescimento e Desenvolvimento Econômico</h1>
+      <p class="subtitle">Resumo visual da aula · Prof. Alejandro Martins</p>
+    </div>
+  </div>
+</header>
+
+<nav>
+  <div class="wrap">
+    <a href="#visao">Visão geral</a>
+    <a href="#conceitos">Crescimento × desenvolvimento</a>
+    <a href="#fontes">Fontes de crescimento</a>
+    <a href="#solow">Solow–Swan</a>
+    <a href="#tecnologia">Tecnologia e educação</a>
+    <a href="#estrategias">Estratégias</a>
+    <a href="#questoes">Questões</a>
+  </div>
+</nav>
+
+<main class="wrap">
+<section id="visao">
+  <div class="kicker">Visão geral</div>
+  <h2>Do crescimento da renda ao desenvolvimento humano</h2>
+  <p class="lead">A aula desloca o foco da macroeconomia de curto prazo — atividade, emprego e preços — para as <strong>estratégias de longo prazo</strong>. A pergunta central passa a ser: <strong>por que algumas economias conseguem elevar de modo sustentado a renda per capita e o bem-estar, enquanto outras permanecem presas a baixos níveis de produtividade?</strong></p>
+
+  <div class="flow">
+    <div class="card concept"><strong>Acumular fatores</strong><br>trabalho, capital e capital humano</div>
+    <div class="arrow">→</div>
+    <div class="card concept"><strong>Aumentar produtividade</strong><br>tecnologia e organização</div>
+    <div class="arrow">→</div>
+    <div class="card concept"><strong>Desenvolver</strong><br>renda + bem-estar econômico e social</div>
+  </div>
+
+  <p class="note"><strong>Ideia-força:</strong> crescer é aumentar a renda per capita; desenvolver é transformar esse crescimento em melhores condições de vida.</p>
+</section>
+
+<section id="conceitos">
+  <div class="kicker">1 · Conceitos fundamentais</div>
+  <h2>Crescimento não é sinônimo de desenvolvimento</h2>
+
+  <div class="grid">
+    <div class="card">
+      <h3>Crescimento econômico</h3>
+      <p>É o <strong>crescimento contínuo da renda per capita ao longo do tempo</strong>.</p>
+      <p>É, portanto, um conceito essencialmente quantitativo.</p>
+    </div>
+    <div class="card">
+      <h3>Desenvolvimento econômico</h3>
+      <p>É um conceito <strong>qualitativo</strong>, ligado à melhora dos indicadores de bem-estar econômico e social.</p>
+      <p><strong>Exemplos:</strong> pobreza, desemprego, desigualdade, saúde, nutrição, educação e moradia.</p>
+    </div>
+  </div>
+
+  <div class="card concept">
+    <h3>Horizonte de análise</h3>
+    <p>A macroeconomia conjuntural se ocupa de estabilização no curto prazo. A teoria do crescimento e do desenvolvimento olha para o <strong>produto potencial</strong>, o pleno emprego dos recursos e as estratégias de longo prazo para um crescimento equilibrado e autossustentado.</p>
+  </div>
+
+  <figure class="figure">
+    <img src="IMG/pib_per_capita_mapa.png" alt="Mapa de PIB per capita">
+    <figcaption>A aula destaca grandes diferenças internacionais de renda per capita — o ponto de partida para perguntar por que os países apresentam trajetórias tão diferentes.</figcaption>
+  </figure>
+</section>
+
+<section id="fontes">
+  <div class="kicker">2 · Fontes de crescimento</div>
+  <h2>De onde vem o crescimento econômico?</h2>
+
+  <div class="grid3">
+    <div class="card"><h3>Trabalho</h3><p>Aumento da força de trabalho por crescimento demográfico ou imigração.</p></div>
+    <div class="card"><h3>Capital físico</h3><p>Aumento do estoque de máquinas, equipamentos, infraestrutura e capacidade produtiva.</p></div>
+    <div class="card"><h3>Capital humano</h3><p>Melhoria da qualidade da mão de obra por educação, capacitação e treinamento.</p></div>
+    <div class="card"><h3>Tecnologia</h3><p>Aumenta a eficiência com que capital e trabalho são utilizados.</p></div>
+    <div class="card"><h3>Organização</h3><p>Interação mais eficiente entre insumos e processos.</p></div>
+    <div class="card"><h3>Financiamento</h3><p>Poupança doméstica e poupança externa financiam a acumulação de capital.</p></div>
+  </div>
+
+  <div class="card warn">
+    <h3>O círculo difícil dos países de baixa renda</h3>
+    <p>A aula chama atenção para um problema clássico: <strong>é difícil acumular capital físico e humano quando a renda é baixa</strong>. E, sem acumulação e produtividade, a própria renda cresce lentamente. A restrição não some com boa vontade — é preciso romper o círculo.</p>
+  </div>
+
+  <figure class="figure">
+    <img src="IMG/investimento_pib_evidencia.png" alt="Gráfico de participação do investimento no PIB versus PIB per capita">
+    <figcaption>Evidência visual utilizada na aula para relacionar investimento e níveis de renda per capita.</figcaption>
+  </figure>
+</section>
+
+<section id="solow">
+  <div class="kicker">3 · Modelo de Solow–Swan</div>
+  <h2>Capital por trabalhador e estado estacionário</h2>
+  <p class="lead">O modelo de Solow–Swan resume uma ideia poderosa: a renda por trabalhador depende do <strong>capital por trabalhador</strong>, mas a acumulação de capital enfrenta depreciação, crescimento populacional e rendimentos decrescentes.</p>
+
+  <div class="grid">
+    <div class="card">
+      <h3>Função por trabalhador</h3>
+      <div class="formula">Y = f(K,N) &nbsp;&nbsp; → &nbsp;&nbsp; y = f(k)</div>
+      <p class="small">y = produto por trabalhador; k = capital por trabalhador.</p>
+    </div>
+    <div class="card">
+      <h3>Poupança e investimento</h3>
+      <div class="formula">I = S = sY</div>
+      <p>A poupança é uma fração <strong>s</strong> da renda e financia integralmente o investimento agregado.</p>
+    </div>
+  </div>
+
+  <div class="grid">
+    <figure class="figure">
+      <img src="IMG/funcao_producao_per_capita.png" alt="Função de produção por trabalhador">
+      <figcaption>Função de produção agregada por trabalhador: produto aumenta com capital, mas a taxas decrescentes.</figcaption>
+    </figure>
+    <figure class="figure">
+      <img src="IMG/solow_estado_estacionario.png" alt="Gráfico do estado estacionário no modelo de Solow">
+      <figcaption>No estado estacionário, o investimento é suficiente apenas para repor depreciação e equipar a força de trabalho que cresce.</figcaption>
+    </figure>
+  </div>
+
+  <div class="card concept">
+    <h3>Condição de estado estacionário</h3>
+    <div class="formula">s · y = (n + d) · k</div>
+    <p><strong>s·y</strong> representa a poupança/investimento por trabalhador; <strong>n</strong> é o crescimento da população e <strong>d</strong> a depreciação.</p>
+  </div>
+
+  <div class="grid">
+    <div class="card good">
+      <h3>Se o capital estiver abaixo de k*</h3>
+      <p>Quando <strong>s·y &gt; (n+d)k</strong>, o capital por trabalhador aumenta, elevando também a renda per capita durante a transição.</p>
+    </div>
+    <div class="card">
+      <h3>Convergência</h3>
+      <p>A dinâmica sugere que economias com baixo capital inicial podem crescer mais rapidamente rumo ao estado estacionário, embora essa convergência dependa das condições estruturais de cada economia.</p>
+    </div>
+  </div>
+
+  <figure class="figure">
+    <img src="IMG/crescimento_populacional_solow.png" alt="Efeito do crescimento populacional no modelo de Solow">
+    <figcaption>Um crescimento populacional mais rápido eleva a necessidade de investimento e reduz o capital e a renda de estado estacionário por trabalhador.</figcaption>
+  </figure>
+</section>
+
+<section id="tecnologia">
+  <div class="kicker">4 · Tecnologia, capital humano e ideias</div>
+  <h2>Por que só acumular máquinas não basta?</h2>
+
+  <div class="grid">
+    <div class="card">
+      <h3>Tecnologia em Solow</h3>
+      <p>Na formulação tradicional, a tecnologia aparece como fator <strong>exógeno</strong>. Ela permite elevar a produtividade sem depender apenas de acumular cada vez mais capital físico.</p>
+    </div>
+    <div class="card">
+      <h3>Crescimento endógeno</h3>
+      <p>Autores como <strong>Robert Lucas</strong> e <strong>Paul Romer</strong> colocam capital humano, aprendizado, conhecimento e inovação no centro do crescimento sustentado.</p>
+    </div>
+  </div>
+
+  <div class="grid">
+    <div class="card">
+      <h3>Evidências citadas na aula</h3>
+      <p><strong>Solow (1957):</strong> no estudo sobre os EUA entre 1909–1949, grande parte do crescimento da produção per capita foi atribuída ao progresso tecnológico.</p>
+      <p><strong>Schultz (1961):</strong> destaca a contribuição do investimento em educação.</p>
+      <p><strong>Lucas:</strong> enfatiza externalidades positivas do conhecimento e aprendizagem.</p>
+    </div>
+    <div class="card">
+      <h3>Capital humano</h3>
+      <p>É o conjunto de <strong>conhecimentos, habilidades e capacidades</strong> que possuem valor econômico para organizações e países.</p>
+      <img src="IMG/capital_humano_competencias.png" alt="Árvore representando atitudes, conhecimentos e habilidades" style="max-width:100%;height:auto">
+    </div>
+  </div>
+
+  <div class="card concept">
+    <h3>Competência</h3>
+    <p>A aula sintetiza competência em três dimensões:</p>
+    <p><span class="pill">Conhecimentos — saber</span><span class="pill">Habilidades — saber fazer</span><span class="pill">Atitudes — querer fazer</span></p>
+  </div>
+
+  <div class="grid">
+    <figure class="figure">
+      <img src="IMG/pib_per_capita_renda_familiar.png" alt="Gráfico comparando PIB per capita e renda familiar média">
+      <figcaption>O material chama atenção para a diferença entre crescimento do PIB per capita e a renda efetivamente percebida pelas famílias.</figcaption>
+    </figure>
+    <figure class="figure">
+      <img src="IMG/populacao_renda_evidencia.png" alt="Gráfico relacionando crescimento populacional e renda por pessoa">
+      <figcaption>Evidência apresentada na aula para discutir crescimento populacional e desempenho econômico.</figcaption>
+    </figure>
+  </div>
+
+  <div class="card warn">
+    <h3>Tecnologia e mercado de trabalho</h3>
+    <p>A aula diferencia <strong>trabalhos rotineiros</strong>, mais passíveis de automação, de <strong>trabalhos não rotineiros</strong>, que exigem interação, criatividade, julgamento e conhecimento especializado. Desenvolvimento econômico também muda a estrutura do emprego.</p>
+  </div>
+</section>
+
+<section id="estrategias">
+  <div class="kicker">5 · Estratégias de desenvolvimento</div>
+  <h2>Como os países tentam acelerar sua trajetória?</h2>
+
+  <div class="grid3">
+    <div class="card">
+      <h3>Industrialização</h3>
+      <p>Ampliação da estrutura produtiva e aumento da produtividade, com papel relevante do investimento.</p>
+    </div>
+    <div class="card">
+      <h3>Substituição de importações</h3>
+      <p>Estratégia associada especialmente às décadas de 1950 e 1960, buscando internalizar a produção antes importada.</p>
+    </div>
+    <div class="card">
+      <h3>Abertura e exportações</h3>
+      <p>A aula contrasta essa estratégia com experiências de maior abertura comercial e integração ao mercado internacional.</p>
+    </div>
+  </div>
+
+  <div class="card good">
+    <h3>Exemplo da aula — Tigres Asiáticos</h3>
+    <p>Coreia, Taiwan, Hong Kong e Cingapura são apresentados como exemplos associados a <strong>abertura comercial</strong>, <strong>poupança elevada</strong>, <strong>forte investimento em educação</strong> e <strong>políticas fiscais cuidadosas</strong>.</p>
+  </div>
+
+  <div class="card">
+    <h3>Restrição demográfica</h3>
+    <p>Elevado crescimento populacional pode diluir o estoque de capital e reduzir a renda per capita, motivo pelo qual a dinâmica populacional aparece como variável importante nos modelos de crescimento.</p>
+  </div>
+</section>
+
+<section id="sintese">
+  <div class="kicker">Síntese final</div>
+  <h2>O que precisa ficar</h2>
+  <div class="grid">
+    <div class="card"><strong>Crescimento</strong>: aumento sustentado da renda per capita.</div>
+    <div class="card"><strong>Desenvolvimento</strong>: melhoria do bem-estar econômico e social.</div>
+    <div class="card"><strong>Fontes</strong>: trabalho, capital, capital humano, tecnologia e organização.</div>
+    <div class="card"><strong>Solow</strong>: poupança acumula capital, mas depreciação e população limitam o processo.</div>
+    <div class="card"><strong>Tecnologia</strong>: fundamental para sustentar crescimento além da acumulação física.</div>
+    <div class="card"><strong>Educação</strong>: forma capital humano e reforça produtividade, inovação e absorção tecnológica.</div>
+  </div>
+</section>
+
+<section id="questoes">
+  <div class="kicker">Estudo e avaliação</div>
+  <h2>20 questões para revisar a aula</h2>
+  <p class="small">As questões são predominantemente respondíveis a partir do material da aula, com algumas de integração e aplicação.</p>
+
+  <details><summary>1. Diferencie crescimento econômico de desenvolvimento econômico.</summary></details>
+  <details><summary>2. Quais indicadores sociais aparecem na aula para caracterizar desenvolvimento?</summary></details>
+  <details><summary>3. Quais são as principais fontes de crescimento econômico?</summary></details>
+  <details><summary>4. Por que países de baixa renda enfrentam dificuldades para acumular capital físico e humano?</summary></details>
+  <details><summary>5. Qual é o papel da poupança interna e da poupança externa no financiamento do desenvolvimento?</summary></details>
+  <details><summary>6. O que representa a função y = f(k) no modelo de Solow–Swan?</summary></details>
+  <details><summary>7. Qual é a relação entre poupança e investimento no modelo apresentado?</summary></details>
+  <details><summary>8. Interprete a condição s·y = (n+d)k.</summary></details>
+  <details><summary>9. O que significa estado estacionário no modelo de Solow?</summary></details>
+  <details><summary>10. O que ocorre quando s·y é maior que (n+d)k?</summary></details>
+  <details><summary>11. Como um crescimento populacional maior afeta o estado estacionário por trabalhador?</summary></details>
+  <details><summary>12. O que significa a hipótese de convergência no modelo de Solow?</summary></details>
+  <details><summary>13. Por que os modelos de crescimento endógeno questionam a visão tradicional de Solow?</summary></details>
+  <details><summary>14. Qual é o papel da tecnologia no crescimento de longo prazo?</summary></details>
+  <details><summary>15. Como a educação contribui para a formação de capital humano?</summary></details>
+  <details><summary>16. Diferencie trabalho rotineiro e trabalho não rotineiro segundo a aula.</summary></details>
+  <details><summary>17. Quais elementos compõem a noção de competência apresentada no apêndice?</summary></details>
+  <details><summary>18. Quais estratégias de desenvolvimento econômico aparecem na aula?</summary></details>
+  <details><summary>19. Por que os Tigres Asiáticos são utilizados como exemplo de estratégia de desenvolvimento?</summary></details>
+  <details><summary>20. Integração: explique por que uma economia pode aumentar o PIB per capita sem necessariamente produzir desenvolvimento econômico na mesma intensidade.</summary></details>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <strong>15000599 Economia — UFPel</strong><br>
+    Infográfico elaborado a partir da aula “Crescimento e Desenvolvimento Econômico”.<br>
+    <span class="small">Todos os recursos visuais estão em <code>IMG/</code> e são referenciados por caminhos relativos.</span>
+  </div>
+</footer>
+</body>
+</html>

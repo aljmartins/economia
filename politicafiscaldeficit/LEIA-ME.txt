@@ -1,0 +1,8 @@
+Infográfico de Aula – Política Fiscal e Déficit Público
+Disciplina: 15000599 Economia
+
+Arquivos:
+- index.html
+- IMG/
+
+Abra index.html localmente no navegador ou publique a pasta em hospedagem estática/GitHub Pages.
